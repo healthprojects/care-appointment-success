@@ -1,0 +1,157 @@
+{
+  "common": {
+    "siteName": "Care Appointment Success",
+    "tagline": "Byddwch yn barod ar gyfer eich apwyntiad ysbyty",
+    "skipToContent": "Neidio i'r prif gynnwys",
+    "prototypeBanner": "Prototeip ar gyfer ymchwil yw hwn. Nid yw'n wasanaeth GIG go iawn, ac mae pob apwyntiad a ddangosir yn ddychmygol.",
+    "pickerTheme": "Thema",
+    "pickerLocale": "Iaith",
+    "pickerTextSize": "Maint testun",
+    "pickerShare": "Rhannu",
+    "shareEmail": "E-bost",
+    "shareCopyLink": "Copïo'r ddolen",
+    "shareCopied": "Dolen wedi'i chopïo",
+    "navHome": "Hafan",
+    "navAppointment": "Eich apwyntiad",
+    "mainNavLabel": "Prif",
+    "back": "Yn ôl",
+    "backToAppointment": "Yn ôl i'ch apwyntiad",
+    "errorSummaryTitle": "Mae problem wedi codi",
+    "footerText": "Prototeip Cam 1 yw Care Appointment Success ar gyfer her Contractau ar gyfer Arloesi Cymru: Lleihau Apwyntiadau a Gollwyd a Gwella Mynediad at Ofal wedi'i Gynllunio.",
+    "footerSource": "Cod ffynhonnell"
+  },
+  "home": {
+    "title": "Byddwch yn barod ar gyfer eich apwyntiad ysbyty",
+    "intro": "Mae Care Appointment Success yn eich helpu i gadarnhau eich apwyntiad, ei newid, neu gael help os gallai rhywbeth eich atal rhag dod.",
+    "youCanHeading": "Gallwch chi:",
+    "youCan": [
+      "gadarnhau y gallwch ddod",
+      "newid neu ganslo eich apwyntiad, fel y gall rhywun arall ddefnyddio'r amser",
+      "dweud wrthym os gallai rhywbeth ei gwneud hi'n anodd dod, a dod o hyd i help",
+      "gofyn am alwad ffôn gan rywun a all helpu"
+    ],
+    "start": "Gweld eich apwyntiad",
+    "privacyHeading": "Am y prototeip hwn",
+    "privacy": "Nid yw'r prototeip hwn yn casglu, yn storio nac yn anfon unrhyw wybodaeth bersonol. Nid oes dim a ddewiswch yma yn gadael eich dyfais."
+  },
+  "appointment": {
+    "title": "Eich apwyntiad",
+    "detailsLabel": "Manylion yr apwyntiad",
+    "clinicLabel": "Clinig",
+    "clinic": "Clinig cleifion allanol dermatoleg",
+    "dateLabel": "Dyddiad",
+    "timeLabel": "Amser",
+    "placeLabel": "Lle",
+    "place": "Adran Cleifion Allanol, Ysbyty Brenhinol Morgannwg, Llantrisant",
+    "referenceLabel": "Cyfeirnod",
+    "question": "Allwch chi ddod i'r apwyntiad hwn?",
+    "confirm": "Gallaf, gallaf ddod",
+    "barriers": "Efallai na fyddaf yn gallu dod",
+    "change": "Mae angen i mi ei newid neu ei ganslo",
+    "helpHeading": "Angen help?",
+    "help": "Os oes rhywbeth yn ei gwneud hi'n anodd dod, dywedwch wrthym. Ni fyddwn yn eich barnu, ac ni fydd yn effeithio ar eich gofal."
+  },
+  "confirmed": {
+    "title": "Diolch, mae eich apwyntiad wedi'i gadarnhau",
+    "body": "Byddwn yn anfon neges i'ch atgoffa y diwrnod cynt.",
+    "bringHeading": "Beth i ddod gyda chi",
+    "bring": [
+      "rhestr o unrhyw feddyginiaethau rydych yn eu cymryd",
+      "eich sbectol neu'ch cymorth clyw, os ydych yn eu defnyddio",
+      "rhywun i'ch cefnogi, os hoffech chi"
+    ],
+    "changeHint": "Os bydd unrhyw beth yn newid, gallwch newid eich apwyntiad unrhyw bryd.",
+    "changeLink": "Newid eich apwyntiad"
+  },
+  "barriers": {
+    "title": "A oes unrhyw beth yn ei gwneud hi'n anodd dod?",
+    "hint": "Dewiswch bob un sy'n berthnasol. Mae eich atebion yn ein helpu i'ch cefnogi. Ni fyddant yn effeithio ar eich gofal.",
+    "legend": "Pethau a allai ei gwneud hi'n anodd dod",
+    "options": {
+      "travel": "Cyrraedd yno, fel trafnidiaeth neu bellter",
+      "cost": "Cost teithio",
+      "caring": "Gofalu am rywun, neu ofal plant",
+      "work": "Gwaith neu astudio",
+      "health": "Fy iechyd neu anabledd",
+      "anxiety": "Rwy'n poeni am yr apwyntiad",
+      "communication": "Mae angen gwybodaeth arnaf mewn fformat neu iaith wahanol",
+      "other": "Rhywbeth arall"
+    },
+    "submit": "Dangos beth allai helpu",
+    "errorNone": "Dewiswch o leiaf un opsiwn, neu ewch yn ôl os nad oes dim yn ei gwneud hi'n anodd dod.",
+    "resultsTitle": "Help a allai ei gwneud hi'n haws",
+    "support": {
+      "travel": "Efallai y gallwch ddefnyddio trafnidiaeth gymunedol, neu gludiant cleifion os oes gennych angen meddygol. Gall llywiwr wirio beth sydd ar gael yn agos atoch.",
+      "cost": "Os ydych yn cael budd-daliadau penodol neu os oes gennych incwm isel, efallai y gallwch hawlio costau teithio yn ôl drwy'r Cynllun Costau Teithio Gofal Iechyd.",
+      "caring": "Gallwn chwilio am amser sy'n gweddu i'r ysgol neu i'ch gofalu. Efallai y gall gwasanaethau gofalwyr lleol helpu hefyd.",
+      "work": "Gallwn roi llythyr apwyntiad i chi ar gyfer eich cyflogwr, neu chwilio am amser cynharach neu hwyrach.",
+      "health": "Dywedwch wrthym pa addasiadau sydd eu hangen arnoch, fel mynediad heb risiau, apwyntiad hirach neu le tawelach i aros.",
+      "anxiety": "Mae'n arferol teimlo'n bryderus. Gallwn ddweud wrthych beth fydd yn digwydd yn yr apwyntiad, a gallwch ddod â rhywun gyda chi.",
+      "communication": "Gallwn anfon gwybodaeth yn Gymraeg neu'n Saesneg, mewn fformat hawdd ei ddeall, print bras, sain neu Iaith Arwyddion Prydain.",
+      "other": "Gall rhywun o'n tîm siarad am y peth gyda chi."
+    },
+    "nextHeading": "Beth hoffech chi ei wneud?",
+    "callMe": "Gofyn am alwad ffôn",
+    "change": "Newid neu ganslo fy apwyntiad",
+    "canCome": "Gallaf ddod nawr"
+  },
+  "rebook": {
+    "title": "Newid neu ganslo eich apwyntiad",
+    "hint": "Mae rhoi eich amser yn ôl yn gynnar yn golygu y gall rhywun arall sy'n aros am ofal ei ddefnyddio.",
+    "legend": "Dewiswch amser newydd",
+    "cancelOption": "Nid oes angen yr apwyntiad hwn arnaf mwyach",
+    "submit": "Cadarnhau",
+    "errorNone": "Dewiswch amser newydd, neu dywedwch wrthym nad oes angen yr apwyntiad arnoch mwyach.",
+    "bookedTitle": "Mae eich apwyntiad newydd wedi'i drefnu",
+    "bookedBody": "Dyddiad ac amser eich apwyntiad newydd yw {date} am {time}. Byddwn yn anfon neges i'ch atgoffa y diwrnod cynt.",
+    "cancelledTitle": "Mae eich apwyntiad wedi'i ganslo",
+    "cancelledBody": "Diolch am roi gwybod i ni. Gellir cynnig eich amser i rywun arall nawr. Os bydd eich symptomau'n newid, cysylltwch â'ch meddyg teulu."
+  },
+  "navigator": {
+    "title": "Gofyn am alwad ffôn",
+    "intro": "Gall llywiwr cymunedol o sefydliad cymorth lleol eich ffonio i helpu gyda beth bynnag sy'n ei gwneud hi'n anodd dod.",
+    "languageLegend": "Ym mha iaith yr hoffech i ni eich ffonio?",
+    "languageWelsh": "Cymraeg",
+    "languageEnglish": "English (Saesneg)",
+    "timeLegend": "Pryd mae'n amser da i ffonio?",
+    "timeMorning": "Bore (9yb i 12yp)",
+    "timeAfternoon": "Prynhawn (12yp i 5yp)",
+    "timeEvening": "Min nos (5yp i 7yh)",
+    "phoneHint": "Byddwn yn ffonio'r rhif ffôn sydd gennym eisoes ar eich cyfer.",
+    "submit": "Gofyn am alwad",
+    "errorNone": "Dewiswch iaith ac amser ar gyfer yr alwad.",
+    "doneTitle": "Diolch, byddwn yn eich ffonio",
+    "doneBody": "Bydd llywiwr yn eich ffonio o fewn 2 ddiwrnod gwaith, yn yr iaith a ddewisoch."
+  },
+  "landing": {
+    "title": "Care Appointment Success",
+    "intro": "Dewiswch eich iaith",
+    "cardBody": "Byddwch yn barod ar gyfer eich apwyntiad ysbyty."
+  },
+  "dates": {
+    "weekdays": [
+      "Dydd Sul",
+      "Dydd Llun",
+      "Dydd Mawrth",
+      "Dydd Mercher",
+      "Dydd Iau",
+      "Dydd Gwener",
+      "Dydd Sadwrn"
+    ],
+    "months": [
+      "Ionawr",
+      "Chwefror",
+      "Mawrth",
+      "Ebrill",
+      "Mai",
+      "Mehefin",
+      "Gorffennaf",
+      "Awst",
+      "Medi",
+      "Hydref",
+      "Tachwedd",
+      "Rhagfyr"
+    ],
+    "dateFormat": "{weekday} {day} {month} {year}"
+  }
+}

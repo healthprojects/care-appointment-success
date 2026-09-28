@@ -1,0 +1,157 @@
+{
+  "common": {
+    "siteName": "Care Appointment Success",
+    "tagline": "Get ready for your hospital appointment",
+    "skipToContent": "Skip to main content",
+    "prototypeBanner": "This is a prototype for research. It is not a real NHS service, and every appointment shown is made up.",
+    "pickerTheme": "Theme",
+    "pickerLocale": "Language",
+    "pickerTextSize": "Text size",
+    "pickerShare": "Share",
+    "shareEmail": "Email",
+    "shareCopyLink": "Copy link",
+    "shareCopied": "Link copied",
+    "navHome": "Home",
+    "navAppointment": "Your appointment",
+    "mainNavLabel": "Main",
+    "back": "Back",
+    "backToAppointment": "Back to your appointment",
+    "errorSummaryTitle": "There is a problem",
+    "footerText": "Care Appointment Success is a Phase 1 prototype for the Contracts for Innovation Cymru challenge: Reducing Missed Appointments and Improving Access to Planned Care.",
+    "footerSource": "Source code"
+  },
+  "home": {
+    "title": "Get ready for your hospital appointment",
+    "intro": "Care Appointment Success helps you confirm your appointment, change it, or get help if something might stop you coming.",
+    "youCanHeading": "You can:",
+    "youCan": [
+      "confirm that you can come",
+      "change or cancel your appointment, so someone else can use the time",
+      "tell us if something might make it hard to come, and find help",
+      "ask for a phone call from someone who can help"
+    ],
+    "start": "View your appointment",
+    "privacyHeading": "About this prototype",
+    "privacy": "This prototype does not collect, store or send any personal information. Nothing you choose here leaves your device."
+  },
+  "appointment": {
+    "title": "Your appointment",
+    "detailsLabel": "Appointment details",
+    "clinicLabel": "Clinic",
+    "clinic": "Dermatology outpatient clinic",
+    "dateLabel": "Date",
+    "timeLabel": "Time",
+    "placeLabel": "Place",
+    "place": "Outpatients Department, Royal Glamorgan Hospital, Llantrisant",
+    "referenceLabel": "Reference",
+    "question": "Can you come to this appointment?",
+    "confirm": "Yes, I can come",
+    "barriers": "I might not be able to come",
+    "change": "I need to change or cancel it",
+    "helpHeading": "Need help?",
+    "help": "If something is making it hard to come, tell us. We will not judge you, and it will not affect your care."
+  },
+  "confirmed": {
+    "title": "Thank you, your appointment is confirmed",
+    "body": "We will send you a reminder the day before.",
+    "bringHeading": "What to bring",
+    "bring": [
+      "a list of any medicines you take",
+      "your glasses or hearing aid, if you use them",
+      "someone to support you, if you would like"
+    ],
+    "changeHint": "If anything changes, you can change your appointment at any time.",
+    "changeLink": "Change your appointment"
+  },
+  "barriers": {
+    "title": "Is anything making it hard to come?",
+    "hint": "Choose all that apply. Your answers help us support you. They will not affect your care.",
+    "legend": "Things that might make it hard to come",
+    "options": {
+      "travel": "Getting there, such as transport or distance",
+      "cost": "The cost of travel",
+      "caring": "Caring for someone, or childcare",
+      "work": "Work or study",
+      "health": "My health or a disability",
+      "anxiety": "I feel worried about the appointment",
+      "communication": "I need information in a different format or language",
+      "other": "Something else"
+    },
+    "submit": "Show me what could help",
+    "errorNone": "Choose at least one option, or go back if nothing is making it hard to come.",
+    "resultsTitle": "Help that could make it easier",
+    "support": {
+      "travel": "You may be able to use community transport, or patient transport if you have a medical need. A navigator can check what is available near you.",
+      "cost": "If you receive certain benefits or have a low income, you may be able to claim back travel costs through the Healthcare Travel Costs Scheme.",
+      "caring": "We can look for a time that fits around school or caring. Local carers' services may also be able to help.",
+      "work": "We can give you an appointment letter for your employer, or look for an earlier or later time.",
+      "health": "Tell us what adjustments you need, such as step-free access, a longer appointment or a quieter place to wait.",
+      "anxiety": "It is normal to feel worried. We can tell you what will happen at the appointment, and you can bring someone with you.",
+      "communication": "We can send information in Welsh or English, easy read, large print, audio or British Sign Language.",
+      "other": "Someone from our team can talk it through with you."
+    },
+    "nextHeading": "What would you like to do?",
+    "callMe": "Ask for a phone call",
+    "change": "Change or cancel my appointment",
+    "canCome": "I can come now"
+  },
+  "rebook": {
+    "title": "Change or cancel your appointment",
+    "hint": "Giving your time back early means someone else waiting for care can use it.",
+    "legend": "Choose a new time",
+    "cancelOption": "I no longer need this appointment",
+    "submit": "Confirm",
+    "errorNone": "Choose a new time, or tell us you no longer need the appointment.",
+    "bookedTitle": "Your new appointment is booked",
+    "bookedBody": "Your new appointment is on {date} at {time}. We will send you a reminder the day before.",
+    "cancelledTitle": "Your appointment is cancelled",
+    "cancelledBody": "Thank you for letting us know. Your time can now be offered to someone else. If your symptoms change, contact your GP."
+  },
+  "navigator": {
+    "title": "Ask for a phone call",
+    "intro": "A community navigator from a local support organisation can call you to help with whatever is making it hard to come.",
+    "languageLegend": "Which language would you like us to call you in?",
+    "languageWelsh": "Cymraeg (Welsh)",
+    "languageEnglish": "English",
+    "timeLegend": "When is a good time to call?",
+    "timeMorning": "Morning (9am to 12pm)",
+    "timeAfternoon": "Afternoon (12pm to 5pm)",
+    "timeEvening": "Evening (5pm to 7pm)",
+    "phoneHint": "We will call the phone number we already have for you.",
+    "submit": "Ask for a call",
+    "errorNone": "Choose a language and a time for the call.",
+    "doneTitle": "Thank you, we will call you",
+    "doneBody": "A navigator will call you within 2 working days, in the language you chose."
+  },
+  "landing": {
+    "title": "Care Appointment Success",
+    "intro": "Choose your language",
+    "cardBody": "Get ready for your hospital appointment."
+  },
+  "dates": {
+    "weekdays": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "dateFormat": "{weekday} {day} {month} {year}"
+  }
+}

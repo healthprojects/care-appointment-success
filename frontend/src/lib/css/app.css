@@ -1,0 +1,173 @@
+/* Layout only. Visual design (colour, type, spacing, focus, component
+ * styling) comes from the Lily theme stylesheet the theme picker loads from
+ * static/themes/. This file positions the page chrome and a few layout-only
+ * patterns the themes do not cover. */
+
+:root {
+  --page-width: 60rem;
+  --gutter: 1rem;
+}
+
+/* Page-level typography and colour. Themes style Lily's component class
+ * hooks but leave the page itself to the app, so read the theme's tokens. */
+body {
+  margin: 0;
+  font-family: var(--lily-font-body, system-ui, sans-serif);
+  line-height: 1.5;
+  color: var(--lily-text, CanvasText);
+  background-color: var(--lily-surface, Canvas);
+}
+
+.site-header-inner,
+.site-footer-inner,
+.site-main {
+  box-sizing: border-box;
+  max-width: var(--page-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.site-header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  padding-block: 0.75rem;
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  margin-inline-end: auto;
+}
+
+.site-brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: inherit;
+}
+
+.site-nav a[aria-current='page'] {
+  font-weight: 700;
+}
+
+.picker-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.prototype-banner {
+  box-sizing: border-box;
+  max-width: var(--page-width);
+  margin: 1rem auto 0;
+  padding: 0.5rem var(--gutter);
+  border-inline-start: 0.5rem solid currentColor;
+  font-weight: 600;
+}
+
+.site-main {
+  padding-block: 1.5rem 3rem;
+}
+
+.site-main:focus {
+  outline: none;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.choice-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checkboxes,
+.radios {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-block: 1rem;
+}
+
+.checkbox-item,
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.radio-divider {
+  border-block-start: 1px solid currentColor;
+  opacity: 0.3;
+  inline-size: 100%;
+}
+
+/* Summary lists: the theme's grid has a third column for row actions; these
+ * rows have only a term and a value. On narrow screens stack them instead. */
+.summary-list {
+  grid-template-columns: minmax(8rem, max-content) 1fr;
+}
+
+@media (max-width: 40rem) {
+  .summary-list {
+    display: block;
+  }
+
+  .summary-list-item {
+    display: block;
+    padding-block: 0.5rem;
+  }
+
+  .summary-list-item dt {
+    font-weight: 700;
+  }
+
+  .summary-list-item dd {
+    margin-inline-start: 0;
+  }
+}
+
+.summary-list dt {
+  font-weight: 700;
+}
+
+.support-list dt {
+  font-weight: 700;
+  margin-block-start: 1rem;
+}
+
+.support-list dd {
+  margin-inline-start: 0;
+}
+
+.results h2:focus,
+.confirmation-panel h1:focus {
+  outline: none;
+}
+
+.site-footer-inner {
+  padding-block: 1.5rem;
+}
