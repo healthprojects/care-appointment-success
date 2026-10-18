@@ -208,6 +208,23 @@ Grouped by where they act. Mark 🟢 as likely feasible in Phase 1, 🟡 as desi
 
 ---
 
+### 5.8 Added 18 October 2026: score, ladder and barrier-to-help map
+
+Adopted with changes from outside suggestions. Full rules are in `plan.md` §10.
+
+- 🟢 Support-only "may benefit from support" list for staff: reasons in words, a suggested action, text as well as colour. First inputs: lead time and past attendance. Age, distance, language and deprivation are audit variables, not inputs.
+- 🟢 Same reminder ladder for everyone (7 days, 3 days, 24 hours, then a staff call). The score only brings the call forward. Replies count, not email opens.
+- 🟢 Barrier-to-help map: the reply that records a reason also triggers the matching offer (remote consult, other time, travel information, call-back).
+- 🟡 Telehealth flip as a *changed appointment* for clinician-approved types, with phone as an equal option to video.
+- 🟡 Interactive voice response (IVR) in Welsh and English for people without a smartphone.
+- 🟡 Weather as a same-day operational prompt, not a score input. Evidence is weak.
+- 🟡 Daily-scored risk engine (batch, stored model version, bands not raw percentages, capacity-based cut-off, shadow mode first). See `plan.md` §10.5.
+- 🔴 Fixed 70% "High Risk" cut-off, age and postcode distance as inputs, and a risk label next to the name on shared screens.
+- 🟢 Escalation for every patient with no reply, triggered by no confirm, cancel or reschedule action. The score only brings it forward. Main "can't come?" prompt at T-7, second touch around T-4, final nudge at T-24h (`plan.md` §10.6).
+- 🟡 Call-to-action links with single-use tokens and a show-then-confirm page, so email security scanners cannot cancel appointments.
+- 🔴 Automatic taxi or shuttle dispatch on confirmation: eligibility, cost and consent need a person.
+- 🔴 Routing channels by demographic profile: it repeats the proxy problem.
+
 ## 6. Behavioural science ideas
 
 From [Notes], [Lacy] and general behavioural insight. All need testing.
@@ -477,3 +494,4 @@ Our favourite tools are messaging and machine learning. The evidence says the bi
 - Resolve the budget gap flagged elsewhere: the F1 answer mentions an academic evaluation partner and a clinical safety officer that H1 does not cost.
 - Check every number used in submissions against its source before final submission.
 - Re-run this brainstorm after the first data release and after the first round of patient interviews, and prune it.
+- Test the three §5.8 ideas (score, ladder, barrier-to-help map) as hypotheses with a mechanism, a population and a measure. Check the NEPTS and travel-cost rules before writing any wording.

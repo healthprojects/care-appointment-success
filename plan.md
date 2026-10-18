@@ -346,3 +346,123 @@ Further suggested improvements from this pass:
 ### 9.5 Remaining gaps
 
 Not found: Welsh-specific DNA data after 2016–17, an NHS Wales App roadmap, a direct study of navigators and DNAs, and anything on BSL video in appointment contact. These are questions for CTM, DHCW and the briefing event.
+
+## 10. Three capability ideas for the platform and the PAS (18 October 2026)
+
+Three ideas were proposed for the platform and for a patient administration system (PAS). Each is adopted with changes, so that it matches the safety rule (a score or offer can only add support), the Welsh and English requirement, and the rule that Phase 1 sends no live patient messages. Evidence for each is a hypothesis to test. None of it is a claim about effect.
+
+The reference implementation is the author's own PAS (`~/git/patient-administration-system`). It is not the Welsh Patient Administration System (WPAS). It already has structured cancellation reasons, a write-back API, release events and a standby list. Use it to write a concrete "what we need from WPAS" specification for Digital Health and Care Wales (DHCW).
+
+### 10.1 Support-only no-show score
+
+| Proposed | Adopted as |
+|---|---|
+| A "no-show probability" for every upcoming slot, weighted by past misses, lead time, age, distance and weather | A **may-benefit-from-support** list for staff, built first on lead time and past attendance |
+| A colour-coded "High Risk" flag on the scheduling dashboard | Plain-words reasons plus a suggested action ("booked 11 weeks ago, no reminder confirmed, last letter bounced: suggest a call"), shown as text as well as colour |
+
+Rules:
+
+1. The score only adds support. It never overbooks, reduces slots or contact, or penalises. Test this as a hard acceptance criterion.
+2. Do not use age, distance, language, disability, ethnicity or deprivation as inputs. Use them to **audit** flag rates and false-flag rates by group. Use distance to trigger travel help, not to score.
+3. Past misses can reflect service failures (a letter not received). Prefer barrier codes and bounce data to raw miss counts.
+4. Weather is weak evidence. Use it only as a same-day operational prompt ("snow forecast: offer phone or video"), not in the individual score.
+5. Make no accuracy claim until the model has been checked locally on approved data. Report that it was validated, not that it works.
+6. Show the top N that staff can act on, and log the action taken and the outcome.
+7. A human decides every action, so UK GDPR Article 22 (solely automated decisions) should not apply. A data protection impact assessment (DPIA) and a DCB0129 hazard ("score wrongly lowers support") are still needed.
+
+### 10.2 Stepped, multi-channel reminders with escalation
+
+The PAS already stores channels in preference order (`print`, `email`, `sms`, `whatsapp`, `apple_messages`, `portal`) and plans a 7-day, 3-day and 24-hour cadence (REM-4). Adopted with these changes:
+
+1. Route by the **individual's** stated preference and observed replies. Never route by demographic profile.
+2. Count replies (confirm, cancel, rebook), not email opens, because mail apps pre-fetch images.
+3. Give **everyone** the same escalation ladder when there is no reply. The score may only bring the phone call forward.
+4. End the ladder with a person: a staff call list that shows the reason ("no reply to two reminders, text bounced"), with the outcome logged. Navigator evidence is stronger than reminder evidence, but it is a hypothesis for Phase 1 (see §9.4).
+5. The 3-day touch carries the "can't come?" prompt, because it is the last point at which a released slot can still be refilled.
+6. Add interactive voice response (IVR) as a channel for people without a smartphone, with Welsh and English prompts.
+7. Guardrails before any escalation: a cap on touches per appointment, quiet hours, STOP and opt-out across channels, no clinical detail in SMS or WhatsApp, and WhatsApp opt-in and approved templates.
+8. Record the whole ladder per appointment (channels tried, times, outcomes) so results can be split by language and deprivation quintile.
+9. Test the fall-through to the next channel first (the PAS marks it FR-3, not yet tested).
+
+### 10.3 Barrier-reduction tools
+
+The barrier codes (`cannot_travel`, `caring`, `work`, `feel_better`, `unwell`, `forgot`, `other`) become a **barrier-to-help map**: the reply that records the reason also triggers the matching offer. Design it together with rebook options (CAP-5).
+
+| Barrier | Offer (adds support only) |
+|---|---|
+| `cannot_travel` | Phone or video consult if clinically suitable, travel-help information, call-back from a navigator |
+| `caring` | Phone or video consult, other time, call-back |
+| `work` | Other time, evening or early slot, employer letter information |
+| `feel_better`, `unwell` | Rebook, or a clinician check where the pathway is urgent |
+| `forgot` | Rebook, and a reminder in a channel that works |
+
+Rules:
+
+1. **Telehealth flip.** Clinicians mark each appointment type as remote-suitable (video, phone, or neither). The flip is a **changed appointment** (a mode field), not an instant save, because it needs a clinician, a link or call-back number, and a freed room. Offer phone as an equal option to video. Monitor uptake by language and deprivation quintile, because remote care can widen gaps for digitally excluded patients. Evidence that it cuts missed visits is mixed.
+2. **Transport.** Do not auto-dispatch a taxi or shuttle. Start with an information link and a staff or navigator call-back. In Wales, patient transport (NEPTS) is based on medical need, and the Healthcare Travel Costs Scheme reimburses qualifying low incomes. **Verify** current rules with the health board. The PAS holds only opaque `person_id` values, so a transport request carries a minimum reference and the patient's consent, and the address stays in the identity service.
+3. Declining an offer must not affect the patient's slot, wait position or later contact.
+4. Offers are in Welsh and English together, with no clinical detail in the message.
+5. Log the offer, acceptance, completion and attendance, to give the evaluation a measurable path from barrier to attendance.
+6. Add a DCB0129 hazard for "flipped to remote when an in-person assessment was needed". Remote mode and a transport-request hook are two integration points to assess with DHCW.
+
+### 10.4 Where each idea sits
+
+| Idea | Phase 1 (fictional data, no live messages) | Later |
+|---|---|---|
+| Support-only score | Fairness audit design, staff view in the prototype, retrospective check if data is released | Live pilot after DPIA and hazard log |
+| Stepped reminders | Cadence, ladder and guardrail design, Welsh and English templates, prototype | Live sending in Phase 2 |
+| Barrier-to-help map | Map, offers and wording tested in usability sessions | Remote mode and transport hook with DHCW |
+
+Open questions for CTM and DHCW: which appointment types are remote-suitable, who owns the template and channel settings, whether WPAS exposes a remote-mode field, and which transport route CTM patients use today.
+
+### 10.5 Predictive risk engine: requirements as proposed, and as adopted
+
+A fuller requirements list for the score in §10.1 was proposed on 18 October 2026. It is adopted as the target design for the PAS and for Phase 2, with the changes below. Phase 1 builds the staff view and the fairness audit on fictional data only.
+
+| # | Proposed | Adopted |
+|---|---|---|
+| 1 | A "No-Show Probability Score" of 0–100% for every appointment on creation, updated daily until the appointment date | Yes, as a daily batch job. Store each run with a model version, so a flag can be explained later. Show **bands**, not a raw percentage, until calibration is proven (a "73%" implies precision the model may not have) |
+| 2 | Inputs: past attendance, lead time, age, distance from postcode, clinic type, day and time | Keep past attendance (with the caution in §10.1 item 3), lead time, clinic type, and day and time of day. **Drop age.** Use distance only to trigger travel help, not to score. Postcode-derived distance is personal data and a deprivation proxy. Clinic type, day and time are service factors, so they point at fixes the service controls (template, slot time) and not at the patient |
+| 3 | Visual indicator (High, Medium, Low) next to the patient's name, from a configurable threshold | A band label in text and colour, shown to staff roles with permission, not on shared or reception-facing screens. Name the band by action ("Support suggested"), not by the patient ("High Risk"). The threshold is configurable by a named role and every change is logged |
+| 4 | Automatic "High Risk" flag above 70%, routed to an operational dashboard for manual staff intervention | Routing to a **support worklist** is adopted: it only adds contact, so it matches the safety rule. A fixed 70% is not. Set the cut-off so the list matches outreach capacity (top N per day) and recheck it by group, since a fixed number can flag a third of one group and a tenth of another |
+
+Further requirements, all testable:
+
+1. No score, band or flag changes the patient's slot, wait position, priority or the number of reminders. Contact can only increase.
+2. Every flag shows its reasons in plain words and a suggested action, in Welsh and English.
+3. Staff can record "not helpful" or "already contacted". That feedback is reviewed monthly.
+4. Pre-register the fairness checks: calibration, false-flag rate and miss rate by deprivation quintile, age, sex and language, before any results are seen.
+5. A model card (inputs, data period, known limits), an access log for the score, and retention rules.
+6. Run in **shadow mode** first: compute and log scores without showing them, and compare with actual attendance before any use. Do not hold back support from anyone to create a comparison group. Use a stepped rollout across clinics instead.
+7. Safety case: a DCB0129 hazard for "score wrongly lowers support", a DPIA, and a named clinical safety officer.
+
+### 10.6 Adaptive multi-channel reminders: requirements as proposed, and as adopted
+
+A requirements list (FR-2.1 to FR-2.5) was proposed on 18 October 2026 for the reminder ladder in §10.2. It is adopted as the target design for the PAS and for Phase 2, with the changes below. Renumber when moving it into the PAS specification, because the PAS already uses FR-3 for channel fallback. Phase 1 designs the ladder, templates and call-to-action pages on fictional data and sends no live messages.
+
+| Ref | Proposed | Adopted |
+|---|---|---|
+| FR-2.1 | Routing across SMS, WhatsApp, email and interactive voice response (IVR) | Yes. The PAS already has `print`, `email`, `sms`, `whatsapp`, `apple_messages` and `portal`. Add IVR with Welsh and English prompts |
+| FR-2.2 | Use the patient's preferred channel from their profile | Yes. The preference is the patient's own, then what they have replied to. Add a fallback to the next channel on failure or bounce (the PAS marks this FR-3, not yet tested) |
+| FR-2.3 | Configurable matrix: T-7 days, T-3 days, T-24 hours | Yes, configurable per clinic and urgency. Timing is changed, see below |
+| FR-2.4 | If a high-risk patient does not acknowledge or open the T-3 email within 24 hours, escalate the T-24h reminder to SMS or IVR | Escalation is adopted, but for **everyone** with no reply. The score only brings it forward. The trigger is "no confirm, cancel or reschedule action", not "opened", because mail apps pre-fetch images |
+| FR-2.5 | Every message has a call to action to Confirm, Cancel or Request Reschedule | Yes, with the safety rules below |
+
+**Timing.** The PAS counts a cancellation as early release only with at least 3 days' notice (`EARLY_RELEASE_DAYS = 3`). A reply to a T-3 message is at 3 days or fewer, and a 24-hour wait after it lands at T-2, when a released slot is hard to refill. So:
+
+1. T-7 carries the main "can't come?" prompt.
+2. A second touch goes around T-4. A silent patient is escalated then by SMS or IVR, and then to a staff call if still silent.
+3. T-24h is the final nudge.
+
+**Call-to-action safety.**
+
+1. Single-use tokens, with no personal data in the URL.
+2. Opening a link shows a page. Only a deliberate tap confirms or cancels, because email security scanners follow links and could cancel appointments.
+3. An "Are you sure?" step on Cancel.
+4. Reply words limited to Confirm, Cancel, Reschedule and Help, in English and Welsh. IVR uses keypad options in both languages.
+5. Reschedule leads to the rebook options (CAP-5).
+6. A cancel or no reply on an urgent or cancer pathway triggers human contact.
+
+**Tie each reply to one appointment.** A text reply carries a phone number and some words. Use a per-message reply token or "latest open reminder per number", and ask back when a patient has several appointments.
+
+**Guardrails (unchanged from §10.2).** Touch cap per appointment, quiet hours, STOP and opt-out across all channels, no clinical detail in SMS or WhatsApp, WhatsApp opt-in and approved templates. Log each step of the ladder per appointment so results can be split by language and deprivation quintile.

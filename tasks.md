@@ -50,6 +50,30 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [ ] Ask CTM and DHCW the §9.5 gaps: recent Welsh DNA data, the NHS Wales App roadmap and BSL contact options
 - [ ] Label the fictional-data status on every prototype page and in the video
 
+## Capability ideas (from `plan.md` §10)
+
+- [ ] Write the support-only score into the prototype as a "may benefit from support" staff list with plain-words reasons and a text label, not a colour alone
+- [ ] Add the fairness audit to E4/F1: flag rate and false-flag rate by deprivation quintile, age, sex and language, with age, distance, language and deprivation excluded as inputs
+- [ ] Add "no score reduces slots, contact or priority" as a hard acceptance test
+- [ ] Define the reminder ladder (7 days, 3 days, 24 hours, then a staff call) and its guardrails: touch cap, quiet hours, STOP, no clinical detail in messages
+- [ ] Count replies, not email opens, as the response signal
+- [ ] Add interactive voice response (IVR) with Welsh and English prompts to the channel options
+- [ ] Draw the barrier-to-help map (barrier code to offer) and test the wording with Welsh and English speakers
+- [ ] Ask CTM which appointment types are remote-suitable and who owns clinic templates
+- [ ] Verify current Welsh patient transport (NEPTS) and Healthcare Travel Costs Scheme rules before any wording is written
+- [ ] Add DCB0129 hazards: score lowers support, flip to remote when in-person was needed, channel fall-through fails
+- [ ] Write the "what we need from WPAS" list for DHCW: write-back replies, release events, standby offers, remote mode, transport request
+- [ ] Add the three ideas to J1 as Phase 2 features, with Phase 1 delivering the audit, the staff view and the maps on fictional data
+- [ ] Add the reminder requirements (`plan.md` §10.6) to the PAS specification, renumbered to avoid the PAS FR-3 clash
+- [ ] Move the "can't come?" prompt to T-7, add a T-4 second touch with escalation of silent patients, and keep T-24h as the final nudge
+- [ ] Specify call-to-action pages: single-use token, show-then-confirm, "Are you sure?" on Cancel, Welsh and English, keypad options for IVR
+- [ ] Specify mapping of a text reply to one appointment (reply token or latest open reminder per number, ask back when several)
+- [ ] Add predictive risk engine requirements (`plan.md` §10.5) to the PAS specification: daily batch scoring, stored model version, bands instead of raw percentages, capacity-based cut-off, support worklist
+- [ ] Decide the model inputs with CTM: past attendance, lead time, clinic type, day and time. Age and postcode distance are excluded as inputs
+- [ ] Run the model in shadow mode before any staff see it, and plan a stepped rollout, not a withheld-support control group
+- [ ] Write a model card, score access log and retention rule
+- [ ] Add a "not helpful / already contacted" feedback control to the staff view and a monthly review
+
 ## Prototype (`care-appointment-success.github.io/`, `care-appointment-success-ui/`)
 
 - [x] Scaffold the SvelteKit 3 + Lily Design System prototype with `locales/{en-001,cy-001}` and a GitHub Pages workflow
