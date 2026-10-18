@@ -1,0 +1,148 @@
+# Sveltia CMS: edits the per-locale message catalogues in git.
+# Docs: https://github.com/sveltia/sveltia-cms
+backend:
+  name: github
+  repo: care-appointment-success/care-appointment-success.github.io
+  branch: main
+media_folder: static/uploads
+public_folder: /uploads
+i18n:
+  structure: multiple_folders
+  locales: [en-001, cy-001]
+  default_locale: en-001
+collections:
+  - name: messages
+    label: Messages
+    i18n: true
+    files:
+      - name: messages
+        label: Site messages
+        file: locales/{{locale}}/messages.json
+        format: json
+        i18n: true
+        fields:
+          - { label: common, name: common, widget: object, collapsed: true, fields:
+              - { label: siteName, name: siteName, widget: string }
+              - { label: tagline, name: tagline, widget: string }
+              - { label: skipToContent, name: skipToContent, widget: string }
+              - { label: prototypeBanner, name: prototypeBanner, widget: text }
+              - { label: pickerTheme, name: pickerTheme, widget: string }
+              - { label: pickerLocale, name: pickerLocale, widget: string }
+              - { label: pickerTextSize, name: pickerTextSize, widget: string }
+              - { label: pickerShare, name: pickerShare, widget: string }
+              - { label: shareEmail, name: shareEmail, widget: string }
+              - { label: shareCopyLink, name: shareCopyLink, widget: string }
+              - { label: shareCopied, name: shareCopied, widget: string }
+              - { label: navHome, name: navHome, widget: string }
+              - { label: navAppointment, name: navAppointment, widget: string }
+              - { label: mainNavLabel, name: mainNavLabel, widget: string }
+              - { label: back, name: back, widget: string }
+              - { label: backToAppointment, name: backToAppointment, widget: string }
+              - { label: errorSummaryTitle, name: errorSummaryTitle, widget: string }
+              - { label: footerText, name: footerText, widget: text }
+              - { label: footerSource, name: footerSource, widget: string }
+            }
+          - { label: home, name: home, widget: object, collapsed: true, fields:
+              - { label: title, name: title, widget: string }
+              - { label: intro, name: intro, widget: text }
+              - { label: youCanHeading, name: youCanHeading, widget: string }
+              - { label: youCan, name: youCan, widget: list, field: { label: item, name: item, widget: text } }
+              - { label: start, name: start, widget: string }
+              - { label: privacyHeading, name: privacyHeading, widget: string }
+              - { label: privacy, name: privacy, widget: text }
+            }
+          - { label: appointment, name: appointment, widget: object, collapsed: true, fields:
+              - { label: title, name: title, widget: string }
+              - { label: detailsLabel, name: detailsLabel, widget: string }
+              - { label: clinicLabel, name: clinicLabel, widget: string }
+              - { label: clinic, name: clinic, widget: string }
+              - { label: dateLabel, name: dateLabel, widget: string }
+              - { label: timeLabel, name: timeLabel, widget: string }
+              - { label: placeLabel, name: placeLabel, widget: string }
+              - { label: place, name: place, widget: text }
+              - { label: referenceLabel, name: referenceLabel, widget: string }
+              - { label: question, name: question, widget: string }
+              - { label: confirm, name: confirm, widget: string }
+              - { label: barriers, name: barriers, widget: string }
+              - { label: change, name: change, widget: string }
+              - { label: helpHeading, name: helpHeading, widget: string }
+              - { label: help, name: help, widget: text }
+            }
+          - { label: confirmed, name: confirmed, widget: object, collapsed: true, fields:
+              - { label: title, name: title, widget: string }
+              - { label: body, name: body, widget: string }
+              - { label: bringHeading, name: bringHeading, widget: string }
+              - { label: bring, name: bring, widget: list, field: { label: item, name: item, widget: text } }
+              - { label: changeHint, name: changeHint, widget: text }
+              - { label: changeLink, name: changeLink, widget: string }
+            }
+          - { label: barriers, name: barriers, widget: object, collapsed: true, fields:
+              - { label: title, name: title, widget: string }
+              - { label: hint, name: hint, widget: text }
+              - { label: legend, name: legend, widget: string }
+              - { label: options, name: options, widget: object, collapsed: true, fields:
+                  - { label: travel, name: travel, widget: string }
+                  - { label: cost, name: cost, widget: string }
+                  - { label: caring, name: caring, widget: string }
+                  - { label: work, name: work, widget: string }
+                  - { label: health, name: health, widget: string }
+                  - { label: anxiety, name: anxiety, widget: string }
+                  - { label: communication, name: communication, widget: string }
+                  - { label: other, name: other, widget: string }
+                }
+              - { label: submit, name: submit, widget: string }
+              - { label: errorNone, name: errorNone, widget: text }
+              - { label: resultsTitle, name: resultsTitle, widget: string }
+              - { label: support, name: support, widget: object, collapsed: true, fields:
+                  - { label: travel, name: travel, widget: text }
+                  - { label: cost, name: cost, widget: text }
+                  - { label: caring, name: caring, widget: text }
+                  - { label: work, name: work, widget: text }
+                  - { label: health, name: health, widget: text }
+                  - { label: anxiety, name: anxiety, widget: text }
+                  - { label: communication, name: communication, widget: text }
+                  - { label: other, name: other, widget: string }
+                }
+              - { label: nextHeading, name: nextHeading, widget: string }
+              - { label: callMe, name: callMe, widget: string }
+              - { label: change, name: change, widget: string }
+              - { label: canCome, name: canCome, widget: string }
+            }
+          - { label: rebook, name: rebook, widget: object, collapsed: true, fields:
+              - { label: title, name: title, widget: string }
+              - { label: hint, name: hint, widget: text }
+              - { label: legend, name: legend, widget: string }
+              - { label: cancelOption, name: cancelOption, widget: string }
+              - { label: submit, name: submit, widget: string }
+              - { label: errorNone, name: errorNone, widget: text }
+              - { label: bookedTitle, name: bookedTitle, widget: string }
+              - { label: bookedBody, name: bookedBody, widget: text }
+              - { label: cancelledTitle, name: cancelledTitle, widget: string }
+              - { label: cancelledBody, name: cancelledBody, widget: text }
+            }
+          - { label: navigator, name: navigator, widget: object, collapsed: true, fields:
+              - { label: title, name: title, widget: string }
+              - { label: intro, name: intro, widget: text }
+              - { label: languageLegend, name: languageLegend, widget: string }
+              - { label: languageWelsh, name: languageWelsh, widget: string }
+              - { label: languageEnglish, name: languageEnglish, widget: string }
+              - { label: timeLegend, name: timeLegend, widget: string }
+              - { label: timeMorning, name: timeMorning, widget: string }
+              - { label: timeAfternoon, name: timeAfternoon, widget: string }
+              - { label: timeEvening, name: timeEvening, widget: string }
+              - { label: phoneHint, name: phoneHint, widget: string }
+              - { label: submit, name: submit, widget: string }
+              - { label: errorNone, name: errorNone, widget: string }
+              - { label: doneTitle, name: doneTitle, widget: string }
+              - { label: doneBody, name: doneBody, widget: text }
+            }
+          - { label: landing, name: landing, widget: object, collapsed: true, fields:
+              - { label: title, name: title, widget: string }
+              - { label: intro, name: intro, widget: string }
+              - { label: cardBody, name: cardBody, widget: string }
+            }
+          - { label: dates, name: dates, widget: object, collapsed: true, fields:
+              - { label: weekdays, name: weekdays, widget: list, field: { label: item, name: item, widget: text } }
+              - { label: months, name: months, widget: list, field: { label: item, name: item, widget: text } }
+              - { label: dateFormat, name: dateFormat, widget: string }
+            }

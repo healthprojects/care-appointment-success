@@ -1,0 +1,38 @@
+Cynhyrchion tebyg yn y farchnad:
+
+- Nodiadau atgoffa un ffordd drwy neges destun. Yn cael eu defnyddio'n eang ar draws GIG Cymru ac fel arfer yn Saesneg yn gyntaf.
+- Llwyfannau ymgysylltu â chleifion. Yn cynnig negeseua dwy ffordd a llythyrau digidol. Mae enghreifftiau'n cynnwys DrDoctor a Netcall.
+- Offer deallusrwydd artiffisial sy'n rhagfynegi apwyntiadau a gollwyd. Wedi'u treialu yn GIG Lloegr, yn bennaf i dargedu nodiadau atgoffa ychwanegol neu i or-archebu.
+
+Anaml y mae'r cynhyrchion hyn yn gwneud y canlynol:
+
+- rhoi profiad cyfwerth i siaradwyr Cymraeg mewn cynnwys deinamig a llais
+- gofyn *pam* y gallai rhywun beidio â mynychu
+- cysylltu pobl â help ymarferol
+- archwilio eu rhagfynegiadau am degwch
+- cynnig llwybr dynol i bobl sydd wedi'u hallgáu'n ddigidol
+
+Sut mae Care Appointment Success yn wahanol (y cysyniadau newydd a ddatblygwn):
+
+1. Ymwybodol o rwystrau, nid nodiadau atgoffa'n unig. Mae'n adnabod ac yn ymateb i'r rhwystr penodol, gan droi gwasanaeth nodiadau atgoffa yn wasanaeth mynediad.
+2. Rhagfynegi sy'n cefnogi'n unig. Archwiliad tegwch cyhoeddedig a rheol ysgrifenedig na fydd sgoriau risg byth yn arwain at or-archebu na chosbau. Nid ydym yn ymwybodol o unrhyw offeryn apwyntiadau a gollwyd yng Nghymru sy'n gweithredu o dan y polisi archwiliedig eglur hwn.
+3. Dwyieithog drwy ddyluniad, gan gynnwys cynnwys deinamig a llais. Profir geiriad negeseuon ar wahân ym mhob iaith.
+4. Digidol gyda rhwyd ddiogelwch ddynol. Mae llywiwyr cymunedol yn cyrraedd y bobl y mae awtomeiddio yn eu colli. Damcaniaeth heb ei phrofi yw hon y bydd Cam 1 yn ei phrofi.
+5. Cau'r ddolen capasiti. Mae canslo cynnar wedi'i gysylltu â llenwi slotiau o'r rhestr aros. Mae Ap GIG Cymru yn ddarllen yn unig ar gyfer apwyntiadau ysbyty, felly mae'r cam dwy ffordd hwn yn fwlch. Yng Ngham 1 byddwn yn cysylltu o negeseuon i mewn i'r ap ac yn aros yn annibynnol ar sianeli.
+6. Asedau y gellir eu hailddefnyddio ledled Cymru. Tacsonomeg rhwystrau dwyieithog, llyfrgell gynnwys, dull archwilio tegwch a fframwaith gwerthuso.
+
+Dulliau, offer a thechnolegau newydd a ddefnyddiwn:
+
+- Peiriant cynnwys dwyieithog gyda gwiriadau cydraddoldeb.
+- Llif gwirio rhwystrau gyda chyfeiriadur cyfeirio.
+- Model dehongladwy gydag adrodd ar degwch.
+- Gwasanaeth paru atebion ar gyfer testun rhydd Cymraeg a Saesneg.
+
+Eiddo deallusol (IP) presennol a pham mae'n bwysig ar gyfer rhyddid i weithredu:
+
+- IP cefndirol. IP cefndirol y prif ymgeisydd yw [disgrifiwch: e.e. cydrannau meddalwedd, dulliau a gwybodaeth arbenigol presennol]. Caiff ei gofnodi yng nghofrestr IP cefndirol y contract (Atodlen C) cyn i'r prosiect ddechrau.
+- Arwyddocâd. Mae rhyddid i weithredu yn golygu y gallwn adeiladu a chynnig y gwasanaeth heb dorri patentau na thrwyddedau neb arall. Mae'n bwysig oherwydd y bydd y cyllidwr a byrddau iechyd eraill yn mabwysiadu'r hyn a adeiladwn.
+- Cydrannau trydydd parti. Mae Care Appointment Success wedi'i adeiladu ar safonau agored a chydrannau ffynhonnell agored sydd â thrwyddedau trwyddedus. Mae canfyddiadau gwyddor ymddygiad y mae'n eu defnyddio wedi'u cyhoeddi ac nid ydynt yn berchnogol. [Cadarnhewch drwy wiriad rhyddid i weithredu nad oes unrhyw batentau na thrwyddedau yn cyfyngu ar y dull arfaethedig.]
+- IP y prosiect. Mae IP a grëir yn y prosiect yn eiddo i ni o dan y contract safonol. Mae'r cyllidwr yn cael yr hawliau trwydded a nodir yn y contract, sy'n cefnogi mabwysiadu ar draws GIG Cymru.
+
+Parodrwydd presennol. Mae'r gwasanaeth cyfun ar lefel parodrwydd technoleg (TRL) 3–4: prawf o gysyniad, gyda chydrannau wedi'u profi ar wahân. Bydd Cam 1 yn mynd ag ef i tua TRL 5: prototeip wedi'i ddilysu gyda defnyddwyr ac ar ddata hanesyddol.

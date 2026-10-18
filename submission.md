@@ -86,15 +86,15 @@ Contracts are awarded to a single legal entity. Partners join as subcontractors.
 
 ### D1. "Dragons' Den" style public elevator pitch (≤ 250 words; published if funded)
 
-Every year, around 64,000 outpatient appointments in Cwm Taf Morgannwg go unattended. Each one is a person whose care is delayed and a clinic slot someone else could have used. Most people don't choose to miss appointments. Something gets in the way: a letter that arrived late or was hard to understand, no way to get there, a child to collect, a shift that couldn't be swapped, or a phone number that changed.
+Every year, around 64,000 outpatient appointments in Cwm Taf Morgannwg go unattended. Each is a person whose care is delayed and a slot someone else could have used. Most people don't choose to miss appointments. Something gets in the way: a letter that arrived late or was hard to understand, no way to get there, a child to collect, a shift that couldn't be swapped, or a phone number that changed.
 
-Care Appointment Success helps people get ready for their appointment. If they can't make it, it lets them hand the slot back early so someone else can use it.
+Care Appointment Success helps people get ready. If they can't make it, they hand the slot back early so someone else can use it.
 
-Care Appointment Success sends clear, two-way reminders in Welsh and English by text, app, voice call or letter, with easy-read and accessible versions. Patients confirm, cancel or rebook in one step. A short "Can you make it?" check asks about practical barriers and links people to help that already exists, such as travel cost refunds, community transport or carer support. People who need more help get a phone call from a trusted local community navigator.
+Reminders alone are not enough, so Care Appointment Success finds out what is in the way. It sends clear, two-way reminders in Welsh and English by text, app, voice call or letter, with easy-read and accessible versions. Patients confirm, cancel or rebook in one step. A short "Can you make it?" check asks about practical barriers and links people to help that already exists, such as travel cost refunds, community transport or carer support. People who need more help get a phone call from a trusted local community navigator.
 
 Behind the scenes, a fair, transparent model helps staff see who may need extra support. It is used only to offer help, never to overbook or penalise anyone. Released slots go to people on waiting lists.
 
-What's new is joining these pieces into one integrated service that is bilingual by design and works with existing NHS Wales systems. The result: fewer wasted appointments, shorter waits and fairer access.
+What's new is joining these pieces into one service, bilingual by design, that works with existing NHS Wales systems. The result: fewer wasted appointments, shorter waits and fairer access.
 
 ### D2. Video pitch (≤ 3 minutes)
 
@@ -136,17 +136,18 @@ Care Appointment Success treats these barriers together, because a single remind
    - Care Appointment Success signposts them to support that already exists: the Healthcare Travel Costs Scheme, community transport, carers' services, employer letters and reasonable adjustments.
    - We do not fund or provide transport.
 3. **Fair, transparent risk flagging** from appointment history. It highlights who may need extra help and is used *only* to offer support, never to overbook, deprioritise or penalise.
-4. **Community navigators** from a local voluntary-sector partner. They phone people with the highest need, in Welsh or English, which reaches people who are digitally excluded.
+4. **Community navigators** from a local voluntary-sector partner. They phone people with the highest need, in Welsh or English, which reaches people who are digitally excluded. We found no published evidence that navigators reduce missed appointments, so Phase 1 tests this as a hypothesis (reached, barrier resolved, attended).
 5. **Released-slot backfill.** Early cancellations are offered to suitable people on waiting lists, so freed capacity becomes care delivered.
 
 **Current state of development.** Each component technology is proven: two-way messaging, prediction from appointment data, and navigator models. Combining them into one integrated, bilingual-by-design, fairness-governed service is new, and is currently at concept and early design stage. Phase 1 will take it to a tested prototype and a feasibility case.
 
 **Evidence supporting our approach:**
 
-- **Two-way reminders:** NHS England guidance reports that reminders reduce missed appointments, and that two-way reminders, where patients can reply to cancel, work better.
-- **Message wording:** Two randomised controlled trials in NHS hospitals showed that changing reminder wording alone reduced missed appointments from 11.1% to 8.4% (Hallsworth and others, PLOS One, 2015).
+- **Reminders:** A Cochrane review found text reminders beat no reminder or post and match phone calls, though the evidence is low to moderate quality. NHS England (2023) expects reminders and easy cancelling as a baseline, and reported a 7.6% rate in England in 2021/22. Reminders are therefore our starting point, not the innovation.
+- **Message wording:** Two randomised controlled trials in NHS hospitals found that stating the cost of a missed appointment cut missed appointments from 11.1% to 8.4% (Hallsworth and others, PLOS One, 2015). We will retest wording separately in Welsh and English, with results by deprivation.
+- **Booking choice:** Scottish guidance links patient-choice booking to fewer missed appointments, and one general-practice study found booking lead time the strongest predictor. We will test both in outpatients.
 - **Targeted support:** A reported NHS pilot of risk-targeted reminders cut missed appointments in the highest-risk group by about two-thirds. The source is a supplier report, which we will test independently.
-- **Barriers:** The health board's own review identifies the barriers Care Appointment Success addresses.
+- **Gap we fill:** The NHS Wales App shows hospital appointments but cannot cancel or rebook them. Care Appointment Success supplies that two-way step.
 
 **Phase 1 activities (November 2026 to March 2027):**
 
@@ -181,24 +182,14 @@ Care Appointment Success treats these barriers together, because a single remind
   - less lost working time
   - Welsh voluntary-sector and language-service partners strengthened through paid work
 
-**Measures.** We will set baselines and targets for:
-
-- the missed-appointment rate
-- the equity gap between most and least deprived areas
-- Welsh and English parity
-- early cancellation and slot reuse
-- patient experience
-- staff time
-- cost per missed appointment avoided
-
-These match the challenge's success measures.
+**Measures.** We will set baselines and targets for the missed-appointment rate, the equity gap between most and least deprived areas, Welsh and English parity, early cancellation and slot reuse, patient experience, staff time and cost per missed appointment avoided. These match the challenge's success measures.
 
 **Scalability and sustainability.**
 
-- The service is modular: a health board can adopt one component or all of them.
-- It is built on open standards and existing NHS Wales infrastructure, rather than replacing it.
+- The service is modular, so a health board can adopt one component or all of them.
+- It uses open standards and existing NHS Wales infrastructure.
 - Running cost is modelled per 1,000 appointments, so every health board can test affordability.
-- Content, the barrier list and the evaluation framework are reusable across Wales, and are configured for rurality and local services.
+- Content, the barrier list and the evaluation framework are reusable across Wales.
 
 **Collaboration.** We will work with:
 
@@ -207,7 +198,7 @@ These match the challenge's success measures.
 - a Welsh-language partner
 - [an academic evaluation partner]
 
-We will share learning with other health boards and Rural Health and Care Wales.
+We will share learning with other health boards.
 
 **Safeguards.** Clinical oversight stays in place. Appointments that clinicians mark as urgent always get human follow-up, and no clinical decision is automated.
 
@@ -217,12 +208,15 @@ Scored for technical validity, care (safety and compassion) and impact.
 
 **How we will address the challenge.** We will build and test a bilingual attendance-support service. It combines two-way communication, a barrier check, fair risk flagging, community navigators and slot backfill.
 
+**What the innovation is.** One service that finds out why a person may not attend and responds to that barrier, instead of only reminding them. It joins five parts that are rarely combined: Welsh and English two-way messaging, a barrier check, fairness-audited support flagging, community navigators and slot backfill.
+
 **Main technical challenges and our research and development (R&D) approach:**
 
 1. **Fair, explainable prediction.** Missed-appointment prediction models can encode deprivation and ethnicity. When used for overbooking, they worsen access for the people who most need care.
    - We will build an interpretable model, such as regularised logistic regression, on historical appointment data.
    - We will publish its accuracy and error rates by deprivation quintile (Welsh Index of Multiple Deprivation), age, sex and language preference.
-   - It will be governed by a written rule: the model can only trigger *more* support.
+   - It will be governed by a written rule: the model can only trigger *more* support. A US study found that no-show models used for overbooking made Black patients wait about 30% longer, which is why we exclude overbooking.
+   - Fairness checks (calibration and false-negative rate by deprivation quintile, age, sex and language) are fixed before we see results. A test that no score reduces the slots or contact a patient is offered is a pass criterion.
 2. **Welsh and English parity in automated content.**
    - Welsh characters such as ŵ and ŷ can force a different text-message encoding, which halves message length and doubles cost.
    - Welsh text-to-speech quality varies.
@@ -263,7 +257,7 @@ Scored for technical validity, care (safety and compassion) and impact.
   - Clinically urgent appointments always receive human follow-up.
   - A missed urgent appointment triggers contact, not discharge.
   - Every patient still gets standard reminders, so a model error cannot remove support.
-  - A clinical safety hazard log is kept from day one.
+  - A clinical safety hazard log is started in the first month.
 - **Compassion:**
   - Messages are co-designed to be respectful and non-blaming.
   - The barrier check asks "what would help?" rather than warning.
@@ -288,25 +282,26 @@ These products rarely do the following:
 - audit their predictions for fairness
 - offer a human route for digitally excluded people
 
-**How Care Appointment Success is different:**
+**How Care Appointment Success is different (the novel concepts we develop):**
 
 1. **Barrier-aware, not reminder-only.** It identifies and responds to the specific barrier, turning a reminder service into an access service.
 2. **Support-only prediction.** A published fairness audit and a written rule that risk scores never lead to overbooking or penalties. We are not aware of any missed-appointment tool in Wales that operates under this explicit, audited policy.
 3. **Bilingual by design, including dynamic and voice content.** Message wording is tested separately in each language.
-4. **Digital with a human safety net.** Community navigators cover the people automation misses.
-5. **Closing the capacity loop.** Early cancellation is linked to waiting-list backfill.
+4. **Digital with a human safety net.** Community navigators cover the people automation misses. This is an untested hypothesis that Phase 1 will test.
+5. **Closing the capacity loop.** Early cancellation is linked to waiting-list backfill. The NHS Wales App is read-only for hospital appointments, so this two-way step is a gap. In Phase 1 we link from messages into the app and stay channel-independent.
 6. **Reusable Wales-wide assets.** A bilingual barrier taxonomy, content library, fairness-audit method and evaluation framework.
 
-**New approaches, tools and technologies:**
+**New approaches, tools and technologies we use:**
 
 - A bilingual content engine with parity checks.
 - A barrier-check flow with a signposting directory.
 - An interpretable model with fairness reporting.
 - A reply-matching service for Welsh and English free text.
 
-**Existing intellectual property (IP) and freedom to operate:**
+**Existing intellectual property (IP) and why it matters for freedom to operate:**
 
 - **Background IP.** The lead applicant's background IP is [describe: e.g. existing software components, methods, know-how]. It will be recorded in the contract's register of background IP (Schedule C) before the project starts.
+- **Significance.** Freedom to operate means we can build and offer the service without infringing anyone else's patents or licences. It matters because the funder and other health boards will adopt what we build.
 - **Third-party components.** Care Appointment Success is built on open standards and permissively licensed open-source components. The behavioural-science findings it uses are published and not proprietary. [Confirm through a freedom-to-operate check that no patents or licences restrict the proposed approach.]
 - **Project IP.** IP created in the project belongs to us under the standard contract. The funder receives the licence rights the contract sets out, which supports adoption across NHS Wales.
 
@@ -453,8 +448,9 @@ Risks are rated red, amber or green (high, medium, low) before and after mitigat
 - **Model:**
   - Validation on held-out historical data.
   - Calibration and accuracy measures.
-  - A fairness audit by deprivation, age, sex and language.
+  - A fairness audit by deprivation, age, sex and language, with checks fixed before results are seen.
   - A model card that documents its limits.
+- **Data quality:** the share of patients with no usable mobile number, and message bounce rates, because stale contact details limit every reminder.
 - **Clinical safety:**
   - A hazard log and safety case approach following the NHS clinical risk management standards (DCB0129 and DCB0160).
   - A clinician-approved list of appointments that must always get human follow-up.

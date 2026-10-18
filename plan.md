@@ -281,3 +281,68 @@ The full red/amber/green risk register, grouped under the headings the guidance 
 | Jan 2027 | Co-design workshops, prototype build | M3 (29 Jan): bilingual prototype v1; 25% payment |
 | Feb 2027 | Usability testing, model fairness audit, integration assessment | M4 (26 Feb): test results and model validation; **Gate 2** (success criteria); 20% payment |
 | Mar 2027 | Feasibility report, business case, Phase 2 proposal | M5 (31 Mar): final report and closure report; 20% retention payment |
+
+## 9. Research update and suggested improvements (17 October 2026)
+
+Web research with standard searches only. Findings are secondary sources and need checking at the original source before they go into the submission. Items marked **verify** are not yet confirmed.
+
+### 9.1 What the research found
+
+| Finding | Source | Implication |
+|---|---|---|
+| Text reminders beat no reminder and postal reminders, and perform about the same as phone calls. The pooled evidence (8 RCTs, 6,615 participants, to August 2012) is rated low to moderate quality. | [Cochrane CD007458](https://www.cochrane.org/CD007458) | Do not claim a large pooled effect for reminders. Frame Phase 1 as testing wording and barrier-matching, where our evidence is stronger. |
+| Stating the cost of a missed appointment cut DNAs by about 3 percentage points in two RCTs of about 10,000 outpatients each. | [Hallsworth et al. 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4569397) | Keep "cost to the NHS" as a Welsh and English A/B arm. Check it is acceptable in Welsh and for equity (it can read as blame). |
+| NHS England's 2023 letter reports a 7.6% DNA rate in 2021/22 (103m appointments). It asks for SMS-style reminders, easy cancel and rearrange, patient portals, and an assessment of digital literacy. | [NHS England](https://www.england.nhs.uk/long-read/reducing-did-not-attends-dnas-in-outpatient-services/), [HTN summary](https://htn.co.uk/2023/02/16/the-role-of-digital-in-nhs-englands-letter-on-reducing-did-not-attend-rate/) | CTM's 8.6% is above the English 2021/22 figure. Use this as the comparator and as the baseline expectation: reminders and easy rebooking are table stakes, not the innovation. |
+| Forward booking time was the best predictor of DNA rates in one general-practice study. Structural changes to the appointment system were judged more effective than patient behaviour work. | [BJGP 2021](https://bjgp.org/content/71/702/e31) | Add lead time as a first-class lever (shorter notice, patient-chosen slots), not only a risk-model input. Applies to GP data, so **verify** for outpatients. |
+| NHS Scotland guidance links patient-choice booking to lower DNA rates. | [NHSScotland CEL 2012/33](https://www.publications.scot.nhs.uk/files/cel2012-33.pdf) | Supports the "patient-chosen slots" idea currently unstarred in section 2. |
+| The NHS Wales App has shown hospital waiting-list entries and upcoming outpatient appointments since 31 October 2025. It does not change or cancel them. It shows health board contact details. It covers referrals and first appointments recorded in WPAS or C&V PMS from that date only. | [Practice notices](https://www.newtownmedicalpractice.nhs.wales/news/1693-nhs-wales-app-manage-gp-services-and-track-hospital-appointments), [Age UK guide](https://www.ageuk.org.uk/siteassets/documents/id205842-nhs-wales-app-guide_digital.pdf) | A real integration gap and our opening: the app is read-only. **Verify** with DHCW. Position CAS as the missing two-way layer, and do not assume app channel access in Phase 1. |
+| Race-blind no-show models used with overbooking made Black patients wait about 30% longer. Removing priority slots, or adding an explicit disparity objective, closed most of the gap. | [Samorani et al., M&SOM](https://blogs.vcu.edu/business/?p=2131), [Healthcare IT News](https://www.healthcareitnews.com/news/study-scheduling-systems-lead-longer-wait-times-black-patients) | Strong, citable support for "support, never overbooking". US data and race, so say so. For Wales the proxies are deprivation (WIMD) and language. |
+| No current all-Wales DNA rate was found. The latest in the results was 8.6% for 2016–17. | [Welsh Government 2016–17 outpatient activity](https://www.llyw.cymru/sites/default/files/statistics-and-research/2019-01/171128-outpatient-activity-2016-17-en.pdf) | Do not describe 8.6% as an all-Wales current figure. Get the current rate from StatsWales or CTM. |
+| Welsh PIFU evidence is thin (a 2022 Cardiff and Vale FOI response only). | [C&V FOI](https://cavuhb.nhs.wales/about-us/governance-and-assurance/freedom-of-information/disclosure-log/2022/months1/march-2022/foi-22-145-patient-initiated-follow-up-pdf/) | Keep PIFU out of scope as a pathway change. Treat it as an interface, not a claim. |
+
+### 9.2 Suggested improvements to the concept
+
+1. **Lead with barrier-matching, not reminders.** Reminders and easy rebooking are the baseline NHS England already expects, and the Cochrane evidence is modest. The differentiator is the barrier check plus tiered support. Reword the pitch, KPIs and D1 accordingly.
+2. **Add booking-lead-time and patient-choice as levers.** Model DNA rate against lead time in discovery. Test "choose your slot" and shorter-notice offers. Needs CTM template flexibility, so add it as a stakeholder question.
+3. **Define the NHS Wales App position.** The app is read-only for hospital appointments. Options: (a) deep-link from messages into the app, (b) propose a two-way action API to DHCW for Phase 2, (c) stay channel-independent. Choose (a) plus (c) for Phase 1.
+4. **Make the equity guardrail testable.** Pre-register fairness checks: calibration and false-negative rate by WIMD quintile, age, sex and language. Add a rule that no score can reduce a patient's offered slots, and test it as a hard acceptance criterion.
+5. **A/B test with an equity read-out.** Message wording trials need a per-quintile and per-language result, because "cost to the NHS" wording may help on average and harm trust in some groups.
+6. **Measure digital exclusion before building for digital.** Following NHS England's digital-literacy suggestion, estimate the share of CTM outpatients without a usable mobile number or digital access. Size the voice, letter and navigator tiers from that.
+7. **Contact-detail hygiene as an early win.** Stale numbers cap every reminder tactic. Promote it from unstarred to starred in section 2, with a bounce-rate KPI.
+8. **Use honest evidence language.** Say "low to moderate quality evidence" for reminders, label the Rotherham result vendor-reported, and label the US scheduling study as US data. This helps the Safety and Technical validity criteria.
+9. **Safety case for the future live phase.** Add an explicit rule that a cancel or no-reply on an urgent or cancer pathway triggers human contact. Start the hazard log (DCB0129/DCB0160 awareness) in M1. **Verify** the standards CTM expects.
+10. **Prototype hygiene.** The Svelte prototype uses fictional data only. Keep that stated on every page and in the video, so panel members do not assume live integration.
+
+### 9.3 New stakeholder questions
+
+- 18c. Can clinic templates support patient-chosen slots or shorter notice, and who controls them?
+- 18d. What is the current CTM and all-Wales outpatient DNA rate by specialty, and how is the £150 lost-value figure derived?
+- 18e. Does DHCW plan two-way actions (cancel or rebook) in the NHS Wales App, and could an external service use them?
+- 18f. What share of CTM outpatients have no usable mobile number on WPAS?
+- 18g. Which clinical safety standards and hazard-log format does CTM require at Phase 1?
+
+### 9.4 Second research pass: the earlier gaps
+
+Extended searches on the four gaps. Same caveat as above: secondary summaries, to be checked at source.
+
+| Topic | Finding | Source | Implication |
+|---|---|---|---|
+| Welsh language | The 2016–2019 evaluation of *More than just words* found Welsh-language access made a significant difference to many Welsh speakers' experience and, in many cases, their health and wellbeing. Good Active Offer practice often came from individuals or local initiatives, awareness was low, and uptake was stronger in social care than in health. | [Welsh Government statement, 2021](https://www.gov.wales/written-statement-strengthening-welsh-language-services-health-and-social-care), [evaluation summary](https://www.gov.wales/evaluation-more-just-words-follow-on-strategic-framework-summary), [action plan 2022–2027](https://www.gov.wales/sites/default/files/publications/2022-07/more-than-just-words-action-plan-2022-2027.pdf) | Our Welsh-first design addresses a known weakness. Cite it for relevance, not as proof of DNA impact. |
+| Welsh language | A 2025 study found Welsh speakers value bilingual care but many are not offered Welsh. | [PMC12886726](https://pmc.ncbi.nlm.nih.gov/articles/PMC12886726/) | Supports recording language preference and offering Welsh proactively. |
+| Welsh language | No evidence found on bilingual appointment letters or on Active Offer effects on attendance. | n/a | Our usability test (≥ 10 Welsh speakers) generates new evidence. Say so. |
+| Navigators | No direct evidence that link workers or social prescribing reduce missed hospital appointments. Wider evidence on service use is mixed. | [NASP evidence](https://socialprescribingacademy.org.uk/nasps-evidence-reports/), [King's Fund](https://www.kingsfund.org.uk/insight-and-analysis/long-reads/social-prescribing) | The navigator tier is a hypothesis. Phase 1 should test acceptance and reach, not claim DNA impact. Keep it small and targeted. |
+| Accessible formats | The Accessible Information Standard (DAPB1605, amended July 2025) applies in England. Wales has its own Accessible Communication and Information Standards covering appointment letters. Reported compliance is poor (RNIB: 77% of people with needs rarely or never get alternative formats). | [NHS England AIS](https://www.england.nhs.uk/long-read/accessible-information-standard-implementation-guidance/), [Welsh Government standards](https://www.gov.wales/accessible-communication-and-information-standards-healthcare-html), [RNIB FAQ](https://www.rnib.org.uk/campaign-with-us/support-a-campaign/my-info-my-way/nhs-accessible-information-standard-frequently-asked-questions/) | Use the Welsh standards as the compliance anchor, since the challenge requires them. Do not cite the English standard as the requirement. |
+| Accessible formats | No study found linking easy-read or BSL letters to fewer DNAs. A 2013 hearing-loss report (14% had missed an appointment because they did not hear their name called) is an old extrapolation. | n/a | Frame accessible formats as an equity and compliance requirement, not a DNA lever. |
+| Cost-effectiveness | No published cost per DNA avoided for two-way messaging. The Barts wording trial projected about 5,800 fewer missed appointments a year at no extra cost, from one site, with phone records for only about 20% of eligible patients. Other review figures (reminders cut DNAs by about 29–39%) are secondary. | [Hallsworth et al.](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0137306), [NHS England](https://www.england.nhs.uk/long-read/reducing-did-not-attends-dnas-in-outpatient-services/) | Our K6 value-for-money number will be new. Build it from CTM's real costs and avoid quoting the 80% or 34% figures. |
+| Cost-effectiveness | Data quality limits reminders: the Barts trial reached only part of the patient list. | as above | Strengthens the case for contact-detail hygiene (§9.2 item 7). |
+
+Further suggested improvements from this pass:
+
+11. **Reposition the navigator tier as a test.** There is no direct DNA evidence, so state the hypothesis, the sample and the success measure (contact reached, barrier resolved, attended) in Phase 1, and avoid promising a DNA effect.
+12. **Make Welsh evidence a deliverable.** Because no evidence exists on bilingual letters, add a Welsh versus English completion and attendance comparison to the Phase 2 evaluation design.
+13. **Treat accessible formats as compliance.** Map each format to a clause of the Welsh standards in the prototype checklist, and keep it out of the impact claims.
+14. **Build the K6 cost model from first principles.** Platform and staff cost, divided by DNAs avoided, with a sensitivity range, using CTM's own cost data and ranges rather than vendor percentages.
+
+### 9.5 Remaining gaps
+
+Not found: Welsh-specific DNA data after 2016–17, an NHS Wales App roadmap, a direct study of navigators and DNAs, and anything on BSL video in appointment contact. These are questions for CTM, DHCW and the briefing event.

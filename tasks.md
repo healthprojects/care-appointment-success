@@ -31,10 +31,29 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [ ] Optionally approach an academic evaluation partner, such as a Welsh university or a health data research group
 - [ ] Get letters of support where possible
 
-## Prototype (`frontend/`)
+## Research follow-ups (from `plan.md` §9)
+
+- [ ] Verify each §9.1 source at its original link before citing it in `submission.md`
+- [ ] Get the current CTM and all-Wales DNA rate from StatsWales or CTM, then fix any "8.6%" wording that implies an all-Wales figure
+- [ ] Ask DHCW about NHS Wales App two-way actions and the read-only limit (stakeholder question 18e)
+- [ ] Add stakeholder questions 18c–18g to the briefing list
+- [ ] Reword the D1 pitch and KPIs to lead with barrier-matching, and use "low to moderate quality evidence" for reminders
+- [ ] Add booking lead time and patient-chosen slots to the discovery analysis and the Phase 1 scope
+- [ ] Write pre-registered fairness checks and the "no score reduces offered slots" acceptance criterion into E4/F1
+- [ ] Add a contact-detail accuracy KPI, and estimate the share of patients with no usable mobile number
+- [ ] Start the clinical safety hazard log in M1 and confirm required standards with CTM
+- [x] Run an extended search on Welsh-language messaging, accessible formats, navigator evidence and platform cost-effectiveness (see `plan.md` §9.4)
+- [ ] Reposition the navigator tier as a tested hypothesis (acceptance, reach, barrier resolved), not a promised DNA effect
+- [ ] Add a Welsh versus English comparison to the Phase 2 evaluation design
+- [ ] Map each accessible format to a clause of the Welsh Accessible Communication and Information Standards
+- [ ] Build the K6 cost model from CTM cost data, with a sensitivity range, and drop vendor percentages
+- [ ] Ask CTM and DHCW the §9.5 gaps: recent Welsh DNA data, the NHS Wales App roadmap and BSL contact options
+- [ ] Label the fictional-data status on every prototype page and in the video
+
+## Prototype (`care-appointment-success-ui/`)
 
 - [x] Scaffold the SvelteKit + Lily Design System prototype with `locales/{en-001,cy-001}` and a GitHub Pages workflow
-- [ ] Have a first-language Welsh speaker review `frontend/locales/cy-001/messages.json`
+- [ ] Have a first-language Welsh speaker review `care-appointment-success-ui/locales/cy-001/messages.json`
 - [ ] Set the repository's Pages source to GitHub Actions, then push to deploy
 - [ ] Use the prototype in the D2 video pitch and the assessment panel demo
 

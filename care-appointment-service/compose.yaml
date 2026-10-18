@@ -1,0 +1,45 @@
+# Local PostgreSQL and Keycloak for development and tests. Run with:
+#   podman-compose up -d
+# Credentials match the defaults in config/development.yaml and config/test.yaml.
+services:
+  postgres:
+    image: docker.io/library/postgres:18
+    container_name: care-appointment-service-postgres
+    environment:
+      POSTGRES_USER: loco
+      POSTGRES_PASSWORD: loco
+      POSTGRES_DB: care-appointment-service_development
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+      - ./podman/initdb:/docker-entrypoint-initdb.d:ro,Z
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U loco -d care-appointment-service_development"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    container_name: care-appointment-service-keycloak
+    command: start-dev --import-realm
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Development only. Never reuse these credentials.
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres:5432/keycloak
+      KC_DB_USERNAME: loco
+      KC_DB_PASSWORD: loco
+      KC_HEALTH_ENABLED: "true"
+    ports:
+      - "127.0.0.1:8280:8080"
+    volumes:
+      - ./podman/keycloak:/opt/keycloak/data/import:ro,Z
+
+volumes:
+  postgres-data:

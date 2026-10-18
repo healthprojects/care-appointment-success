@@ -1,0 +1,88 @@
+Deall yr her. Mae Bwrdd Iechyd Prifysgol Cwm Taf Morgannwg (y bwrdd iechyd) yn cofnodi tua 64,000 o apwyntiadau cleifion allanol a gollwyd bob blwyddyn. Dyna gyfradd "ni fynychodd" (DNA) o 8.6%, gyda gwerth a gollir y gellid ei osgoi o tua £9.6 miliwn, neu tua £150 fesul apwyntiad a gollwyd. Mae hyn yn awgrymu tua 744,000 o apwyntiadau cleifion allanol y flwyddyn, felly mae pob gostyngiad o un pwynt canran yn y gyfradd DNA yn rhyddhau tua 7,400 o apwyntiadau, sy'n werth tua £1.1 miliwn.
+
+Mae adolygiad y bwrdd iechyd ei hun yn dangos bod peidio â mynychu yn deillio o rwystrau sy'n rhyngweithio â'i gilydd, yn hytrach nag o ddewis:
+
+- cyfathrebu hwyr neu aneglur
+- trafnidiaeth a phellter
+- amddifadedd
+- allgáu digidol
+- cyfrifoldebau gofalu a gwaith
+- anghenion hygyrchedd
+
+Mae Care Appointment Success yn mynd i'r afael â'r rhwystrau hyn gyda'i gilydd, oherwydd ni all un nodyn atgoffa eu datrys i gyd.
+
+Y broses arfaethedig: gwasanaeth cymorth mynychu haenog, dwyieithog.
+
+1. Cyfathrebu dwy ffordd yn Gymraeg ac yn Saesneg drwy neges destun, Ap GIG Cymru, e-bost, llais awtomataidd a llythyr.
+   - Mae fersiynau hawdd eu darllen, print bras, sain a fideo Iaith Arwyddion Prydain ar gael.
+   - Mae cleifion yn cadarnhau, yn canslo neu'n ail-archebu mewn un cam.
+   - Cofnodir iaith ddewisol pob person a'i defnyddio ar bob sianel, yn unol â'r Cynnig Rhagweithiol.
+2. Gwiriad rhwystrau, "Allwch chi ddod?". Gall cleifion ddweud wrthym am broblemau gyda theithio, cost, gofalu, gwaith, gorbryder neu fynediad.
+   - Mae Care Appointment Success yn cyfeirio cleifion at gymorth sydd eisoes yn bodoli: Cynllun Costau Teithio Gofal Iechyd, trafnidiaeth gymunedol, gwasanaethau i ofalwyr, llythyrau i gyflogwyr ac addasiadau rhesymol.
+   - Nid ydym yn ariannu nac yn darparu trafnidiaeth.
+3. Nodi risg yn deg ac yn dryloyw ar sail hanes apwyntiadau. Mae'n amlygu pwy a allai fod angen help ychwanegol ac fe'i defnyddir i gynnig cymorth yn unig, byth i or-archebu, rhoi blaenoriaeth is na neb na chosbi.
+4. Llywiwyr cymunedol gan bartner lleol yn y sector gwirfoddol. Maent yn ffonio'r bobl sydd â'r angen mwyaf, yn Gymraeg neu'n Saesneg, sy'n cyrraedd pobl sydd wedi'u hallgáu'n ddigidol. Ni chawsom unrhyw dystiolaeth gyhoeddedig bod llywiwyr yn lleihau apwyntiadau a gollwyd, felly mae Cam 1 yn profi hyn fel damcaniaeth (cyrraedd y person, datrys y rhwystr, mynychu).
+5. Llenwi slotiau a ryddheir. Cynigir canslo cynnar i bobl addas ar restrau aros, fel bod capasiti a ryddheir yn dod yn ofal a ddarperir.
+
+Cyflwr datblygu presennol. Mae pob technoleg gydran wedi'i phrofi: negeseua dwy ffordd, rhagfynegi o ddata apwyntiadau, a modelau llywiwyr. Mae eu cyfuno yn un gwasanaeth integredig, dwyieithog drwy ddyluniad, a reolir gan degwch, yn newydd, ac ar hyn o bryd mae ar gam cysyniad a dylunio cynnar. Bydd Cam 1 yn mynd ag ef i brototeip wedi'i brofi ac achos dichonoldeb.
+
+Tystiolaeth sy'n cefnogi ein dull:
+
+- Nodiadau atgoffa: Canfu adolygiad Cochrane fod nodiadau atgoffa drwy neges destun yn well na dim nodyn atgoffa neu'r post ac yr un mor dda â galwadau ffôn, er bod y dystiolaeth o ansawdd isel i gymedrol. Mae GIG Lloegr (2023) yn disgwyl nodiadau atgoffa a chanslo hawdd fel llinell sylfaen, ac adroddodd gyfradd o 7.6% yn Lloegr yn 2021/22. Felly nodiadau atgoffa yw ein man cychwyn, nid yr arloesedd.
+- Geiriad negeseuon: Canfu dau dreial rheoledig ar hap mewn ysbytai'r GIG fod datgan cost apwyntiad a gollwyd wedi lleihau apwyntiadau a gollwyd o 11.1% i 8.4% (Hallsworth ac eraill, PLOS One, 2015). Byddwn yn ailbrofi'r geiriad ar wahân yn Gymraeg ac yn Saesneg, gyda chanlyniadau yn ôl amddifadedd.
+- Dewis wrth archebu: Mae canllawiau'r Alban yn cysylltu archebu sy'n rhoi dewis i'r claf â llai o apwyntiadau a gollwyd, a chanfu un astudiaeth meddygfa fod yr amser cyn yr apwyntiad yn rhagfynegydd cryfaf. Byddwn yn profi'r ddau mewn gwasanaethau cleifion allanol.
+- Cymorth wedi'i dargedu: Lleihaodd cynllun peilot adroddedig yn y GIG, a oedd yn targedu nodiadau atgoffa yn ôl risg, apwyntiadau a gollwyd yn y grŵp risg uchaf tua dwy ran o dair. Adroddiad gan gyflenwr yw'r ffynhonnell, y byddwn yn ei brofi'n annibynnol.
+- Bwlch rydym yn ei lenwi: Mae Ap GIG Cymru yn dangos apwyntiadau ysbyty ond ni all eu canslo na'u haildrefnu. Mae Care Appointment Success yn darparu'r cam dwy ffordd hwnnw.
+
+Gweithgareddau Cam 1 (Tachwedd 2026 i Fawrth 2027):
+
+- Darganfod a dadansoddi data. Dadansoddi data apwyntiadau dad-adnabyddedig i ganfod lle mae apwyntiadau a gollwyd yn crynhoi, yn ôl arbenigedd, safle, ardal a grŵp poblogaeth, ac i bennu llinellau sylfaen.
+- Cydgynllunio. Cyfweliadau a gweithdai dwyieithog gyda chleifion, gan gynnwys siaradwyr Cymraeg, pobl anabl, gofalwyr, pobl sydd wedi'u hallgáu'n ddigidol a phobl mewn ardaloedd difreintiedig. Hefyd gyda staff archebu, clinigwyr a phartneriaid yn y sector gwirfoddol.
+- Prototeip.
+  - Prototeip dwyieithog o'r llif negeseua, gwirio rhwystrau ac ail-archebu.
+  - Fformatau llythyrau hygyrch.
+  - Sgript llywiwr a llwybr atgyfeirio.
+- Dilysu technegol.
+  - Model risg wedi'i brofi ar ddata hanesyddol, gydag archwiliad tegwch.
+  - Asesiad o integreiddio â systemau GIG Cymru.
+- Profi cynnar. Profi defnyddioldeb gydag o leiaf 30 o gleifion, o leiaf traean ohonynt yn siaradwyr Cymraeg. Nid yw Cam 1 yn cynnwys negeseua byw i gleifion.
+- Dichonoldeb. Dyluniad gwasanaeth wedi'i gostio, effaith wedi'i modelu, model fforddiadwyedd a chynllun gwerthuso ar gyfer Cam 2.
+
+Buddion:
+
+- Cleifion a theuluoedd:
+  - gofal mwy amserol
+  - llai o straen
+  - llai o deithiau wedi'u gwastraffu a llai o amser i ffwrdd o'r gwaith neu o ofalu
+  - cyfathrebu yn eu hiaith a'u fformat eu hunain
+- Staff:
+  - clinigau llawnach
+  - llai o amser yn mynd ar ôl cleifion ac yn ail-archebu
+  - amser clinigol yn cael ei ddefnyddio ar gleifion sy'n mynychu
+- Y bwrdd iechyd a GIG Cymru:
+  - cyfraddau is o apwyntiadau a gollwyd ac amseroedd aros byrrach
+  - gwell defnydd o tua £150 o gapasiti fesul apwyntiad a gollwyd a osgowyd
+  - bwlch culach rhwng yr ardaloedd mwyaf a lleiaf difreintiedig
+- Aelwydydd a busnesau yng Nghymru:
+  - llai o amser gwaith yn cael ei golli
+  - partneriaid yn y sector gwirfoddol a gwasanaethau iaith yng Nghymru yn cael eu cryfhau drwy waith â thâl
+
+Mesurau. Byddwn yn pennu llinellau sylfaen a thargedau ar gyfer cyfradd yr apwyntiadau a gollwyd, y bwlch cydraddoldeb rhwng yr ardaloedd mwyaf a lleiaf difreintiedig, cydraddoldeb Cymraeg a Saesneg, canslo cynnar ac ailddefnyddio slotiau, profiad cleifion, amser staff a chost fesul apwyntiad a gollwyd a osgowyd. Mae'r rhain yn cyd-fynd â mesurau llwyddiant yr her.
+
+Graddadwyedd a chynaliadwyedd.
+
+- Mae'r gwasanaeth yn fodiwlaidd, felly gall bwrdd iechyd fabwysiadu un gydran neu bob un ohonynt.
+- Mae'n defnyddio safonau agored a seilwaith GIG Cymru presennol.
+- Caiff cost rhedeg ei modelu fesul 1,000 o apwyntiadau, fel y gall pob bwrdd iechyd brofi fforddiadwyedd.
+- Gellir ailddefnyddio'r cynnwys, y rhestr rwystrau a'r fframwaith gwerthuso ledled Cymru.
+
+Cydweithio. Byddwn yn gweithio gyda:
+
+- timau gofal wedi'i gynllunio, cleifion allanol, llywodraethu gwybodaeth, y Gymraeg a phrofiad cleifion y bwrdd iechyd
+- partner lleol yn y sector gwirfoddol
+- partner Cymraeg
+- [partner gwerthuso academaidd]
+
+Byddwn yn rhannu'r hyn a ddysgwn â byrddau iechyd eraill.
+
+Mesurau diogelu. Mae goruchwyliaeth glinigol yn aros yn ei lle. Mae apwyntiadau y mae clinigwyr yn eu marcio'n frys bob amser yn cael eu dilyn i fyny gan berson, ac nid oes unrhyw benderfyniad clinigol yn cael ei awtomeiddio.

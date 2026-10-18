@@ -1,0 +1,52 @@
+{
+  "realm": "care-appointment",
+  "enabled": true,
+  "displayName": "Care Appointment Success",
+  "loginTheme": "keycloak",
+  "internationalizationEnabled": true,
+  "supportedLocales": ["cy", "en"],
+  "defaultLocale": "cy",
+  "registrationAllowed": false,
+  "resetPasswordAllowed": true,
+  "sslRequired": "external",
+  "clients": [
+    {
+      "clientId": "care-appointment-success-ui",
+      "name": "Care Appointment Success UI",
+      "enabled": true,
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": [
+        "http://localhost:5173/*",
+        "http://localhost:4173/*"
+      ],
+      "webOrigins": ["http://localhost:5173", "http://localhost:4173"],
+      "attributes": { "pkce.code.challenge.method": "S256" }
+    },
+    {
+      "clientId": "care-appointment-service",
+      "name": "Care Appointment Service API",
+      "enabled": true,
+      "bearerOnly": true
+    }
+  ],
+  "roles": {
+    "realm": [
+      { "name": "navigator", "description": "Community attendance navigator" },
+      { "name": "booking-staff", "description": "Outpatient booking team" }
+    ]
+  },
+  "users": [
+    {
+      "username": "dev-navigator",
+      "firstName": "Dev",
+      "lastName": "Navigator",
+      "enabled": true,
+      "email": "dev-navigator@example.invalid",
+      "emailVerified": true,
+      "credentials": [{ "type": "password", "value": "dev-only-password", "temporary": false }],
+      "realmRoles": ["navigator"]
+    }
+  ]
+}

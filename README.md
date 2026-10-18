@@ -54,7 +54,7 @@ See [plan.md](plan.md) for the brainstorm, stakeholder questions, KPIs and metri
 | [plan.md](plan.md) | Research summary, brainstorm, chosen approach, stakeholder questions, KPIs, metrics, Phase 1 plan, risks |
 | [tasks.md](tasks.md) | Task checklist through to submission and Phase 1 delivery |
 | [submission.md](submission.md) | Draft answers for SimplyDo submission sections A–K, within word limits |
-| [frontend/](frontend/) | Clickable bilingual prototype of Care Appointment Success (SvelteKit + Lily Design System, GitHub Pages) |
+| [care-appointment-success-ui/](care-appointment-success-ui/) | Clickable bilingual prototype of Care Appointment Success (SvelteKit + Lily Design System, GitHub Pages) |
 | [spec/official-publications/introduction.md](spec/official-publications/introduction.md) | Markdown extraction of the official challenge page |
 | [spec/submission-template/submission-template.md](spec/submission-template/submission-template.md) | Markdown extraction of the submission form (sections A–K, word limits) |
 | `spec/**/*.html` | Original saved HTML pages |
