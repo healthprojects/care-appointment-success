@@ -15,7 +15,7 @@ A bid for the Contracts for Innovation Cymru challenge *Reducing Missed Appointm
 | `spec/submission/` | The question text for each form section | The question, not the answer |
 | `locales/en-gb/submission/` | Final English answers per section | The text we submit (D1 to H3) |
 | `locales/cy-gb/submission/` | Welsh versions | Welsh text. Needs first-language review |
-| `submission.md` | Early draft of all sections A to K | Sections A to C, I to K only. See its banner |
+| `submission.md` | Early draft of all sections A to K | Sections A to C and K only. See its banner |
 | `plan.md`, `tasks.md` | Research, approach, checklist | Plan and task status |
 | `care-appointment-success-ui/` | SvelteKit prototype with staff sign-in | Prototype with OIDC |
 | `care-appointment-success.github.io/` | SvelteKit prototype for GitHub Pages | Public static prototype |

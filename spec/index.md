@@ -31,14 +31,19 @@ Folder `official-publications/`. Each PDF has a markdown extraction beside it.
 | D5 Innovation | `submission-d5-current-innovation-and-novel-concepts-750-words` | same name |
 | E1 Project management | `submission-e1-project-management-750-words` | `submission-e1-project-management` (plus `plan-gantt-chart.pdf`) |
 | E2 Risks | `submission-e2-risks-750-words` | `submission-e2-risks` |
-| E3 Team | `submission-e3-team-750-words` | not yet written |
-| E4 Readiness | `submission-e4-readiness-750-words` | not yet written |
+| E3 Team | `submission-e3-team-750-words` | same name (has placeholders) |
+| E4 Readiness | `submission-e4-readiness-750-words` | same name (has placeholders) |
 | F1 Testing | `submission-f1-testing` | `submission-f1-testing-750-words` |
 | G1 Accessibility | `submission-g1-accessibility-500-words` | same name |
 | H1 Costs | `submission-h1-costs-750-words` | `submission-h1-finance-750-words` |
 | H2 Payment schedule | `submission-h2-payment-schedule-750-words` | same name |
 | H3 Other funding | `submission-h3-other-funding-sources-750-words` | same name |
-| I1 to I3, J1, J2, K | in the form template | `submission.md` (draft) |
+| I1 Wellbeing | in the form template | `submission-i1-wellbeing-500-words` |
+| I2 Welsh economy | in the form template | `submission-i2-welsh-economy-500-words` |
+| I3 Carbon | in the form template | `submission-i3-carbon-500-words` (has placeholders) |
+| J1 Commercialisation | in the form template | `submission-j1-commercialisation-750-words` (has placeholders) |
+| J2 Value for money | in the form template | `submission-j2-value-for-money-750-words` (has placeholders) |
+| A to C, K | in the form template | `submission.md` (draft) |
 
 ## Research
 

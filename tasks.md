@@ -69,13 +69,13 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [x] D3–D5) Finalise the solution answers
 - [x] E1) Create the project plan attachment: a Gantt chart, one PDF of at most 2 A4 pages (`locales/en-gb/submission/submission-e1-project-management/plan-gantt-chart.pdf`; payments key spills to page 2)
 - [x] E2) Risks answer written (`locales/en-gb/submission/submission-e2-risks/`)
-- [ ] E3–E4) Write the team and readiness answers, including named team members and time allocations
+- [x] E3–E4) Answers written. Fill the bracketed placeholders: names, qualifications, partner status, equipment
 - [x] F1) Finalise the assurance and testing answer
 - [x] G1) Confirm the Welsh and accessibility commitment
 - [x] H1–H3) Costed budget, payment schedule and other-funding answers written (confirm day rates, partner quotes and that there is no other funding)
-- [ ] Cost the academic evaluation partner and clinical safety officer named in F1, or reword F1 (H1 only pays the Welsh-language and voluntary-sector subcontractors)
-- [ ] I1–I3) Finalise the social value answers
-- [ ] J1–J2) Finalise the commercialisation and value-for-money answers
+- [x] Reword F1 so the academic partner and clinical safety officer match the H1 budget (decide whether to engage and cost an academic partner)
+- [x] I1–I3) Answers written. Fill the carbon-reduction plan placeholder
+- [x] J1–J2) Answers written. Fill the bracketed placeholders (dates, relationships, favourable terms, cost per 1,000 appointments)
 - [ ] K) Read the contract and complete the declarations
 - [ ] Check word counts against the limits in `spec/submission-template/submission-template.md`
 

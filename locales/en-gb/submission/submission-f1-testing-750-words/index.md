@@ -42,8 +42,8 @@ Evaluation process:
 
 Specialist support:
 
-- Academic evaluation partner. We will subcontract an academic statistician or health services researcher to review the model validation and fairness audit, and to co-design the Phase 2 evaluation. They will review the analysis plan before results are seen, and sign off the methods in the final report. Their work is covered by the subcontract terms described in section E1, so we keep freedom to operate.
-- Clinical safety officer. A qualified clinician, subcontracted or provided through the health board, will own the hazard log and approve the urgent-appointment list.
+- Independent review of the model and evaluation. An academic statistician or health services researcher would review the model validation and fairness audit, and the Phase 2 evaluation design, before results are seen. This is not yet budgeted in section H1. If we engage one, we will add the cost to sections H1 and H2. Until then, the data scientist writes the analysis plan before results are seen and the health board's data and evaluation advisers review it.
+- Clinical safety officer. A qualified clinician provided through the health board as challenge-partner support will own the hazard log and approve the urgent-appointment list. If the health board cannot provide one, we will tell the funder at mobilisation.
 - Welsh-language partner. First-language speakers review all content and run the Welsh user tests.
 - Voluntary-sector partner. They recruit seldom-heard participants and host sessions in community venues.
 - Health board advisers. Clinical, information governance and digital advisers, offered as challenge-partner support, review safety, data protection and integration findings.
