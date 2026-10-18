@@ -1,0 +1,41 @@
+# Care Appointment Success
+
+> Care Appointment Success is a bilingual (Welsh and English) bid and prototype for the Contracts for Innovation Cymru challenge Reducing Missed Appointments and Improving Access to Planned Care, led by Cwm Taf Morgannwg University Health Board.
+
+Phase 1 runs November 2026 to 31 March 2027. The bid deadline is 20 October 2026, 12:00 noon BST. The prototype uses fictional data only and is not a real service.
+
+## Start here
+
+- [README](https://github.com/healthprojects/care-appointment-success/blob/main/README.md): overview, concept, key dates, repository map
+- [AGENTS.md](https://github.com/healthprojects/care-appointment-success/blob/main/AGENTS.md): rules and commands for AI agents
+- [spec/index.md](https://github.com/healthprojects/care-appointment-success/blob/main/spec/index.md): specification index and form-to-answer map
+
+## Bid content
+
+- [Plan](https://github.com/healthprojects/care-appointment-success/blob/main/plan.md): research summary, approach, KPIs, risks
+- [Tasks](https://github.com/healthprojects/care-appointment-success/blob/main/tasks.md): checklist to submission and Phase 1
+- [Submission draft](https://github.com/healthprojects/care-appointment-success/blob/main/submission.md): sections A to K
+- [Final English answers](https://github.com/healthprojects/care-appointment-success/blob/main/locales/en-gb/submission/): D1 to H3
+- [Project plan Gantt chart](https://github.com/healthprojects/care-appointment-success/blob/main/locales/en-gb/submission/submission-e1-project-management/plan-gantt-chart.pdf)
+
+## Research
+
+- [Brainstorms](https://github.com/healthprojects/care-appointment-success/blob/main/spec/brainstorms/index.md)
+- [Academic research](https://github.com/healthprojects/care-appointment-success/blob/main/spec/academic-research-into-missed-medical-appointments/index.md)
+- [Why patients miss appointments](https://github.com/healthprojects/care-appointment-success/blob/main/spec/why-patients-miss-doctors-appointments/index.md)
+- [Patient perceptions of no-shows (Lacy et al. 2004)](https://github.com/healthprojects/care-appointment-success/blob/main/spec/why-we-dont-come-patient-perceptions-on-no-shows/index.md)
+- [Strategies to reduce no-shows](https://github.com/healthprojects/care-appointment-success/blob/main/spec/strategies-to-reduce-no-shows/index.md)
+- [Reminder message templates](https://github.com/healthprojects/care-appointment-success/blob/main/spec/templates-for-effective-reminder-messages/index.md)
+
+## Official documents
+
+- [Challenge brief](https://github.com/healthprojects/care-appointment-success/blob/main/spec/official-publications/Challenge-Brief---Reducing-Missed-Appointments-and-Improving-Access-to-Planned-Care_1790073987.md)
+- [Application guidance notes](https://github.com/healthprojects/care-appointment-success/blob/main/spec/official-publications/Application-Guidance-Notes_1789988310.md)
+- [Evaluation questions](https://github.com/healthprojects/care-appointment-success/blob/main/spec/official-publications/Evaluation-Questions_1789742823.md)
+- [FAQs](https://github.com/healthprojects/care-appointment-success/blob/main/spec/official-publications/Contracts-for-Innovation-Cymru-FAQs_1789742837.md)
+
+## Code
+
+- [care-appointment-success.github.io](https://github.com/healthprojects/care-appointment-success/blob/main/care-appointment-success.github.io/README.md): SvelteKit 3 and Lily Design System prototype for GitHub Pages
+- [care-appointment-success-ui](https://github.com/healthprojects/care-appointment-success/blob/main/care-appointment-success-ui/README.md): the same prototype with staff sign-in (Keycloak, OIDC)
+- [care-appointment-service](https://github.com/healthprojects/care-appointment-success/blob/main/care-appointment-service/README.md): Rust (Loco) API with Keycloak token checks

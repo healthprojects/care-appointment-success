@@ -1,61 +1,31 @@
-# Welcome to Loco :train:
+# Care Appointment Service
 
-[Loco](https://loco.rs) is a web and API framework running on Rust.
+Rust API for the Care Appointment Success prototype, built on the [Loco](https://loco.rs) framework (0.16) with SeaORM and PostgreSQL. Staff sign in through Keycloak (OpenID Connect), and the API checks their access tokens.
 
-This is the **SaaS starter** which includes a `User` model and authentication based on JWT.
-It also include configuration sections that help you pick either a frontend or a server-side template set up for your fullstack server.
+This is a skeleton. It has users and token checks, and no appointment data yet. The prototype uses fictional data only.
 
-
-## Quick Start
+## Quick start
 
 ```sh
-cargo loco start
+podman-compose up -d      # Postgres on 5433, Keycloak on 8280
+cargo loco start          # http://localhost:5150
+cargo check
+cargo test
+cargo fmt --all -- --check
 ```
 
-```sh
-$ cargo loco start
-Finished dev [unoptimized + debuginfo] target(s) in 21.63s
-    Running `target/debug/myapp start`
+CI (`.github/workflows/ci.yaml`) runs formatting, clippy and tests against Postgres and Redis.
 
-    :
-    :
-    :
+## Layout
 
-controller/app_routes.rs:203: [Middleware] Adding log trace id
-
-                      ▄     ▀
-                                 ▀  ▄
-                  ▄       ▀     ▄  ▄ ▄▀
-                                    ▄ ▀▄▄
-                        ▄     ▀    ▀  ▀▄▀█▄
-                                          ▀█▄
-▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄▄▄ ▀▀█
- ██████  █████   ███ █████   ███ █████   ███ ▀█
- ██████  █████   ███ █████   ▀▀▀ █████   ███ ▄█▄
- ██████  █████   ███ █████       █████   ███ ████▄
- ██████  █████   ███ █████   ▄▄▄ █████   ███ █████
- ██████  █████   ███  ████   ███ █████   ███ ████▀
-   ▀▀▀██▄ ▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀ ██▀
-       ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-                https://loco.rs
-
-environment: development
-   database: automigrate
-     logger: debug
-compilation: debug
-      modes: server
-
-listening on http://localhost:5150
-```
-
-## Full Stack Serving
-
-You can check your [configuration](config/development.yaml) to pick either frontend setup or server-side rendered template, and activate the relevant configuration sections.
-
-
-## Getting help
-
-Check out [a quick tour](https://loco.rs/docs/getting-started/tour/) or [the complete guide](https://loco.rs/docs/getting-started/guide/).
+| Path | Purpose |
+|---|---|
+| `src/controllers/` | HTTP routes (`auth`, `me`) |
+| `src/auth/oidc.rs` | Keycloak token validation |
+| `src/models/`, `migration/` | Users model and migrations |
+| `config/*.yaml` | Development, test and production settings |
+| `compose.yaml`, `podman/` | Local Postgres and Keycloak |
+| `tests/` | Request, model, task and worker tests |
 
 ## Authentication with Keycloak
 

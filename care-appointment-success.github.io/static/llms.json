@@ -1,0 +1,71 @@
+{
+  "name": "Care Appointment Success",
+  "description": "Care Appointment Success is a bilingual (Welsh and English) bid and prototype for the Contracts for Innovation Cymru challenge Reducing Missed Appointments and Improving Access to Planned Care, led by Cwm Taf Morgannwg University Health Board.",
+  "language": [
+    "cy",
+    "en"
+  ],
+  "deadline": "2026-10-20T12:00:00+01:00",
+  "phase1": {
+    "start": "2026-11",
+    "end": "2027-03-31",
+    "months": 5,
+    "requestedIncludingVatGbp": 59400
+  },
+  "entryPoints": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "spec": "spec/index.md",
+    "plan": "plan.md",
+    "tasks": "tasks.md",
+    "submissionDraft": "submission.md",
+    "finalAnswers": "locales/en-gb/submission/"
+  },
+  "projects": [
+    {
+      "path": "care-appointment-success.github.io",
+      "stack": [
+        "SvelteKit 3",
+        "Svelte 5",
+        "Lily Design System"
+      ],
+      "checks": [
+        "pnpm run check",
+        "pnpm run check:locales",
+        "pnpm run build"
+      ]
+    },
+    {
+      "path": "care-appointment-success-ui",
+      "stack": [
+        "SvelteKit 3",
+        "Svelte 5",
+        "Lily Design System",
+        "OIDC"
+      ],
+      "checks": [
+        "pnpm run check",
+        "pnpm run check:locales",
+        "pnpm run build"
+      ]
+    },
+    {
+      "path": "care-appointment-service",
+      "stack": [
+        "Rust",
+        "Loco 0.16",
+        "Keycloak"
+      ],
+      "checks": [
+        "cargo check",
+        "cargo test"
+      ]
+    }
+  ],
+  "rules": [
+    "Welsh and English for every patient-facing string",
+    "Fictional data only in prototypes",
+    "Risk scores only add support",
+    "Do not edit spec/official-publications"
+  ]
+}

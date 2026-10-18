@@ -1,18 +1,18 @@
 # care-appointment-success.github.io
 
-A clickable, bilingual (Welsh and English) prototype of **Care Appointment Success**, the attendance-support service proposed in [`../submission.md`](../submission.md) for the Contracts for Innovation Cymru challenge *Reducing Missed Appointments and Improving Access to Planned Care*.
+A clickable, bilingual (Welsh and English) prototype of **Care Appointment Success**, the attendance-support service proposed in [`../submission.md`](../submission.md) and [`../locales/en-gb/submission/`](../locales/en-gb/submission/) for the Contracts for Innovation Cymru challenge *Reducing Missed Appointments and Improving Access to Planned Care*.
 
 It is for co-design workshops, usability testing and the assessment panel demo. **It is not a real service.** Every appointment is fictional, and nothing a visitor chooses is collected, stored or sent anywhere.
 
 ## Stack
 
-- [SvelteKit 2](https://svelte.dev/docs/kit) with Svelte 5 runes and TypeScript
+- [SvelteKit 3](https://svelte.dev/docs/kit) with Svelte 5 runes and TypeScript
 - [`@sveltejs/adapter-static`](https://svelte.dev/docs/kit/adapter-static): every page is prerendered to static HTML
 - [Lily Design System](https://lilydesignsystem.com/):
   - [`@lilydesignsystem/svelte-headless`](https://www.npmjs.com/package/@lilydesignsystem/svelte-headless) for accessible, unstyled components
   - [`@lilydesignsystem/svelte-picker-bar`](https://www.npmjs.com/package/@lilydesignsystem/svelte-picker-bar) for the header's theme, language, text size and share controls
   - Lily's standalone theme stylesheets in `static/themes/`, defaulting to NHS Wales (patients)
-- GitHub Pages, deployed by [`../../.github/workflows/care-appointment-success-frontend.yml`](../../.github/workflows/care-appointment-success-frontend.yml)
+- GitHub Pages, deployed by [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
 
 ## Pages
 
@@ -59,7 +59,7 @@ BASE_PATH=/healthprojects/care-appointment-success pnpm run build
 
 ## Deploy
 
-The deploy workflow runs on pushes to `main` that touch this directory. It publishes to `https://healthprojects.github.io/healthprojects/care-appointment-success/`.
+The deploy workflow (`.github/workflows/pages.yml`) runs on every push to `main` and can be started by hand. This folder is meant to be published as its own repository named `care-appointment-success.github.io`, which does not exist on GitHub yet, so the workflow does not run from this monorepo. It publishes to the site root. It installs with `--frozen-lockfile`, then runs `check`, `check:locales` and `build`, so a failing check blocks the deploy.
 
 Before the first deploy, set the repository's **Settings → Pages → Source** to **GitHub Actions**.
 
@@ -76,4 +76,3 @@ Last checked in a local build served under the Pages sub-path:
 
 - Messages live in `locales/<code>/messages.json` (`en-001`, `cy-001`). Each locale directory also has `index.md`, a `README.md` symlink and a shared `.locale-peer-id`. `locales.tsv` lists known languages.
 - [Sveltia CMS](https://github.com/sveltia/sveltia-cms) is served at `/admin/` and edits those catalogues with `i18n.structure: multiple_folders` (`static/admin/config.yml`). Regenerate its fields if message keys change.
-- Deployed by `.github/workflows/pages.yml` to GitHub Pages at the site root (no `BASE_PATH`).

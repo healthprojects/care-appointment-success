@@ -6,13 +6,13 @@ It is for co-design workshops, usability testing and the assessment panel demo. 
 
 ## Stack
 
-- [SvelteKit 2](https://svelte.dev/docs/kit) with Svelte 5 runes and TypeScript
+- [SvelteKit 3](https://svelte.dev/docs/kit) with Svelte 5 runes and TypeScript
 - [`@sveltejs/adapter-static`](https://svelte.dev/docs/kit/adapter-static): every page is prerendered to static HTML
 - [Lily Design System](https://lilydesignsystem.com/):
   - [`@lilydesignsystem/svelte-headless`](https://www.npmjs.com/package/@lilydesignsystem/svelte-headless) for accessible, unstyled components
   - [`@lilydesignsystem/svelte-picker-bar`](https://www.npmjs.com/package/@lilydesignsystem/svelte-picker-bar) for the header's theme, language, text size and share controls
   - Lily's standalone theme stylesheets in `static/themes/`, defaulting to NHS Wales (patients)
-- GitHub Pages, deployed by [`../../.github/workflows/care-appointment-success-frontend.yml`](../../.github/workflows/care-appointment-success-frontend.yml)
+- This folder is the version with staff sign-in (Keycloak, OIDC). The public GitHub Pages build is [`../care-appointment-success.github.io/`](../care-appointment-success.github.io/README.md), which omits sign-in
 
 ## Pages
 
@@ -59,9 +59,7 @@ BASE_PATH=/healthprojects/care-appointment-success pnpm run build
 
 ## Deploy
 
-The deploy workflow runs on pushes to `main` that touch this directory. It publishes to `https://healthprojects.github.io/healthprojects/care-appointment-success/`.
-
-Before the first deploy, set the repository's **Settings → Pages → Source** to **GitHub Actions**.
+This folder has no deploy workflow. Public deployment is from [`../care-appointment-success.github.io/`](../care-appointment-success.github.io/README.md). Build this version with `VITE_OIDC_AUTHORITY` set (see `.env.example`) and serve it next to the service in `../care-appointment-service/`.
 
 ## Verified
 

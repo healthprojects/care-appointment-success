@@ -50,11 +50,13 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [ ] Ask CTM and DHCW the §9.5 gaps: recent Welsh DNA data, the NHS Wales App roadmap and BSL contact options
 - [ ] Label the fictional-data status on every prototype page and in the video
 
-## Prototype (`care-appointment-success-ui/`)
+## Prototype (`care-appointment-success.github.io/`, `care-appointment-success-ui/`)
 
-- [x] Scaffold the SvelteKit + Lily Design System prototype with `locales/{en-001,cy-001}` and a GitHub Pages workflow
+- [x] Scaffold the SvelteKit 3 + Lily Design System prototype with `locales/{en-001,cy-001}` and a GitHub Pages workflow
+- [x] Update dependencies (SvelteKit 3.1, Vite 8.3.4, Svelte 5.57.2) and GitHub Actions versions; checks and builds pass
+- [ ] Move TypeScript to 7 when the SvelteKit tooling supports it (7.0.2 currently breaks `vite build`)
+- [ ] Publish `care-appointment-success.github.io` as its own repository so the Pages workflow can run
 - [ ] Have a first-language Welsh speaker review `care-appointment-success-ui/locales/cy-001/messages.json`
-- [ ] Set the repository's Pages source to GitHub Actions, then push to deploy
 - [ ] Use the prototype in the D2 video pitch and the assessment panel demo
 
 ## Submission content (by 16 October 2026)
@@ -62,14 +64,16 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [ ] A) Confirm project title, duration and total cost
 - [ ] B) Fill in the lead organisation details
 - [ ] C) Fill in contact details
-- [ ] D1) Final elevator pitch (≤ 250 words)
+- [x] D1) Final elevator pitch (≤ 250 words)
 - [ ] D2) Record the video pitch (at most 3 minutes; what it is and why it is innovative, benefits, why fund it)
-- [ ] D3–D5) Finalise the solution answers
-- [ ] E1) Create the project plan attachment: a Gantt chart, one PDF of at most 2 A4 pages, showing gates and monthly payments
-- [ ] E2–E4) Finalise the risks, team and readiness answers, including named team members and time allocations
-- [ ] F1) Finalise the assurance and testing answer
-- [ ] G1) Confirm the Welsh and accessibility commitment
-- [ ] H1–H3) Build the costed budget (day rates, subcontractors, VAT) and payment schedule linked to milestones
+- [x] D3–D5) Finalise the solution answers
+- [x] E1) Create the project plan attachment: a Gantt chart, one PDF of at most 2 A4 pages (`locales/en-gb/submission/submission-e1-project-management/plan-gantt-chart.pdf`; payments key spills to page 2)
+- [x] E2) Risks answer written (`locales/en-gb/submission/submission-e2-risks/`)
+- [ ] E3–E4) Write the team and readiness answers, including named team members and time allocations
+- [x] F1) Finalise the assurance and testing answer
+- [x] G1) Confirm the Welsh and accessibility commitment
+- [x] H1–H3) Costed budget, payment schedule and other-funding answers written (confirm day rates, partner quotes and that there is no other funding)
+- [ ] Cost the academic evaluation partner and clinical safety officer named in F1, or reword F1 (H1 only pays the Welsh-language and voluntary-sector subcontractors)
 - [ ] I1–I3) Finalise the social value answers
 - [ ] J1–J2) Finalise the commercialisation and value-for-money answers
 - [ ] K) Read the contract and complete the declarations
@@ -97,3 +101,9 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [ ] M3: Bilingual prototype v1 (messaging, barrier check, accessible formats, navigator pathway)
 - [ ] M4: Usability test results (n ≥ 30, including ≥ 10 Welsh speakers) and risk model fairness audit
 - [ ] M5: Feasibility report, business case, commercialisation plan and Phase 2 proposal (by 31 March 2027)
+
+## Housekeeping
+
+- [x] Add root `AGENTS.md`, `CLAUDE.md`, `llms.txt`, `llms.json` and `spec/index.md`
+- [ ] Have a first-language Welsh speaker review all Welsh text, including `locales/cy-gb/`
+- [ ] Write Welsh versions of D5 and E1 to H3 in `locales/cy-gb/submission/`

@@ -1,5 +1,8 @@
 # Submission Draft: Reducing Missed Appointments and Improving Access to Planned Care
 
+> **Status (18 October 2026).** The final English text for D1 to D5, E1, E2, F1, G1 and H1 to H3 is in `locales/en-gb/submission/`. That is the source of truth for those sections. The versions below are earlier drafts and may be out of date. Sections A to C, E3, E4, I, J and K are still drafted only here. See `spec/index.md` for the map of sections to folders.
+
+
 Draft answers for the SimplyDo form, sections A–K. Text in `[brackets]` is a placeholder to confirm. All costs are provisional until the stakeholder questions in `plan.md` §4 are answered.
 
 The draft follows these source documents, all in `spec/`:

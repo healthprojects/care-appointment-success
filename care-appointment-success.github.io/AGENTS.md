@@ -1,6 +1,9 @@
-# AGENTS.md — Care Appointment Success prototype frontend
+# AGENTS.md: Care Appointment Success prototype frontend
 
-- SvelteKit 2, Svelte 5 runes, TypeScript, pnpm. Static output only (`adapter-static`, `prerender = true`, `trailingSlash = 'always'`).
+See the root [`AGENTS.md`](../AGENTS.md) for project-wide rules. This file adds rules for this folder.
+
+
+- SvelteKit 3, Svelte 5 runes, TypeScript, pnpm. Static output only (`adapter-static`, `prerender = true`, `trailingSlash = 'always'`).
 - **No user-facing strings in `.svelte` files.** Every string lives in `locales/<code>/messages.json`. Keep keys identical across locales, and run `pnpm run check:locales`.
 - Locale codes are `cy-001` and `en-001`, following the sibling Health Projects repos. Routes are `/locales/[locale]/<page>/`. `src/routes/locales/[locale]/+layout.ts` supplies `ui` through `page.data`, so the root layout's chrome is localised.
 - Build every internal link with `localePath()` from `src/lib/paths.ts`, and assets with `asset()`, so the site works under the GitHub Pages base path (`BASE_PATH`).
@@ -8,3 +11,6 @@
 - Secondary buttons use `data-variant="secondary"` on `.button`, which is how the themes style variants.
 - Never collect, store or send personal data. The prototype uses fictional data from `src/lib/appointment.ts`.
 - Before committing, run `pnpm run check`, `pnpm run check:locales` and `pnpm run build`.
+- Content is editable at `/admin/` with Sveltia CMS (`static/admin/config.yml`). Regenerate its fields when message keys change.
+- `static/llms.txt` and `static/llms.json` describe the project for AI agents. Keep them in step with the root `llms.txt` and `llms.json`.
+- The Pages workflow is `.github/workflows/pages.yml`. It deploys to the site root, so leave `BASE_PATH` unset.

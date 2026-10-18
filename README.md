@@ -15,7 +15,7 @@ Response to the Contracts for Innovation Cymru (SBRI) challenge **Reducing Misse
 | Cost | ~£9.6m avoidable lost value per year (≈ £150 per missed appointment) |
 | Implied volume | ≈ 744,000 outpatient appointments per year (64,000 ÷ 8.6%) |
 | Phase 1 funding | Up to £200,000 total, shared across a portfolio of projects |
-| Phase 1 window | November 2026 to 31 March 2027 (≈ 4.5 months) |
+| Phase 1 window | November 2026 to 31 March 2027 (up to 5 months; we propose 5) |
 | Phase 2 | Not guaranteed; separate competition for real-world pilot and evaluation |
 | Assessment | Written application (sections A–K), then in-person "Dragons' Den" style panel for shortlisted applicants |
 | Must-haves | Bilingual Welsh/English by design; accessible and inclusive; realistic route to adoption across Wales; affordability and sustainability |
@@ -48,16 +48,32 @@ See [plan.md](plan.md) for the brainstorm, stakeholder questions, KPIs and metri
 
 ## Repository contents
 
-| File | Purpose |
+| Path | Purpose |
 |---|---|
 | [README.md](README.md) | This overview |
-| [plan.md](plan.md) | Research summary, brainstorm, chosen approach, stakeholder questions, KPIs, metrics, Phase 1 plan, risks |
+| [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md) | Rules and commands for AI agents |
+| [llms.txt](llms.txt), [llms.json](llms.json) | Machine-readable project index for AI agents |
+| [plan.md](plan.md) | Research summary, brainstorm, chosen approach, stakeholder questions, KPIs, Phase 1 plan, risks |
 | [tasks.md](tasks.md) | Task checklist through to submission and Phase 1 delivery |
-| [submission.md](submission.md) | Draft answers for SimplyDo submission sections A–K, within word limits |
-| [care-appointment-success-ui/](care-appointment-success-ui/) | Clickable bilingual prototype of Care Appointment Success (SvelteKit + Lily Design System, GitHub Pages) |
-| [spec/official-publications/introduction.md](spec/official-publications/introduction.md) | Markdown extraction of the official challenge page |
-| [spec/submission-template/submission-template.md](spec/submission-template/submission-template.md) | Markdown extraction of the submission form (sections A–K, word limits) |
-| `spec/**/*.html` | Original saved HTML pages |
+| [submission.md](submission.md) | Early draft of sections A to K. Final D1 to H3 text is in `locales/` |
+| [locales/en-gb/submission/](locales/en-gb/submission/) | Final English answers D1 to H3, including the Gantt chart PDF for E1 |
+| [locales/cy-gb/](locales/cy-gb/) | Welsh versions |
+| [spec/index.md](spec/index.md) | Specification index: official documents, form questions, research |
+| [spec/brainstorms/index.md](spec/brainstorms/index.md) | Brainstorms drawn from all research |
+| [care-appointment-success.github.io/](care-appointment-success.github.io/) | Public bilingual prototype (SvelteKit 3, Lily Design System, GitHub Pages) |
+| [care-appointment-success-ui/](care-appointment-success-ui/) | The same prototype with staff sign-in (Keycloak, OIDC) |
+| [care-appointment-service/](care-appointment-service/) | Rust (Loco) API with Keycloak token checks |
+| [assets/images/logo/](assets/images/logo/) | Project logo |
+
+## Develop
+
+```sh
+# either web folder
+pnpm install && pnpm run check && pnpm run check:locales && pnpm run build
+
+# service
+cd care-appointment-service && cargo check && cargo test
+```
 
 ## Official documents
 
