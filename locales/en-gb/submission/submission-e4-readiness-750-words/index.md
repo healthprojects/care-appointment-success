@@ -14,6 +14,7 @@ Equipment and resources:
 - No specialist equipment is needed. Phase 1 is a prototype using fictional appointments, so it needs ordinary computers, a UK-hosted cloud environment and standard development tools.
 - Already in place: [confirm each: UK-hosted cloud environment; prototyping toolset; text-message and voice test environment with a UK provider; accessibility testing tools].
 - A working bilingual prototype of the patient journey already exists, built with SvelteKit and the Lily Design System. It covers a fictional appointment, a barrier check, rebooking and a navigator request, in Welsh and English. It passes automated type, locale-parity and build checks. Its Welsh text is a draft awaiting first-language review.
+- A tested way of keeping many language versions in step. The lead's open book *Software Engineering Metrics* is maintained in more than 20 languages, with Welsh among them, using the same locale folders and parity checks as this prototype.
 - Venues and translation will be booked at milestone M1.
 
 Preparation already done:

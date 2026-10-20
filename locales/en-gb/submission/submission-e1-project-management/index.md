@@ -50,9 +50,9 @@ Main risks and mitigation (full register in section E2):
 
 Intellectual property (IP):
 
-- Before the start, background IP is recorded in the contract's register (Schedule C). Project IP is logged monthly in the foreground IP register (Schedule B).
+- Before the start, background IP, including our own open-source patient administration system, is recorded in the contract's register (Schedule C). Project IP is logged monthly in the foreground IP register (Schedule B).
 - Each subcontract assigns project IP to us, keeps the subcontractor's background IP with them under a licence to us, and flows down the contract's IP, confidentiality, data protection and audit terms. We can then grant the funder its royalty-free, non-exclusive UK licence.
 - Freedom to operate: before we reuse any open-source component, dataset or translation, we check its licence, avoid terms that restrict commercial or public-sector use, and record it in an IP and dependency register. We copy nothing whose licence we cannot confirm.
 - The health board's data stays its own; we only license its use.
 - We seek the funder's approval before any IP assignment, and plan to exploit the IP within three years.
-- Any IP issue goes to the project lead within two working days, then the steering group, with legal advice if needed.
+- Any IP issue goes to the project lead within two working days, then the steering group.

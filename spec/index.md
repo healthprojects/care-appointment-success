@@ -43,7 +43,10 @@ Folder `official-publications/`. Each PDF has a markdown extraction beside it.
 | I3 Carbon | in the form template | `submission-i3-carbon-500-words` (has placeholders) |
 | J1 Commercialisation | in the form template | `submission-j1-commercialisation-750-words` (has placeholders) |
 | J2 Value for money | in the form template | `submission-j2-value-for-money-750-words` (has placeholders) |
-| A to C, K | in the form template | `submission.md` (draft) |
+| A Application | in the form template | `submission-a-application` (has a dropdown choice to make) |
+| B Lead applicant | in the form template | `submission-b-lead-applicant` (all company details are placeholders) |
+| C Contact | in the form template | `submission-c-contact-details` (has placeholders) |
+| K Declaration | in the form template | `submission-k-declaration` (a checklist; the declaration text is on the live form) |
 
 ## Research
 

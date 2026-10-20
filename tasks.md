@@ -12,6 +12,8 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [x] Extract those PDFs to markdown
 - [x] Reconcile `plan.md` and `submission.md` with the Application Guidance Notes and Evaluation Questions
 - [ ] Run a freedom-to-operate check and list background IP (D5, Schedule C)
+- [ ] Confirm that no employer or other party has a claim on the PAS (check employment contracts and any IP assignment clauses). Checked 2026-10-19: all 51 commits are by one author, `MAINTAINERS.md` and `LICENSE.md` name the lead applicant as sole copyright holder, and `cargo deny check licenses` passes. Then remove the bracket in D5
+- [ ] Ask the contracting authority which schedule holds background IP: clause 14.2 says Schedule B, but the schedule headings say B is foreground and C is background. Our answers follow the headings (C = background)
 - [ ] Confirm day rates are cost-based at fair market value with no profit (H1)
 - [ ] Ask whether there is a per-project cost cap (stakeholder question 18a)
 - [ ] Capture the dropdown options on the live form (A4, B6–B9, C8, G1, K1)
@@ -64,6 +66,7 @@ Deadline: **20 October 2026, 12:00 noon BST.** Aim to submit by 19 October.
 - [ ] Add DCB0129 hazards: score lowers support, flip to remote when in-person was needed, channel fall-through fails
 - [ ] Write the "what we need from WPAS" list for DHCW: write-back replies, release events, standby offers, remote mode, transport request
 - [ ] Add the three ideas to J1 as Phase 2 features, with Phase 1 delivering the audit, the staff view and the maps on fictional data
+- [ ] Confirm which *Software Engineering Metrics* language versions have had first-language review before relying on the "20+ languages" claim in E3 and E4 (21 language codes found; `cy-001` style drafts may be unreviewed)
 - [ ] Add the reminder requirements (`plan.md` §10.6) to the PAS specification, renumbered to avoid the PAS FR-3 clash
 - [ ] Move the "can't come?" prompt to T-7, add a T-4 second touch with escalation of silent patients, and keep T-24h as the final nudge
 - [ ] Specify call-to-action pages: single-use token, show-then-confirm, "Are you sure?" on Cancel, Welsh and English, keypad options for IVR

@@ -23,7 +23,7 @@ How the team covers what the project needs:
 
 How each organisation has the skills to deliver:
 
-- Lead organisation: [Relevant experience of delivering health or public-sector software, and any NHS Wales work. Cyber Essentials status.]
+- Lead organisation: our lead has written and published a book, *Software Engineering Metrics*, in more than 20 languages, including Welsh, from one set of source files with automated checks that every language version has the same content. We will use the same method to keep the Welsh and English patient content identical in meaning. [State which language versions have been reviewed by first-language speakers.] [Relevant experience of delivering health or public-sector software, and any NHS Wales work. Cyber Essentials status.]
 - Welsh-language partner: [Years working in Welsh-language health or public-sector translation; use of first-language Welsh reviewers.]
 - Voluntary-sector partner: [Local reach in Rhondda Cynon Taf, Merthyr Tydfil or Bridgend; experience of supporting patients or carers.]
 
