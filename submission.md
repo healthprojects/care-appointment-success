@@ -2,7 +2,6 @@
 
 > **Status (18 October 2026).** The final English text for D1 to D5, E1 to E4, F1, G1, H1 to H3, I1 to I3, J1 and J2 is in `locales/en-gb/submission/`. That is the source of truth for those sections. The versions below are earlier drafts and may be out of date. E3, E4, I1 to I3, J1 and J2 are now also written there, with placeholders. Sections A to C and K are still drafted only here. See `spec/index.md` for the map of sections to folders.
 
-
 Draft answers for the SimplyDo form, sections A–K. Text in `[brackets]` is a placeholder to confirm. All costs are provisional until the stakeholder questions in `plan.md` §4 are answered.
 
 The draft follows these source documents, all in `spec/`:
@@ -14,7 +13,7 @@ The draft follows these source documents, all in `spec/`:
 ## Drafting rules (from the guidance notes)
 
 - **Scoring:** Sections D–K are scored 0–5 against the criteria mapped below. Sections A–C are not scored, but every mandatory field must be completed or the application is rejected.
-- **Acronyms:** Keep them to a minimum. Define each one on first use *in every section*, because assessors may read sections separately.
+- **Acronyms:** Keep them to a minimum. Define each one on first use _in every section_, because assessors may read sections separately.
 - **Text limits:** Text beyond a word limit, or appendices over the maximum length, is not read.
 - **Costs:** Include VAT, use fair market value, and include no profit.
 - **Duration:** No more than 5 months.
@@ -23,21 +22,21 @@ The draft follows these source documents, all in `spec/`:
 
 ## Assessment criteria map
 
-| Form section | Scored against (0–5 each) |
-|---|---|
-| D1–D3 | Understanding: meets the challenge, shows understanding and full benefits |
-| D4 | Technical validity; **Care** (safety, compassion); Impact on problem and end users |
-| D5 | Innovation |
-| E1 | Project delivery: realistic timeframes, management plan, milestones and evaluation |
-| E2 | **Safety** (5 = improves safety, 0 = detrimental); Risk |
-| E3 | Project team |
-| E4 | Readiness |
-| F1 | Testing |
-| G1 | Accessibility and Welsh language compliance |
-| H1–H3 | Finance: value for money; realistic, justified costs |
-| I1–I3 | Social value: *measurable* economic, social, environmental and cultural benefits for Wales |
-| J1 | Commercialisation; **Timing** (available in time if the funder wants to buy) |
-| J2 | Financial viability, including preferential terms |
+| Form section | Scored against (0–5 each)                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| D1–D3        | Understanding: meets the challenge, shows understanding and full benefits                  |
+| D4           | Technical validity; **Care** (safety, compassion); Impact on problem and end users         |
+| D5           | Innovation                                                                                 |
+| E1           | Project delivery: realistic timeframes, management plan, milestones and evaluation         |
+| E2           | **Safety** (5 = improves safety, 0 = detrimental); Risk                                    |
+| E3           | Project team                                                                               |
+| E4           | Readiness                                                                                  |
+| F1           | Testing                                                                                    |
+| G1           | Accessibility and Welsh language compliance                                                |
+| H1–H3        | Finance: value for money; realistic, justified costs                                       |
+| I1–I3        | Social value: _measurable_ economic, social, environmental and cultural benefits for Wales |
+| J1           | Commercialisation; **Timing** (available in time if the funder wants to buy)               |
+| J2           | Financial viability, including preferential terms                                          |
 
 ---
 
@@ -138,7 +137,7 @@ Care Appointment Success treats these barriers together, because a single remind
 2. **A "Can you make it?" barrier check.** Patients can tell us about problems with travel, cost, caring, work, anxiety or access.
    - Care Appointment Success signposts them to support that already exists: the Healthcare Travel Costs Scheme, community transport, carers' services, employer letters and reasonable adjustments.
    - We do not fund or provide transport.
-3. **Fair, transparent risk flagging** from appointment history. It highlights who may need extra help and is used *only* to offer support, never to overbook, deprioritise or penalise.
+3. **Fair, transparent risk flagging** from appointment history. It highlights who may need extra help and is used _only_ to offer support, never to overbook, deprioritise or penalise.
 4. **Community navigators** from a local voluntary-sector partner. They phone people with the highest need, in Welsh or English, which reaches people who are digitally excluded. We found no published evidence that navigators reduce missed appointments, so Phase 1 tests this as a hypothesis (reached, barrier resolved, attended).
 5. **Released-slot backfill.** Early cancellations are offered to suitable people on waiting lists, so freed capacity becomes care delivered.
 
@@ -218,7 +217,7 @@ Scored for technical validity, care (safety and compassion) and impact.
 1. **Fair, explainable prediction.** Missed-appointment prediction models can encode deprivation and ethnicity. When used for overbooking, they worsen access for the people who most need care.
    - We will build an interpretable model, such as regularised logistic regression, on historical appointment data.
    - We will publish its accuracy and error rates by deprivation quintile (Welsh Index of Multiple Deprivation), age, sex and language preference.
-   - It will be governed by a written rule: the model can only trigger *more* support. A US study found that no-show models used for overbooking made Black patients wait about 30% longer, which is why we exclude overbooking.
+   - It will be governed by a written rule: the model can only trigger _more_ support. A US study found that no-show models used for overbooking made Black patients wait about 30% longer, which is why we exclude overbooking.
    - Fairness checks (calibration and false-negative rate by deprivation quintile, age, sex and language) are fixed before we see results. A test that no score reduces the slots or contact a patient is offered is a pass criterion.
 2. **Welsh and English parity in automated content.**
    - Welsh characters such as ŵ and ŷ can force a different text-message encoding, which halves message length and doubles cost.
@@ -280,7 +279,7 @@ Scored for technical validity, care (safety and compassion) and impact.
 These products rarely do the following:
 
 - give Welsh speakers an equivalent experience in dynamic and voice content
-- ask *why* someone may not attend
+- ask _why_ someone may not attend
 - link people to practical help
 - audit their predictions for fairness
 - offer a human route for digitally excluded people
@@ -320,10 +319,10 @@ Scored for realistic timeframes, a clear management plan, and appropriate milest
 
 **Management process:**
 
-- Fortnightly sprints inside a stage-gated plan.
-- A monthly steering group with the health board's challenge lead and representatives from planned care, information governance, Welsh language and patient experience, plus our subcontractors.
-- A fortnightly written progress report.
+- Weekly sprints inside a stage-gated plan.
+- Weekly written progress report.
 - A log of risks, assumptions, issues and dependencies.
+- A four-week steering group with the health board's challenge lead and representatives from planned care, information governance, Welsh language and patient experience, plus our subcontractors.
 - Patients are involved at every stage through the voluntary-sector partner.
 
 **Resources:**
@@ -343,21 +342,21 @@ Scored for realistic timeframes, a clear management plan, and appropriate milest
 
 **SMART milestones.** Payments are due on completion of the milestone and match H2:
 
-| # | Due | Milestone and measurable deliverables | Payment (incl. VAT) |
-|---|---|---|---|
-| M1 | 30 Nov 2026 | **Mobilisation.** Kickoff held; stakeholder map; data request and data protection impact assessment screening submitted; discovery plan signed off by the challenge lead | £8,910 (15%) |
-| M2 | 23 Dec 2026 | **Discovery.** Baseline missed-appointment analysis; at least 15 patient and 6 staff interviews (at least 5 in Welsh); journey map; barrier taxonomy. **Gate 1** | £11,880 (20%) |
-| M3 | 29 Jan 2027 | **Co-design and prototype.** 2 bilingual workshops; working bilingual prototype; accessible templates; navigator pathway | £14,850 (25%) |
-| M4 | 26 Feb 2027 | **Test and validate.** Usability tests with at least 30 patients (at least 10 Welsh speakers); model and fairness audit report; integration assessment. **Gate 2** | £11,880 (20%) |
-| M5 | 31 Mar 2027 | **Final report and project closure report.** Feasibility and affordability model; commercialisation plan; Phase 2 evaluation design; show-and-tell (the 20% retention) | £11,880 (20%) |
+| #   | Due         | Milestone and measurable deliverables                                                                                                                                    | Payment (incl. VAT) |
+| --- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+| M1  | 30 Nov 2026 | **Mobilisation.** Kickoff held; stakeholder map; data request and data protection impact assessment screening submitted; discovery plan signed off by the challenge lead | £8,910 (15%)        |
+| M2  | 23 Dec 2026 | **Discovery.** Baseline missed-appointment analysis; at least 15 patient and 6 staff interviews (at least 5 in Welsh); journey map; barrier taxonomy. **Gate 1**         | £11,880 (20%)       |
+| M3  | 29 Jan 2027 | **Co-design and prototype.** 2 bilingual workshops; working bilingual prototype; accessible templates; navigator pathway                                                 | £14,850 (25%)       |
+| M4  | 26 Feb 2027 | **Test and validate.** Usability tests with at least 30 patients (at least 10 Welsh speakers); model and fairness audit report; integration assessment. **Gate 2**       | £11,880 (20%)       |
+| M5  | 31 Mar 2027 | **Final report and project closure report.** Feasibility and affordability model; commercialisation plan; Phase 2 evaluation design; show-and-tell (the 20% retention)   | £11,880 (20%)       |
 
 **Go/no-go gates:**
 
 - **Gate 1 (end of December).**
-  - *Go* if data access is confirmed and discovery shows barriers the service can address.
+  - _Go_ if data access is confirmed and discovery shows barriers the service can address.
   - Otherwise, move to aggregate or synthetic data and narrow the scope to the one or two highest-impact specialties.
 - **Gate 2 (end of February).**
-  - *Go* to a Phase 2 recommendation if the success criteria are met.
+  - _Go_ to a Phase 2 recommendation if the success criteria are met.
   - Otherwise, recommend only the components that passed.
 
 The plan allows for reduced activity over Christmas. Information governance work runs in parallel with discovery.
@@ -374,39 +373,39 @@ The plan allows for reduced activity over Christmas. Information governance work
 
 Risks are rated red, amber or green (high, medium, low) before and after mitigation, and grouped under the headings the guidance requires. Each risk also shows its technical (T), commercial (C) or environmental (E) nature.
 
-| Heading | Risk | Before | Mitigation | After |
-|---|---|---|---|---|
-| **Project management** | Delay in data access or information governance approval (T) | Red | Submit the data request and impact assessment screening in week 1; use challenge-partner governance support; fall back on aggregate or synthetic data (Gate 1) | Amber |
-| | Tight timeline (5 months including Christmas) (T) | Amber | Tight scope; parallel workstreams; weekly tracking; stage gates | Green |
-| **Material** | Integration limits with WPAS or the existing reminder supplier (T) | Amber | Integration-agnostic design; early DHCW engagement; batch fallback | Green |
-| | Welsh text-to-speech or text-message encoding limits (T) | Amber | Test early; use recorded Welsh prompts where synthetic voice quality is poor; message-length budget | Green |
-| **Resources** | Recruiting seldom-heard patients (T) | Amber | Voluntary-sector partner recruits; paid participation; community venues; phone and in-person options | Green |
-| | Health board staff time is limited (C) | Amber | Short, scheduled sessions agreed at M1; use existing meetings | Green |
-| **Staffing** | Loss of a key team member (T) | Amber | Named deputy for each role; shared documentation; subcontractor bench | Green |
-| **Patient safety** | Phase 1 prototype mistaken for a live service (T) | Amber | **No live patient messaging in Phase 1**; fictional appointments only; clear labelling | Green |
-| | In future live use, a patient cancels a clinically urgent appointment (T) | Red | Clinician-defined urgent list always gets human follow-up; missed urgent appointments trigger contact, not discharge; hazard log | Green |
-| | Model misses someone who needs help (T) | Amber | Support-only design; everyone still gets standard reminders; fairness audit; oversight panel | Green |
-| | Model reinforces inequity (T) | Red | Written support-only rule; published fairness audit; patient and clinical oversight | Green |
-| **Other** | Welsh content quality below English (T) | Amber | First-language review; Welsh user testing; automated parity checks | Green |
-| | Affordability at scale (C) | Amber | Cost per 1,000 appointments modelled; modular pricing; reuse of existing infrastructure | Green |
-| | Overlap with existing suppliers (C) | Amber | Position Care Appointment Success as complementary; open interfaces | Green |
-| | Environmental footprint of hosting and letters (E) | Green | Digital-first; low-carbon UK hosting; the service reduces wasted journeys | Green |
+| Heading                | Risk                                                                      | Before | Mitigation                                                                                                                                                     | After |
+| ---------------------- | ------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **Project management** | Delay in data access or information governance approval (T)               | Red    | Submit the data request and impact assessment screening in week 1; use challenge-partner governance support; fall back on aggregate or synthetic data (Gate 1) | Amber |
+|                        | Tight timeline (5 months including Christmas) (T)                         | Amber  | Tight scope; parallel workstreams; weekly tracking; stage gates                                                                                                | Green |
+| **Material**           | Integration limits with WPAS or the existing reminder supplier (T)        | Amber  | Integration-agnostic design; early DHCW engagement; batch fallback                                                                                             | Green |
+|                        | Welsh text-to-speech or text-message encoding limits (T)                  | Amber  | Test early; use recorded Welsh prompts where synthetic voice quality is poor; message-length budget                                                            | Green |
+| **Resources**          | Recruiting seldom-heard patients (T)                                      | Amber  | Voluntary-sector partner recruits; paid participation; community venues; phone and in-person options                                                           | Green |
+|                        | Health board staff time is limited (C)                                    | Amber  | Short, scheduled sessions agreed at M1; use existing meetings                                                                                                  | Green |
+| **Staffing**           | Loss of a key team member (T)                                             | Amber  | Named deputy for each role; shared documentation; subcontractor bench                                                                                          | Green |
+| **Patient safety**     | Phase 1 prototype mistaken for a live service (T)                         | Amber  | **No live patient messaging in Phase 1**; fictional appointments only; clear labelling                                                                         | Green |
+|                        | In future live use, a patient cancels a clinically urgent appointment (T) | Red    | Clinician-defined urgent list always gets human follow-up; missed urgent appointments trigger contact, not discharge; hazard log                               | Green |
+|                        | Model misses someone who needs help (T)                                   | Amber  | Support-only design; everyone still gets standard reminders; fairness audit; oversight panel                                                                   | Green |
+|                        | Model reinforces inequity (T)                                             | Red    | Written support-only rule; published fairness audit; patient and clinical oversight                                                                            | Green |
+| **Other**              | Welsh content quality below English (T)                                   | Amber  | First-language review; Welsh user testing; automated parity checks                                                                                             | Green |
+|                        | Affordability at scale (C)                                                | Amber  | Cost per 1,000 appointments modelled; modular pricing; reuse of existing infrastructure                                                                        | Green |
+|                        | Overlap with existing suppliers (C)                                       | Amber  | Position Care Appointment Success as complementary; open interfaces                                                                                            | Green |
+|                        | Environmental footprint of hosting and letters (E)                        | Green  | Digital-first; low-carbon UK hosting; the service reduces wasted journeys                                                                                      | Green |
 
-**Safety statement.** Phase 1 carries no direct patient-safety risk because no live messages are sent. The design is intended to *improve* safety: urgent appointments get human follow-up, and patients who cannot attend are rebooked rather than discharged.
+**Safety statement.** Phase 1 carries no direct patient-safety risk because no live messages are sent. The design is intended to _improve_ safety: urgent appointments get human follow-up, and patients who cannot attend are rebooked rather than discharged.
 
 ### E3. Delivery team, expertise, qualifications and time commitment (≤ 750 words)
 
 [For each person, give their role, relevant experience, recognised professional qualifications, memberships of chartered institutions, and days committed. For each subcontractor, explain why it is capable.]
 
-| Role | Name / organisation | Expertise and qualifications | Days |
-|---|---|---|---|
-| Project lead; product and service design | Joel Parker Henderson, [organisation] | [health and software delivery experience; qualifications; memberships] | 23 |
-| Data scientist | [ ] | Healthcare analytics, fairness auditing, evaluation design | 20 |
-| Software engineer | [ ] | Messaging integration, accessibility (WCAG 2.2 AA), secure development | 25 |
-| Welsh-language partner (subcontractor) | [ ] | Translation, first-language review, Welsh user testing | fixed fee |
-| Voluntary-sector partner (subcontractor) | [ ] | Community navigation, recruiting seldom-heard groups, workshop hosting in the health board area | fixed fee |
-| Clinical safety and information governance advice | Health board (in kind, as challenge-partner support) | Clinical oversight, information governance | — |
-| [Academic evaluation partner] | [ ] | [ ] | [ ] |
+| Role                                              | Name / organisation                                  | Expertise and qualifications                                                                    | Days      |
+| ------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------- |
+| Project lead; product and service design          | Joel Parker Henderson, [organisation]                | [health and software delivery experience; qualifications; memberships]                          | 23        |
+| Data scientist                                    | [ ]                                                  | Healthcare analytics, fairness auditing, evaluation design                                      | 20        |
+| Software engineer                                 | [ ]                                                  | Messaging integration, accessibility (WCAG 2.2 AA), secure development                          | 25        |
+| Welsh-language partner (subcontractor)            | [ ]                                                  | Translation, first-language review, Welsh user testing                                          | fixed fee |
+| Voluntary-sector partner (subcontractor)          | [ ]                                                  | Community navigation, recruiting seldom-heard groups, workshop hosting in the health board area | fixed fee |
+| Clinical safety and information governance advice | Health board (in kind, as challenge-partner support) | Clinical oversight, information governance                                                      | —         |
+| [Academic evaluation partner]                     | [ ]                                                  | [ ]                                                                                             | [ ]       |
 
 ### E4. Current state of readiness (≤ 750 words)
 
@@ -419,6 +418,7 @@ Risks are rated red, amber or green (high, medium, low) before and after mitigat
   - accessibility testing tools
 
   Venues and translation will be booked at M1.
+
 - **Preparation already done:**
   - a discovery plan
   - a draft data request
@@ -508,19 +508,19 @@ Welsh translation and review costs are included in Section H.
 
 Costs reflect fair market value, include no profit, and include only a realistic overhead element within the day rates. We will provide open-book records if asked.
 
-| Item | Basis | £ (excl. VAT) |
-|---|---|---|
-| Project lead; service design | 23 days × £500 | 11,500 |
-| Data science: analysis, model, fairness audit | 20 days × £500 | 10,000 |
-| Software engineering: prototype, integration assessment | 25 days × £500 | 12,500 |
-| Welsh-language partner: translation, review, testing (subcontract) | Fixed | 4,000 |
-| Voluntary-sector partner: recruitment, workshops, navigator design (subcontract) | Fixed | 6,000 |
-| Accessible formats: easy-read, British Sign Language, audio | Fixed | 2,500 |
-| Participant payments (40 × £25) and community venues | Fixed | 2,000 |
-| Travel within the health board area | Estimate | 1,000 |
-| **Subtotal** | | **49,500** |
-| VAT at 20% | | 9,900 |
-| **Total** | | **59,400** |
+| Item                                                                             | Basis          | £ (excl. VAT) |
+| -------------------------------------------------------------------------------- | -------------- | ------------- |
+| Project lead; service design                                                     | 23 days × £500 | 11,500        |
+| Data science: analysis, model, fairness audit                                    | 20 days × £500 | 10,000        |
+| Software engineering: prototype, integration assessment                          | 25 days × £500 | 12,500        |
+| Welsh-language partner: translation, review, testing (subcontract)               | Fixed          | 4,000         |
+| Voluntary-sector partner: recruitment, workshops, navigator design (subcontract) | Fixed          | 6,000         |
+| Accessible formats: easy-read, British Sign Language, audio                      | Fixed          | 2,500         |
+| Participant payments (40 × £25) and community venues                             | Fixed          | 2,000         |
+| Travel within the health board area                                              | Estimate       | 1,000         |
+| **Subtotal**                                                                     |                | **49,500**    |
+| VAT at 20%                                                                       |                | 9,900         |
+| **Total**                                                                        |                | **59,400**    |
 
 [Confirm day rates are cost-based at fair market value, and get partner quotes.]
 
@@ -543,14 +543,14 @@ We accept the standard terms:
 
 No payment is requested in advance.
 
-| Month | Milestone | % | £ excl. VAT | VAT | £ incl. VAT | Subcontractors (£ excl. VAT) |
-|---|---|---|---|---|---|---|
-| November 2026 | M1 Mobilisation | 15% | 7,425 | 1,485 | 8,910 | 1,500 (voluntary sector 1,000; Welsh 500) |
-| December 2026 | M2 Discovery | 20% | 9,900 | 1,980 | 11,880 | 2,500 (voluntary sector 2,000; Welsh 500) |
-| January 2027 | M3 Co-design and prototype | 25% | 12,375 | 2,475 | 14,850 | 3,000 (voluntary sector 1,500; Welsh 1,500) |
-| February 2027 | M4 Test and validate | 20% | 9,900 | 1,980 | 11,880 | 2,000 (voluntary sector 1,000; Welsh 1,000) |
-| March 2027 | M5 Final and closure report (retention) | 20% | 9,900 | 1,980 | 11,880 | 1,000 (voluntary sector 500; Welsh 500) |
-| **Total** | | **100%** | **49,500** | **9,900** | **59,400** | **10,000** |
+| Month         | Milestone                               | %        | £ excl. VAT | VAT       | £ incl. VAT | Subcontractors (£ excl. VAT)                |
+| ------------- | --------------------------------------- | -------- | ----------- | --------- | ----------- | ------------------------------------------- |
+| November 2026 | M1 Mobilisation                         | 15%      | 7,425       | 1,485     | 8,910       | 1,500 (voluntary sector 1,000; Welsh 500)   |
+| December 2026 | M2 Discovery                            | 20%      | 9,900       | 1,980     | 11,880      | 2,500 (voluntary sector 2,000; Welsh 500)   |
+| January 2027  | M3 Co-design and prototype              | 25%      | 12,375      | 2,475     | 14,850      | 3,000 (voluntary sector 1,500; Welsh 1,500) |
+| February 2027 | M4 Test and validate                    | 20%      | 9,900       | 1,980     | 11,880      | 2,000 (voluntary sector 1,000; Welsh 1,000) |
+| March 2027    | M5 Final and closure report (retention) | 20%      | 9,900       | 1,980     | 11,880      | 1,000 (voluntary sector 500; Welsh 500)     |
+| **Total**     |                                         | **100%** | **49,500**  | **9,900** | **59,400**  | **10,000**                                  |
 
 Subcontractors will be paid within 30 days of a valid invoice, as clause 4.14 of the contract requires.
 
@@ -562,21 +562,21 @@ Subcontractors will be paid within 30 days of a valid invoice, as clause 4.14 of
 
 ## I) Social Value
 
-Scored on *measurable* economic, social, environmental and cultural benefits for Wales beyond the core contract.
+Scored on _measurable_ economic, social, environmental and cultural benefits for Wales beyond the core contract.
 
 ### I1. Long-term wellbeing of people and communities in Wales (≤ 500 words)
 
 Care Appointment Success supports these goals of the Well-being of Future Generations (Wales) Act 2015:
 
-| Goal | Example from this project | Measure |
-|---|---|---|
-| A healthier Wales | More people get timely planned care | Change in missed-appointment rate (modelled in Phase 1, measured in Phase 2) |
-| A more equal Wales | Support targeted at deprived, disabled, caring and digitally excluded people | Missed-appointment gap between most and least deprived areas, reported and never widened |
-| A Wales of vibrant culture and thriving Welsh language | Welsh speakers get an equal experience | 100% of content bilingual; at least a third of testers are Welsh speakers; parity pass rate |
-| A Wales of cohesive communities | Voluntary-sector navigators link people to local support | Number of community organisations in the signposting directory |
-| A prosperous Wales | Less time lost from work and caring | Patient-reported time saved |
-| A globally responsible Wales | Fewer wasted journeys and clinic sessions | Estimated journeys and CO₂ avoided |
-| A resilient Wales | Reusable assets reduce duplicated effort across health boards | Number of assets published for NHS Wales |
+| Goal                                                   | Example from this project                                                    | Measure                                                                                     |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| A healthier Wales                                      | More people get timely planned care                                          | Change in missed-appointment rate (modelled in Phase 1, measured in Phase 2)                |
+| A more equal Wales                                     | Support targeted at deprived, disabled, caring and digitally excluded people | Missed-appointment gap between most and least deprived areas, reported and never widened    |
+| A Wales of vibrant culture and thriving Welsh language | Welsh speakers get an equal experience                                       | 100% of content bilingual; at least a third of testers are Welsh speakers; parity pass rate |
+| A Wales of cohesive communities                        | Voluntary-sector navigators link people to local support                     | Number of community organisations in the signposting directory                              |
+| A prosperous Wales                                     | Less time lost from work and caring                                          | Patient-reported time saved                                                                 |
+| A globally responsible Wales                           | Fewer wasted journeys and clinic sessions                                    | Estimated journeys and CO₂ avoided                                                          |
+| A resilient Wales                                      | Reusable assets reduce duplicated effort across health boards                | Number of assets published for NHS Wales                                                    |
 
 The project follows the Act's five ways of working:
 
@@ -634,12 +634,12 @@ Scored on commercial potential, delivery plan, marketing strategy and competitiv
 
 **Timescales:**
 
-| Period | Activity |
-|---|---|
-| November 2026 to March 2027 | Phase 1 feasibility |
-| [2027/28] | Phase 2 pilot and evaluation in live clinics |
-| [2028] | Adoption by the health board and a first additional Welsh health board |
-| [2029 onward] | Wider UK market |
+| Period                      | Activity                                                               |
+| --------------------------- | ---------------------------------------------------------------------- |
+| November 2026 to March 2027 | Phase 1 feasibility                                                    |
+| [2027/28]                   | Phase 2 pilot and evaluation in live clinics                           |
+| [2028]                      | Adoption by the health board and a first additional Welsh health board |
+| [2029 onward]               | Wider UK market                                                        |
 
 On timing: the bilingual messaging and barrier check could be ready for a live pilot within about 3 months of a Phase 2 start, because Phase 1 delivers a tested prototype and an integration route.
 

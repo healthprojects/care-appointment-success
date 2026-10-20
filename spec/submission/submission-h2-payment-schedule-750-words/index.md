@@ -1,6 +1,6 @@
 # Submission H2: payment schedule 750 words
 
-File `locales/en-gb/submission/submission-h2-payment-schedule-750-words/index.md`
+File `locales/en-gb/submission/submission-h2-payment-schedule-750-words/index.txt`
 
 Provide a Payment Schedule for your project costs. The schedule must also detail subcontractor costs.
 

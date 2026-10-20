@@ -1,6 +1,6 @@
 # Submission E3: team 750 words
 
-File `locales/en-gb/submission/submission-e3-team-750-words/index.md`
+File `locales/en-gb/submission/submission-e3-team-750-words/index.txt`
 
 Tell us able your delivery team, their relevant expertise including relevant
 recognised professional qualifications and any memberships of Chartered

@@ -1,6 +1,6 @@
 # Brainstorms
 
-Brainstorms for the Contracts for Innovation Cymru challenge *Reducing Missed Appointments and Improving Access to Planned Care* (Cwm Taf Morgannwg University Health Board, "CTM").
+Brainstorms for the Contracts for Innovation Cymru challenge _Reducing Missed Appointments and Improving Access to Planned Care_ (Cwm Taf Morgannwg University Health Board, "CTM").
 
 This file is a thinking aid, not a submission answer. It draws on everything in `spec/`:
 
@@ -23,10 +23,10 @@ How to read it:
 Different framings lead to different solutions. Try each on for size.
 
 1. **A capacity problem.** About 64,000 missed outpatient appointments a year, an 8.6% did-not-attend (DNA) rate, about £9.6m of avoidable lost value [Brief]. That is about £150 per miss, and about 744,000 appointments a year in total [Sub]. Each percentage point is about 7,400 appointments.
-2. **A wasted-slot problem.** The harm is not the miss. It is the slot nobody else could use. A miss announced three days early costs far less than a silent one. So *time of release* may matter more than *rate of attendance*.
+2. **A wasted-slot problem.** The harm is not the miss. It is the slot nobody else could use. A miss announced three days early costs far less than a silent one. So _time of release_ may matter more than _rate of attendance_.
 3. **A communication problem.** Unaware of the appointment, unclear or wrong information, trouble cancelling, booked long ago with no reminder [Slides 21].
 4. **An emotion problem.** In Lacy, 65% of participants named emotional barriers (fear of bad news, dread of procedures, symptoms that went away). Logistics were named, but participants said they could be overcome.
-5. **A respect problem.** 44% of Lacy participants felt disrespected, especially by waiting. The authors suggest *respect* may be the single construct linking waiting, satisfaction and non-attendance.
+5. **A respect problem.** 44% of Lacy participants felt disrespected, especially by waiting. The authors suggest _respect_ may be the single construct linking waiting, satisfaction and non-attendance.
 6. **A system-literacy problem.** 41% of Lacy participants did not know what happens when someone doesn't attend. Some thought staff "get free time". Some thought cancelled slots go to whoever calls.
 7. **A missingness problem.** Non-attendance as a warning sign of structural disadvantage or clinical crisis, not "service waste" [Review]. People who miss more than two appointments a year had about 5% annual mortality, highest in people with mental health conditions [Review].
 8. **A geography problem.** The same appointment has very different cost depending on travel time, car access (21.3% of households have no car or van), and rurality [Slides 20, 22].
@@ -51,18 +51,18 @@ Different framings lead to different solutions. Try each on for size.
 ### 2.2 Weak, contested or missing
 
 - Several of the "high-certainty" figures are pooled from settings unlike Wales (US clinics, different services). **Question:** what is the CTM-specific effect size?
-- The navigator effect (about 45%) is moderate certainty. We found no published evidence that navigators reduce *outpatient* missed appointments specifically [Sub]. Is the navigator number about missed screening or referral appointments?
-- The Lacy study is 34 people, 32 women, one US urban family practice, English speakers only, interviewed while *attending* (so survivors of the problem), 2001. It generates hypotheses. It does not measure effect.
+- The navigator effect (about 45%) is moderate certainty. We found no published evidence that navigators reduce _outpatient_ missed appointments specifically [Sub]. Is the navigator number about missed screening or referral appointments?
+- The Lacy study is 34 people, 32 women, one US urban family practice, English speakers only, interviewed while _attending_ (so survivors of the problem), 2001. It generates hypotheses. It does not measure effect.
 - Nobody in `spec/` has CTM's DNA data by specialty, age, deprivation, Welsh-speaking status or time of day. Phase 1 must create that baseline.
 - "£9.6m lost value" is not cashable saving. How CTM calculated it is unknown [Sub].
 - No evidence in `spec/` on Welsh-language effects on attendance. This is an open research gap and possibly a differentiator.
-- No evidence on whether *releasing* a slot early actually leads to it being refilled. The refill rate is the bridge between "fewer DNAs" and "more patients seen".
+- No evidence on whether _releasing_ a slot early actually leads to it being refilled. The refill rate is the bridge between "fewer DNAs" and "more patients seen".
 
 ### 2.3 Contradictions to resolve
 
 - [Notes] recommends overbooking and wave scheduling. [Lacy] and Sharp et al. suggest overbooking raises waits and disrespect, making things worse. [Sub] sets a rule that the model never drives overbooking. Keep that rule, and be ready to explain it.
 - [Notes] suggests no-show fees "create a financial incentive". [Review] says punitive measures backfire. Likely resolved: fees are weak and inequitable.
-- Reminders are the cheapest lever, but CTM already has reminders and a Patient Centred Contact Transformation programme [Slides 23]. So incremental reminder improvements may not be "innovation". The value must come from what reminders *don't* reach.
+- Reminders are the cheapest lever, but CTM already has reminders and a Patient Centred Contact Transformation programme [Slides 23]. So incremental reminder improvements may not be "innovation". The value must come from what reminders _don't_ reach.
 
 ---
 
@@ -72,39 +72,39 @@ The method has four phases: self-critical brainstorming, wide reading, distillin
 
 ### 3.1 Phase 1: raw, unfiltered questions
 
-- Why do people who *want* care not come?
+- Why do people who _want_ care not come?
 - Who doesn't come once, and who never comes again? Are they the same people?
 - What is the cheapest moment to prevent a miss: booking, day 7, day 3, day 1, morning of?
-- What is the cheapest moment to *recover* a slot?
+- What is the cheapest moment to _recover_ a slot?
 - Is a DNA a decision, a drift, or a collapse of a plan?
 - Do people know the appointment matters? Do we say why?
 - What would a patient say if we asked "what would help?" at booking?
 - What happens to the person after they miss? Are they re-offered care or silently dropped?
 - How many "DNAs" were actually "told us late" or "tried to cancel but couldn't get through"?
 - How many were appointments the person didn't know about (wrong number, letter lost)?
-- Are some DNAs a *rational* response to a system that over-books and runs late?
+- Are some DNAs a _rational_ response to a system that over-books and runs late?
 - How does the Welsh-speaking patient's journey differ, and does a Welsh Active Offer change attendance?
 - Where do reminders fail: wrong number, wrong language, wrong format, wrong time?
 
 ### 3.2 Phase 3: "what if" reframings
 
-- What if the DNA is mostly *information failure*, not motivation failure?
-- What if the best reminder is a *question* ("What would help you get there?") rather than a statement?
+- What if the DNA is mostly _information failure_, not motivation failure?
+- What if the best reminder is a _question_ ("What would help you get there?") rather than a statement?
 - What if early cancellation is the metric we should optimise, not attendance?
 - What if a missed appointment triggered care ("we missed you, can we help?") instead of a letter?
 - What if the barrier check is the intervention, and the reminder is just its delivery?
-- What if the model's job is to decide who gets a *human*, not who gets overbooked?
+- What if the model's job is to decide who gets a _human_, not who gets overbooked?
 - What if slot backfill (a standby list) removes most of the cost of a DNA, making prediction less important?
-- What if the system pre-books a *second option* (e.g. video or phone) when someone is high-risk?
+- What if the system pre-books a _second option_ (e.g. video or phone) when someone is high-risk?
 
 ### 3.3 Phase 4: candidate targeted questions
 
 Phrase each as an operational inquiry we can test within five months.
 
 1. Among CTM outpatient DNAs, what share are (a) forgotten, (b) unable to cancel, (c) practical barrier, (d) emotional or fear-related, (e) clinically unwell, (f) unaware? How does the mix differ by specialty, deprivation quintile, age and language?
-2. Does a two-way, bilingual "Can you make it?" barrier check increase *early* cancellations and rebookings compared with a standard reminder, in simulated or fictional-appointment prototype testing?
+2. Does a two-way, bilingual "Can you make it?" barrier check increase _early_ cancellations and rebookings compared with a standard reminder, in simulated or fictional-appointment prototype testing?
 3. Can a transparent, support-only risk model identify patients who benefit from a human call, without being less accurate or less calibrated in deprived, older, Welsh-speaking or minority groups?
-4. What is the *expected refill rate* of released slots, by lead time, specialty and channel? What is the minimum lead time that makes a refill feasible?
+4. What is the _expected refill rate_ of released slots, by lead time, specialty and channel? What is the minimum lead time that makes a refill feasible?
 5. What do Welsh-speaking patients experience differently in appointment communication, and does equivalent Welsh provision change task completion in usability tests?
 6. What does it cost per 1,000 appointments to run the service, and what is the break-even DNA reduction?
 
@@ -114,24 +114,24 @@ Phrase each as an operational inquiry we can test within five months.
 
 Barrier by barrier. Each row mixes evidence from `spec/` with ideas. "Phase 1 test" is the cheapest way to learn something inside five months.
 
-| Barrier | Evidence | Candidate responses | Phase 1 test |
-|---|---|---|---|
-| Forgetting | Common; worse under stress, poverty, high cognitive load [Notes] | Two-way reminders at 7, 3 and 1 days; calendar file attached; reminder on the channel the patient prefers; "write it down now" prompt | Message variants in usability tests |
-| Booked long ago, nothing since | Lead time raises DNA [Lacy, Notes] | Mid-wait "still need this?" check-in; "your waiting time has changed" update | Map where waits exceed X weeks; design check-in |
-| Can't cancel or rearrange | Slides 21; Lacy; friction is the main issue [Notes] | Reply-to-cancel; one-tap link; free-text parsing; call-back; patient-led rebooking | Test reply handling in Welsh and English |
-| Unclear letter or message | Slides 21 | Plain language; easy-read; pictures; what-to-expect; map and parking | Readability and comprehension testing |
-| Wrong contact details | Idea (data quality); Sub F1 | Contact-confirmation step; "is this still your number?" at every touch; carer or alternate contact; letter fallback | Measure share without usable mobile |
-| Digital exclusion | Brief; Slides 26 | Voice calls; letters; navigator calls; trusted-person route; community kiosk or library help | Include digitally excluded participants |
-| Transport and cost | Brief (in scope only to *reduce barriers*, not to provide transport); Slides 22 | Signpost travel-cost refunds and community transport; cluster appointments; offer phone or video where appropriate; check travel time at booking | Barrier taxonomy; signposting accuracy |
-| Work and caring | Slides 21; Notes | Evening or early slots; employer letter; carer-friendly options; booking-time check | Ask "when would suit?" in discovery |
-| Fear and dread of tests | Lacy (65% emotional) | "What to expect" message; named contact; option to talk to a nurse; chaperone or support person offer | Co-design message wording with patients |
-| Symptoms resolved | Lacy; Notes | Explain why follow-up matters; easy "I feel better, do I still need this?" route that doesn't punish honesty | Test non-judgemental wording |
-| Too unwell to come | Notes | Easy "I'm unwell" reply that triggers rebook and, where flagged, a clinical check | Safety review |
-| Feeling disrespected | Lacy (44%) | Honest wait-time information; run-late text; apologise when late; non-blaming tone | Observe tone in co-design |
-| Doesn't know the cost of a miss | Lacy (41%) | One line of context in the message: "If you can't come, tell us so someone waiting can have this slot" | Message variants |
-| Not brought by carer | Slides 21 | Carer reminder; carer contact on the record | Carer co-design |
-| Limited clinic hours | Slides 21 | Out of scope to change clinic hours, but can recommend; flag evening demand | Evidence for service redesign |
-| Appointment no longer needed | Slides 21 | Easy "cancel, no longer needed" with reason; validate and remove from list | Reason-code design |
+| Barrier                         | Evidence                                                                        | Candidate responses                                                                                                                              | Phase 1 test                                    |
+| ------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| Forgetting                      | Common; worse under stress, poverty, high cognitive load [Notes]                | Two-way reminders at 7, 3 and 1 days; calendar file attached; reminder on the channel the patient prefers; "write it down now" prompt            | Message variants in usability tests             |
+| Booked long ago, nothing since  | Lead time raises DNA [Lacy, Notes]                                              | Mid-wait "still need this?" check-in; "your waiting time has changed" update                                                                     | Map where waits exceed X weeks; design check-in |
+| Can't cancel or rearrange       | Slides 21; Lacy; friction is the main issue [Notes]                             | Reply-to-cancel; one-tap link; free-text parsing; call-back; patient-led rebooking                                                               | Test reply handling in Welsh and English        |
+| Unclear letter or message       | Slides 21                                                                       | Plain language; easy-read; pictures; what-to-expect; map and parking                                                                             | Readability and comprehension testing           |
+| Wrong contact details           | Idea (data quality); Sub F1                                                     | Contact-confirmation step; "is this still your number?" at every touch; carer or alternate contact; letter fallback                              | Measure share without usable mobile             |
+| Digital exclusion               | Brief; Slides 26                                                                | Voice calls; letters; navigator calls; trusted-person route; community kiosk or library help                                                     | Include digitally excluded participants         |
+| Transport and cost              | Brief (in scope only to _reduce barriers_, not to provide transport); Slides 22 | Signpost travel-cost refunds and community transport; cluster appointments; offer phone or video where appropriate; check travel time at booking | Barrier taxonomy; signposting accuracy          |
+| Work and caring                 | Slides 21; Notes                                                                | Evening or early slots; employer letter; carer-friendly options; booking-time check                                                              | Ask "when would suit?" in discovery             |
+| Fear and dread of tests         | Lacy (65% emotional)                                                            | "What to expect" message; named contact; option to talk to a nurse; chaperone or support person offer                                            | Co-design message wording with patients         |
+| Symptoms resolved               | Lacy; Notes                                                                     | Explain why follow-up matters; easy "I feel better, do I still need this?" route that doesn't punish honesty                                     | Test non-judgemental wording                    |
+| Too unwell to come              | Notes                                                                           | Easy "I'm unwell" reply that triggers rebook and, where flagged, a clinical check                                                                | Safety review                                   |
+| Feeling disrespected            | Lacy (44%)                                                                      | Honest wait-time information; run-late text; apologise when late; non-blaming tone                                                               | Observe tone in co-design                       |
+| Doesn't know the cost of a miss | Lacy (41%)                                                                      | One line of context in the message: "If you can't come, tell us so someone waiting can have this slot"                                           | Message variants                                |
+| Not brought by carer            | Slides 21                                                                       | Carer reminder; carer contact on the record                                                                                                      | Carer co-design                                 |
+| Limited clinic hours            | Slides 21                                                                       | Out of scope to change clinic hours, but can recommend; flag evening demand                                                                      | Evidence for service redesign                   |
+| Appointment no longer needed    | Slides 21                                                                       | Easy "cancel, no longer needed" with reason; validate and remove from list                                                                       | Reason-code design                              |
 
 ---
 
@@ -173,13 +173,13 @@ Grouped by where they act. Mark 🟢 as likely feasible in Phase 1, 🟡 as desi
 ### 5.4 Risk identification and fair targeting
 
 - 🟢 Interpretable model (e.g. regularised logistic regression) with a model card [Sub].
-- 🟢 Support-only rule: a high score *adds* contact; it never removes slots, reduces contact, triggers overbooking or penalty [Sub].
+- 🟢 Support-only rule: a high score _adds_ contact; it never removes slots, reduces contact, triggers overbooking or penalty [Sub].
 - 🟢 Fairness audit before results are seen: calibration and false-negative rate by deprivation quintile, age, sex, language [Sub].
 - 🟡 "Explain why" shown to staff in plain words ("two recent misses, no mobile on record, long wait").
 - 🟡 Rules-based fallback if the model isn't trusted: simple flags such as "missed two in 12 months" [Notes].
-- 🟡 Use *data quality* as a feature of support, not a risk factor ("no valid phone" → "call this person").
+- 🟡 Use _data quality_ as a feature of support, not a risk factor ("no valid phone" → "call this person").
 - 🟡 Ask patients to self-identify support needs at booking, as an alternative to prediction.
-- 🔴 Predictive models of *barrier type*, not just "will miss".
+- 🔴 Predictive models of _barrier type_, not just "will miss".
 
 ### 5.5 Human and community support
 
@@ -193,7 +193,7 @@ Grouped by where they act. Mark 🟢 as likely feasible in Phase 1, 🟡 as desi
 ### 5.6 Service and pathway redesign (recommendations, not Phase 1 builds)
 
 - 🟡 Shorter book-to-appointment lead times, short-notice blocks each day [Notes].
-- 🟡 Avoid historically unreliable slots (late afternoon, Mondays, Fridays) for people who've flagged barriers [Notes]. Caution: this must not mean *worse* slots for deprived patients.
+- 🟡 Avoid historically unreliable slots (late afternoon, Mondays, Fridays) for people who've flagged barriers [Notes]. Caution: this must not mean _worse_ slots for deprived patients.
 - 🟡 Telehealth or phone pivot ("Can't make it in person? Reply VIDEO") [Notes].
 - 🟡 One-stop clinics to cut multiple trips.
 - 🟡 Opt-in or "still want this?" validation for long waits.
@@ -201,7 +201,7 @@ Grouped by where they act. Mark 🟢 as likely feasible in Phase 1, 🟡 as desi
 
 ### 5.7 Post-miss response
 
-- 🟢 After a DNA, contact is a *welfare* contact, not a letter of discharge.
+- 🟢 After a DNA, contact is a _welfare_ contact, not a letter of discharge.
 - 🟡 A rule that clinically urgent DNAs always trigger human follow-up [Sub].
 - 🟡 Ask "what got in the way?" with a one-tap reason, to feed back into the barrier taxonomy.
 - 🟡 Soft re-entry: offer a chat before rebooking for those who have missed several.
@@ -215,7 +215,7 @@ Adopted with changes from outside suggestions. Full rules are in `plan.md` §10.
 - 🟢 Support-only "may benefit from support" list for staff: reasons in words, a suggested action, text as well as colour. First inputs: lead time and past attendance. Age, distance, language and deprivation are audit variables, not inputs.
 - 🟢 Same reminder ladder for everyone (7 days, 3 days, 24 hours, then a staff call). The score only brings the call forward. Replies count, not email opens.
 - 🟢 Barrier-to-help map: the reply that records a reason also triggers the matching offer (remote consult, other time, travel information, call-back).
-- 🟡 Telehealth flip as a *changed appointment* for clinician-approved types, with phone as an equal option to video.
+- 🟡 Telehealth flip as a _changed appointment_ for clinician-approved types, with phone as an equal option to video.
 - 🟡 Interactive voice response (IVR) in Welsh and English for people without a smartphone.
 - 🟡 Weather as a same-day operational prompt, not a score input. Evidence is weak.
 - 🟡 Daily-scored risk engine (batch, stored model version, bands not raw percentages, capacity-based cut-off, shadow mode first). See `plan.md` §10.5.
@@ -251,7 +251,7 @@ Hard constraints: bilingual by design, equivalent experience, Active Offer, Acce
 
 - Language preference captured once, stored, and used on every channel (including letters and voice).
 - A content model in which each message exists as a Welsh and English pair. A build step fails if either is missing.
-- First-language Welsh review plus *Welsh users* in testing, with parity as a pass criterion [Sub].
+- First-language Welsh review plus _Welsh users_ in testing, with parity as a pass criterion [Sub].
 - Welsh character encoding test (ŵ, ŷ) for SMS length and cost [Sub].
 - Recorded Welsh voice prompts where text-to-speech quality is poor.
 - Welsh-speaking navigators.
@@ -289,10 +289,10 @@ Hard constraints: bilingual by design, equivalent experience, Active Offer, Acce
 ### 8.2 Model ideas
 
 - Start with simple, interpretable models; compare with a "no model" baseline of simple rules.
-- Predict *time-to-cancel* and *barrier type*, not only "will DNA".
+- Predict _time-to-cancel_ and _barrier type_, not only "will DNA".
 - Calibration by group, not only accuracy. Check false-negative rate in the groups with most to lose.
 - Model card including intended use, forbidden uses (overbooking, penalty, deprioritising), limits and monitoring plan.
-- Governance rule: model outputs may *only* increase support.
+- Governance rule: model outputs may _only_ increase support.
 
 ### 8.3 Fairness traps
 
@@ -313,15 +313,15 @@ Hard constraints: bilingual by design, equivalent experience, Active Offer, Acce
 
 ## 9. Evaluation and evidence ideas
 
-Success is broader than a single DNA percentage [Slides 27]. For Phase 1, evidence will be about *feasibility, acceptability and safety*, not proven attendance gains.
+Success is broader than a single DNA percentage [Slides 27]. For Phase 1, evidence will be about _feasibility, acceptability and safety_, not proven attendance gains.
 
 ### 9.1 Outcome ideas
 
-| For | Measures |
-|---|---|
+| For                      | Measures                                                                                                                             |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Patients and communities | Early cancellation rate; successful contact rate; task completion; experience and ease of access; differences by group and geography |
-| Staff and services | Slots released and refilled; clinic utilisation; booking team workload; workflow fit |
-| System and adoption | Cost per 1,000 appointments; benefit-to-cost ratio; safety events; scalability; integration needs |
+| Staff and services       | Slots released and refilled; clinic utilisation; booking team workload; workflow fit                                                 |
+| System and adoption      | Cost per 1,000 appointments; benefit-to-cost ratio; safety events; scalability; integration needs                                    |
 
 ### 9.2 Phase 1 methods
 
@@ -331,7 +331,7 @@ Success is broader than a single DNA percentage [Slides 27]. For Phase 1, eviden
 - Prototype usability tests with pass criteria.
 - Retrospective model validation and fairness audit.
 - Integration feasibility assessment with CTM digital and Digital Health and Care Wales.
-- A *theory of change* connecting mechanism to outcome: the strongest proposals link this explicitly [Slides 25].
+- A _theory of change_ connecting mechanism to outcome: the strongest proposals link this explicitly [Slides 25].
 
 ### 9.3 Phase 2 design ideas
 
@@ -374,7 +374,7 @@ Success is broader than a single DNA percentage [Slides 27]. For Phase 1, eviden
 - Welsh jobs, skills and supply chain: local voluntary-sector partners and Welsh-language specialists.
 - Journeys avoided and clinic sessions saved as environmental benefit.
 - Community resilience: trained community navigators.
-- Reduced inequality as a *measurable* outcome.
+- Reduced inequality as a _measurable_ outcome.
 
 ### 10.4 Policy hooks
 
@@ -392,7 +392,7 @@ Imagine the project failed in March 2027. Why?
 - The data never arrived, and we built a prototype nobody could test on real appointments.
 - Welsh content was late and thinner than English.
 - The model was accurate but unfair, and was dropped.
-- We confused *reminders that work* with *innovation*. Assessors saw a product CTM already had.
+- We confused _reminders that work_ with _innovation_. Assessors saw a product CTM already had.
 - Patients we most needed never took part in testing.
 - The barrier check asked questions we couldn't act on (we signposted to services that don't exist locally).
 - Staff saw it as extra work, not less.
@@ -401,7 +401,7 @@ Imagine the project failed in March 2027. Why?
 - Subcontractor IP wasn't clear, blocking Phase 2.
 - Christmas and a five-month window left too little time.
 
-Mitigations, tests and gates for these are in `submission/submission-e2-risks-750-words/index.md`.
+Mitigations, tests and gates for these are in `submission/submission-e2-risks-750-words/index.txt`.
 
 ---
 
@@ -424,29 +424,29 @@ Questions to ask of any idea:
 
 ### 12.2 Strong candidates
 
-- A bilingual, two-way barrier check linked to *support* rather than only reminders.
+- A bilingual, two-way barrier check linked to _support_ rather than only reminders.
 - Fairness-audited, support-only risk flagging, with an explicit "never overbook, never penalise" rule.
 - A navigator pathway for people who are digitally excluded or high need.
-- Slot release and backfill measured by *refill rate*.
+- Slot release and backfill measured by _refill rate_.
 - A reusable bilingual content model with automated parity checks.
 - A Phase 2 evaluation design that reports by language and deprivation.
 
 ### 12.3 Out of scope or rejected, and why
 
-| Idea | Why not |
-|---|---|
-| Providing or subsidising transport | Out of scope [Brief] |
-| No-show fees, bans, deposits | Weak evidence, equity harm [Review, Notes] |
-| Overbooking driven by a prediction model | Raises waits and disrespect [Lacy]; risks inequity [Sub] |
-| English-only features, Welsh as a later add-on | Disqualifying [Brief] |
-| Replacing clinical judgement | Out of scope [Brief] |
-| Large academic study with no route to adoption | Out of scope [Brief] |
-| Full enterprise integration in Phase 1 | Not required [Slides 24] and unrealistic in five months |
-| Increasing demand for healthcare | Out of scope [Brief] |
+| Idea                                           | Why not                                                  |
+| ---------------------------------------------- | -------------------------------------------------------- |
+| Providing or subsidising transport             | Out of scope [Brief]                                     |
+| No-show fees, bans, deposits                   | Weak evidence, equity harm [Review, Notes]               |
+| Overbooking driven by a prediction model       | Raises waits and disrespect [Lacy]; risks inequity [Sub] |
+| English-only features, Welsh as a later add-on | Disqualifying [Brief]                                    |
+| Replacing clinical judgement                   | Out of scope [Brief]                                     |
+| Large academic study with no route to adoption | Out of scope [Brief]                                     |
+| Full enterprise integration in Phase 1         | Not required [Slides 24] and unrealistic in five months  |
+| Increasing demand for healthcare               | Out of scope [Brief]                                     |
 
 ### 12.4 Hammer-and-nail check
 
-Our favourite tools are messaging and machine learning. The evidence says the biggest levers may be human contact, shorter waits and respect. Keep checking: *would we still propose this if we had no software?*
+Our favourite tools are messaging and machine learning. The evidence says the biggest levers may be human contact, shorter waits and respect. Keep checking: _would we still propose this if we had no software?_
 
 ---
 

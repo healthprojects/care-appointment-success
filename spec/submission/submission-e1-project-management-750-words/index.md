@@ -1,6 +1,6 @@
 # Submission E1: project management 750 words
 
-File `locales/en-gb/submission/submission-e1-project-management-750-words/index.md`
+File `locales/en-gb/submission/submission-e1-project-management-750-words/index.txt`
 
 Describe the project management process and provide a project plan, detailing the key project milestones.
 

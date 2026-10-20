@@ -1,6 +1,6 @@
 # Submission H3: other funding sources
 
-File `locales/en-gb/submission/submission-h3-other-funding-sources-750-words/index.md`
+File `locales/en-gb/submission/submission-h3-other-funding-sources-750-words/index.txt`
 
 Detail if you have received or are receiving innovation funding from any other source for this innovation.
 

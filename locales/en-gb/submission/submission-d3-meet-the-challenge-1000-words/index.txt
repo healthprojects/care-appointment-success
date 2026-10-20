@@ -1,88 +1,85 @@
-Understanding the challenge. Cwm Taf Morgannwg University Health Board (the health board) records about 64,000 missed outpatient appointments a year. That is a "did not attend" (DNA) rate of 8.6%, with an estimated £9.6 million of avoidable lost value, or about £150 per missed appointment. It implies around 744,000 outpatient appointments a year, so each one-percentage-point fall in the DNA rate frees about 7,400 appointments, worth roughly £1.1 million.
+The challenge. is 64,000 missed outpatient appointments a year, a "did not attend" (DNA) rate of 8.6%, and about £9.6 million of avoidable lost value, or roughly £150 each. It implies about 744,000 outpatient appointments a year, so every percentage point off the DNA rate frees about 7,400 appointments, worth about £1.1 million. These are estimates, not cashable savings.
 
-The health board's own review shows non-attendance comes from barriers that interact with each other, rather than from choice:
+The health board's own review found that people miss appointments because barriers get in the way, and the barriers interact: late or unclear communication, transport and distance, deprivation, digital exclusion, caring and work, and accessibility needs. A reminder fixes at most one of them.
 
-- late or unclear communication
-- transport and distance
-- deprivation
-- digital exclusion
-- caring and work responsibilities
-- accessibility needs
+Our answer: four steps for every appointment.
 
-Care Appointment Success treats these barriers together, because a single reminder cannot fix them all.
+1. Ask.
 
-Proposed process: a tiered, bilingual attendance-support service.
+- A clear reminder in Welsh or English, by text, voice call, email or letter, in the person's chosen language and format.
 
-1. Two-way communication in Welsh and English by text message, the NHS Wales App, email, automated voice and letter.
-   - Easy-read, large print, audio and British Sign Language video versions are available.
-   - Patients confirm, cancel or rebook in one step.
-   - Each person's preferred language is recorded and used on every channel, in line with the Welsh Language Active Offer.
-2. A "Can you make it?" barrier check. Patients can tell us about problems with travel, cost, caring, work, anxiety or access.
-   - Care Appointment Success signposts them to support that already exists: the Healthcare Travel Costs Scheme, community transport, carers' services, employer letters and reasonable adjustments.
-   - We do not fund or provide transport.
-3. Fair, transparent risk flagging from appointment history. It highlights who may need extra help and is used *only* to offer support, never to overbook, deprioritise or penalise.
-4. Community navigators from a local voluntary-sector partner. They phone people with the highest need, in Welsh or English, which reaches people who are digitally excluded. We found no published evidence that navigators reduce missed appointments, so Phase 1 tests this as a hypothesis (reached, barrier resolved, attended).
-5. Released-slot backfill. Early cancellations are offered to suitable people on waiting lists, so freed capacity becomes care delivered.
+- Easy-read, large print, audio and British Sign Language versions are available.
 
-Current state of development. Each component technology is proven: two-way messaging, prediction from appointment data, and navigator models. Combining them into one integrated, bilingual-by-design, fairness-governed service is new, and is currently at concept and early design stage. Phase 1 will take it to a tested prototype and a feasibility case.
+- People answer in one tap or one word: confirm, cancel or choose another time.
 
-Evidence supporting our approach:
+- Silent patients are not forgotten. The next reminder uses another channel, and the last step is a phone call from staff.
 
-- Reminders: A Cochrane review found text reminders beat no reminder or post and match phone calls, though the evidence is low to moderate quality. NHS England (2023) expects reminders and easy cancelling as a baseline, and reported a 7.6% rate in England in 2021/22. Reminders are therefore our starting point, not the innovation.
-- Message wording: Two randomised controlled trials in NHS hospitals found that stating the cost of a missed appointment cut missed appointments from 11.1% to 8.4% (Hallsworth and others, PLOS One, 2015). We will retest wording separately in Welsh and English, with results by deprivation.
-- Booking choice: Scottish guidance links patient-choice booking to fewer missed appointments, and one general-practice study found booking lead time the strongest predictor. We will test both in outpatients.
-- Targeted support: A reported NHS pilot of risk-targeted reminders cut missed appointments in the highest-risk group by about two-thirds. The source is a supplier report, which we will test independently.
-- Gap we fill: The NHS Wales App shows hospital appointments but cannot cancel or rebook them. Care Appointment Success supplies that two-way step.
+2. Help.
 
-Phase 1 activities (November 2026 to March 2027):
+- A short "what's in the way?" question links each reason to help that already exists: the Healthcare Travel Costs Scheme, community transport, carer services, employer letters, reasonable adjustments, a different time, or a phone or video appointment where a clinician has approved it for that type of clinic.
 
-- Discovery and data analysis. Analysis of de-identified appointment data to find where missed appointments concentrate, by specialty, site, area and population group, and to set baselines.
-- Co-design. Interviews and bilingual workshops with patients, including Welsh speakers, disabled people, carers, digitally excluded people and people in deprived areas. Also with booking staff, clinicians and voluntary-sector partners.
-- Prototype.
-  - A bilingual prototype of the messaging, barrier check and rebooking flow.
-  - Accessible letter formats.
-  - A navigator script and referral pathway.
-- Technical validation.
-  - A risk model tested on historical data, with a fairness audit.
-  - An assessment of integration with NHS Wales systems.
-- Early testing. Usability testing with at least 30 patients, at least a third of them Welsh speakers. Phase 1 involves no live patient messaging.
-- Feasibility. A costed service design, modelled impact, an affordability model and a Phase 2 evaluation plan.
+- People who want a person are phoned by a community navigator from a local voluntary-sector partner, in Welsh or English.
 
-Benefits:
+- We signpost transport. We do not fund or provide it.
 
-- Patients and families:
-  - more timely care
-  - less stress
-  - fewer wasted journeys and less time off work or away from caring
-  - communication in their own language and format
-- Staff:
-  - fuller clinics
-  - less time chasing and rebooking
-  - clinical time used on patients who attend
-- The health board and NHS Wales:
-  - lower missed-appointment rates and shorter waits
-  - better use of about £150 of capacity per avoided missed appointment
-  - a narrower gap between the most and least deprived areas
-- Households and businesses in Wales:
-  - less lost working time
-  - Welsh voluntary-sector and language-service partners strengthened through paid work
+3. Hand back. Early cancellations are offered to people on the waiting list, so freed time becomes care delivered.
 
-Measures. We will set baselines and targets for the missed-appointment rate, the equity gap between most and least deprived areas, Welsh and English parity, early cancellation and slot reuse, patient experience, staff time and cost per missed appointment avoided. These match the challenge's success measures.
+4. Learn. We report attendance, refilled slots and experience by language and by deprivation quintile.
 
-Scalability and sustainability.
+A fair, explainable tool helps staff choose who to phone first. It can only add support. It never overbooks, deprioritises or penalises anyone.
 
-- The service is modular, so a health board can adopt one component or all of them.
-- It uses open standards and existing NHS Wales infrastructure.
-- Running cost is modelled per 1,000 appointments, so every health board can test affordability.
-- Content, the barrier list and the evaluation framework are reusable across Wales.
+Current state of development.
 
-Collaboration. We will work with:
+- Our open-source reference system, the Patient Administration System (PAS) prototyper with fictitious information, contains the engine: two-way replies in Welsh and English, a reminder sequence that escalates to a phone call, safe reply links, opt-out and quiet hours, released-slot offers and privacy-protected reporting. It has automated tests. It has never sent a real message or held real patient data. It is not the Welsh Patient Administration System (WPAS).
 
-- the health board's planned care, outpatient, information governance, Welsh language and patient experience teams
-- a local voluntary-sector partner
-- a Welsh-language partner
-- [an academic evaluation partner]
+- A bilingual web prototype shows the patient journey with fictional appointments.
 
-We will share learning with other health boards.
+- Not yet done: testing with patients, the health board's data, and a route into WPAS. Phase 1 does these.
 
-Safeguards. Clinical oversight stays in place. Appointments that clinicians mark as urgent always get human follow-up, and no clinical decision is automated.
+Evidence for the approach.
+
+- Reminders help modestly. A Cochrane review found text reminders beat no reminder or post and match phone calls, on low to moderate quality evidence. NHS England (2023) treats reminders and easy cancelling as the baseline, so they are our starting point, not our innovation.
+
+- Wording matters. In two randomised trials, stating the cost of a missed appointment cut misses from 11.1% to 8.4% (Hallsworth and others, 2015). We will test wording separately in Welsh and English, with results by deprivation, because it can read as blame.
+
+- Booking matters. One general-practice study found lead time the strongest predictor of a miss, and Scottish guidance links patient-choice booking to fewer misses. We will test both in outpatients.
+
+- Fairness matters. A US study found that overbooking on no-show scores made Black patients wait about 30% longer. This is why our score only adds support.
+
+- The gap. The NHS Wales App shows hospital appointments but cannot cancel or rebook them. We supply the two-way step.
+
+- Navigators are a hypothesis. We found no published evidence that they reduce missed appointments, so Phase 1 measures whether they reach people, resolve the barrier and whether the person attends.
+
+Phase 1 (November 2026 to March 2027). No live patient messages are sent.
+
+- Discovery: analyse de-identified appointment data for where misses concentrate, and set baselines.
+
+- Co-design: interviews and bilingual workshops with patients, carers, disabled people, Welsh speakers and digitally excluded people, plus booking staff and clinicians.
+
+- Prototype: the bilingual ask-and-help flow, accessible formats and the navigator pathway.
+
+- Validation: the support tool tested on historical data with a fairness audit, and an integration assessment with Digital Health and Care Wales (DHCW).
+
+- Testing: at least 30 patients, at least 10 of them Welsh speakers.
+
+- Feasibility: a costed service design and a Phase 2 evaluation plan.
+
+Benefits, including for households and businesses in Wales.
+
+- Patients and families: earlier care, fewer wasted journeys, less lost work and caring time, and communication in their own language.
+
+- Staff: fuller clinics, less chasing and rebooking.
+
+- Health board and NHS Wales: lower DNA rates, shorter waits and a narrower gap between the most and least deprived areas.
+
+- Welsh households and businesses: less time off work, and paid work for Welsh voluntary-sector and language partners.
+
+Measures: DNA rate, the deprivation gap, Welsh and English parity, early cancellation and slot reuse, patient experience, staff time and cost per missed appointment avoided.
+
+Scale and safety.
+
+- The service is modular and uses open standards. The reference code is free to use, so any health board can adopt a part or all of it without lock-in.
+
+- Clinical oversight stays. Urgent appointments always get human follow-up. A patient's cancel on an urgent pathway is held and a person phones first.
+
+- Collaboration: the health board's planned care, outpatient, information governance, Welsh language and patient experience teams; a voluntary-sector partner; a Welsh-language partner; and [an academic evaluation partner]. We will share learning with other health boards.

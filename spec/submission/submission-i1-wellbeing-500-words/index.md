@@ -1,6 +1,6 @@
 # Submission I1: wellbeing
 
-File `locales/en-gb/submission/submission-i1-wellbeing-500-words/index.md`
+File `locales/en-gb/submission/submission-i1-wellbeing-500-words/index.txt`
 
 The Well-being of Future Generations (Wales) Act 2015 requires public bodies in Wales to think about the long-term impact of their decisions, to work better with people, communities and each other, and to prevent persistent problems such as poverty, health inequalities and climate change.
 

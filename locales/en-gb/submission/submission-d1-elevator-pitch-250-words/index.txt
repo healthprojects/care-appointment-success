@@ -1,9 +1,16 @@
-Every year, around 64,000 outpatient appointments in Cwm Taf Morgannwg go unattended. Each is a person whose care is delayed and a slot someone else could have used. Most people don't choose to miss appointments. Something gets in the way: a letter that arrived late or was hard to understand, no way to get there, a child to collect, a shift that couldn't be swapped, or a phone number that changed.
+About 64,000 outpatient appointments in Cwm Taf Morgannwg go unattended every year. Behind each one is a person who did not get care, and a slot nobody else could use.
 
-Care Appointment Success helps people get ready. If they can't make it, they hand the slot back early so someone else can use it.
+Most people don't skip on purpose. A letter arrived late or was hard to read. The bus doesn't run. A child needs collecting. A shift can't be swapped. The phone number on file changed. Language barriers cause misunderstandings.
 
-Reminders alone are not enough, so Care Appointment Success finds out what is in the way. It sends clear, two-way reminders in Welsh and English by text, app, voice call or letter, with easy-read and accessible versions. Patients confirm, cancel or rebook in one step. A short "Can you make it?" check asks about practical barriers and links people to help that already exists, such as travel cost refunds, community transport or carer support. People who need more help get a phone call from a trusted local community navigator.
+Care Appointment Success does four things for every appointment:
 
-Behind the scenes, a fair, transparent model helps staff see who may need extra support. It is used only to offer help, never to overbook or penalise anyone. Released slots go to people on waiting lists.
+1. Asks. A clear Welsh or English reminder, by text, voice call or letter, answered in one tap or word: yes, no, or a different time.
+2. Helps. If someone can't come, a short "what's in the way?" question points to help that already exists: travel cost refunds, carer support, a different time, or a phone or video appointment where a clinician agrees. Anyone who needs a person gets a call from a local community navigator.
+3. Hands back. Slots released early are offered to people waiting for care.
+4. Learns. We publish what worked, split by language and by area, so gaps narrow.
 
-What's new is joining these pieces into one service, bilingual by design, that works with existing NHS Wales systems. The result: fewer wasted appointments, shorter waits and fairer access.
+A fair, explainable tool helps staff decide who to phone first. It can only add support. It never overbooks, penalises or reduces anyone's care.
+
+What is new is the combination: one bilingual service, built on a free open source prototype, ideally heading towrad NHS Wales systems and tested for fairness.
+
+Result: fewer missed appointments, shorter waits, fairer access, healthier patients.

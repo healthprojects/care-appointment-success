@@ -1,6 +1,6 @@
 # Submission G1: accessibility 500 words
 
-File `locales/en-gb/submission/submission-g1-accessibility-500-words/index.md`
+File `locales/en-gb/submission/submission-g1-accessibility-500-words/index.txt`
 
 Accessibility & Welsh Language Compliance
 

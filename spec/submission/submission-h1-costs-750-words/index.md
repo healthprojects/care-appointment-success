@@ -1,6 +1,6 @@
 # Submission H1: costs 750 words
 
-File `locales/en-gb/submission/submission-h1-costs-750-words/index.md`
+File `locales/en-gb/submission/submission-h1-costs-750-words/index.txt`
 
 Provide a summary and justification of your project costs (including VAT)
 

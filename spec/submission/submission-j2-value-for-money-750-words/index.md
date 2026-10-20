@@ -1,6 +1,6 @@
 # Submission J2: value for money 750 words
 
-File `locales/en-gb/submission/submission-j2-value-for-money-750-words/index.md`
+File `locales/en-gb/submission/submission-j2-value-for-money-750-words/index.txt`
 
 Provide detail of value for money to the public sector in Wales, along with any potential favourable terms for project participants and future Welsh customers.
 

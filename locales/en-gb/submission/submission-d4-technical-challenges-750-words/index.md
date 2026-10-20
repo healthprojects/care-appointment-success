@@ -1,59 +1,61 @@
-How we will address the challenge. We will build and test a bilingual attendance-support service. It combines two-way communication, a barrier check, fair risk flagging, community navigators and slot backfill.
+What the innovation is. One service that finds out why someone may not attend and responds to that barrier, instead of only reminding them. It joins five parts that are rarely combined: Welsh and English two-way messaging, a barrier-to-help map, a support-only fairness-audited tool, community navigators and released-slot backfill.
 
-What the innovation is. One service that finds out why a person may not attend and responds to that barrier, instead of only reminding them. It joins five parts that are rarely combined: Welsh and English two-way messaging, a barrier check, fairness-audited support flagging, community navigators and slot backfill.
+How we will address the challenge. We take an existing open-source reference system, the Patient Administration System (PAS), and test it with people and data in Phase 1. The research and development (R&D) is in six hard problems.
 
-Main technical challenges and our research and development (R&D) approach:
+1. Fair, explainable prediction.
 
-1. Fair, explainable prediction. Missed-appointment prediction models can encode deprivation and ethnicity. When used for overbooking, they worsen access for the people who most need care.
-   - We will build an interpretable model, such as regularised logistic regression, on historical appointment data.
-   - We will publish its accuracy and error rates by deprivation quintile (Welsh Index of Multiple Deprivation), age, sex and language preference.
-   - It will be governed by a written rule: the model can only trigger *more* support. A US study found that no-show models used for overbooking made Black patients wait about 30% longer, which is why we exclude overbooking.
-   - Fairness checks (calibration and false-negative rate by deprivation quintile, age, sex and language) are fixed before we see results. A test that no score reduces the slots or contact a patient is offered is a pass criterion.
-2. Welsh and English parity in automated content.
-   - Welsh characters such as ŵ and ŷ can force a different text-message encoding, which halves message length and doubles cost.
-   - Welsh text-to-speech quality varies.
-   - Translations drift as content changes.
-   - Our response: a content model where both languages are equal, with review by first-language speakers and automated checks that block content existing in only one language.
-3. Integration without disruption. Appointments live in the Welsh Patient Administration System (WPAS), and reminders may come from an existing supplier.
-   - We must prove we can read appointments, write back cancellations and avoid duplicate messages, without replacing existing systems.
-   - We will assess the options with Digital Health and Care Wales (DHCW) and the health board's digital team.
-4. Closing the loop on replies. Free-text replies in either language, such as "can't come", must be matched to the right appointment and reach booking teams quickly enough to refill the slot.
-5. Accessible formats by default. The right format (easy-read, large print, audio or British Sign Language) must be selected automatically from recorded communication needs, in line with the Accessible Communication and Information Standards.
-6. Data protection and security by design:
-   - minimised and pseudonymised data
-   - UK hosting
-   - role-based access
-   - audit logs
-   - alignment with the Digital Technology Assessment Criteria (DTAC) and Cyber Essentials Plus
-   - a data protection impact assessment drafted with the health board's information governance team
+- Models can encode deprivation and ethnicity. Used for overbooking they harm the people who most need care: a US study found Black patients waited about 30% longer.
+
+- Our tool is a transparent weighted score, not a black box. It uses only the patient's own attendance history, booking lead time, and the day and time of the appointment. Age, distance, language and deprivation are not inputs. They are used to audit.
+
+- Staff see a band and plain-words reasons, not a bare percentage. The list of people to phone is a daily top-N matched to call capacity, not a fixed cut-off.
+
+- Rule: the score can only trigger more support. A test that no score changes any slot, offer or reminder is a pass criterion, and the score stays switched off until named people approve its fairness and clinical safety reviews.
+
+- We publish error rates by deprivation quintile (Welsh Index of Multiple Deprivation), age, sex and language, with the checks fixed before results are seen.
+
+2. Matching a reply to the right appointment, in two languages.
+
+- A text reply carries only a phone number and a few words. We map it to one appointment, ask back when there are several, and read Welsh and English keywords.
+
+- Links in messages are single-use and safe. Opening a link shows a page, and only a deliberate tap confirms or cancels, because email security scanners follow links.
+
+3. Welsh and English parity. Welsh characters such as ŵ and ŷ can change text-message encoding and length. Text-to-speech quality varies. Translations drift. A template cannot go live unless both languages exist, and first-language speakers review the content.
+
+4. Integration without disruption. Appointments live in the Welsh Patient Administration System (WPAS). We must show we can read appointments, write back cancellations and avoid duplicate messages. The reference system's reply, release and standby interfaces become a concrete "what we need from WPAS" specification, assessed with DHCW and the health board's digital team.
+
+5. Safety. A cancel on a clinician-listed urgent pathway is held and a person phones first. A miss triggers contact within 48 hours, never discharge. A hazard log starts in month 1.
+
+6. Data protection. Minimised, pseudonymised data, UK hosting, role-based access, audit logs, opt-out and quiet hours, and a data protection impact assessment drafted with the health board's information governance team. Reports suppress small numbers.
 
 Main technical deliverables:
 
-1. A barrier taxonomy and journey map.
-2. A bilingual prototype of messaging, barrier check and rebooking.
-3. An accessible-format template set.
-4. A navigator pathway.
-5. A validated risk model, fairness audit and model card.
-6. An integration assessment.
-7. An affordability model and a Phase 2 evaluation design.
+1. Barrier taxonomy and journey map.
 
-R&D to prove merit:
+2. A tested bilingual flow for asking, helping and rebooking.
 
-- Scientific: retrospective validation of the model, and usability evidence.
-- Environmental: estimated journeys and clinic sessions saved.
-- Commercial: running cost per 1,000 appointments, and the benefit-to-cost ratio.
+3. Accessible-format templates and a navigator pathway.
+
+4. A validated support tool, fairness audit and model card.
+
+5. An integration assessment and WPAS requirements.
+
+6. An affordability model and a Phase 2 evaluation design.
+
+R&D that proves merit:
+
+- Scientific: retrospective validation, usability evidence, and a pre-registered fairness analysis.
+
+- Commercial: running cost per 1,000 appointments and the benefit-to-cost ratio.
+
+- Environmental: journeys and clinic sessions saved.
 
 How it enhances care:
 
-- Safety:
-  - Clinically urgent appointments always receive human follow-up.
-  - A missed urgent appointment triggers contact, not discharge.
-  - Every patient still gets standard reminders, so a model error cannot remove support.
-  - A clinical safety hazard log is started in the first month.
-- Compassion:
-  - Messages are co-designed to be respectful and non-blaming.
-  - The barrier check asks "what would help?" rather than warning.
-  - Navigators offer a human voice to people who struggle with automated systems.
-- Continuity: A patient who cannot attend is rebooked, not lost from the pathway.
+- Safety: urgent appointments get human follow-up, everyone still receives standard reminders, so an error cannot remove support.
 
-Impact if deployed. A 20% relative reduction in missed appointments in the pilot clinics (from 8.6% to about 6.9%), if achieved across the health board, would free about 12,800 appointments a year. That is roughly £1.9 million of capacity, and we aim to narrow the deprivation gap rather than widen it. These are targets, which Phase 1 will test.
+- Compassion: wording is co-designed to be respectful and non-blaming, and the question is "what would help?".
+
+- Continuity: a patient who cannot attend is rebooked, not lost.
+
+Impact if deployed. A 20% relative reduction in misses (from 8.6% to about 6.9%) across the health board would free about 12,800 appointments a year, about £1.9 million of capacity. These are targets that Phase 1 tests. Phase 1 sends no live patient messages.

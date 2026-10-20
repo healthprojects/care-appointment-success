@@ -1,6 +1,6 @@
 # Submission D1: elevator pitch 250 words
 
-File `locales/en-gb/submission/submission-d1-elevator-pitch-250-words/index.txt`
+File `locales/en-gb/submission/submission-d1-elevator-pitch-250-`
 
 - Please provide a brief ‘Dragons Den’ style public facing elevator pitch of your project
 

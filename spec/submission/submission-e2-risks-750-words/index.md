@@ -1,6 +1,6 @@
 # Submission E2: risks 750 words
 
-File `locales/en-gb/submission/submission-e2-risks-750-words/index.md`
+File `locales/en-gb/submission/submission-e2-risks-750-words/index.txt`
 
 What are the key technical, commercial and environmental risks you foresee in the delivery of this project? *
 

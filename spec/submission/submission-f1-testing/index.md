@@ -1,6 +1,6 @@
 # Submission F1: testing 750 words
 
-File `locales/en-gb/submission/submission-f1-testing-750-words/index.md`
+File `locales/en-gb/submission/submission-f1-testing-750-words/index.txt`
 
 Provide a brief description of how you will provide assurance that your solution will be fit for purpose.
 

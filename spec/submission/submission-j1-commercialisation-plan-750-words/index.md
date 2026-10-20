@@ -1,6 +1,6 @@
 # Submission J1: commercialisation plan
 
-File `locales/en-gb/submission/submission-j1-commercialisation-plan-750-words/index.md`
+File `locales/en-gb/submission/submission-j1-commercialisation-plan-750-words/index.txt`
 
 Please note if you are successful, you will need to provide a commercialisation plan/strategy as part of your contractual deliverables.
 

@@ -1,6 +1,6 @@
 # Sbumission E4: Readiness 750 words
 
-File `locales/en-gb/submission/submission-e4-readiness-750-words/index.md`
+File `locales/en-gb/submission/submission-e4-readiness-750-words/index.txt`
 
 Detail your current state of readiness in order to deliver this project within
 the dates outlined in the challenge brief (including sourcing equipment and
