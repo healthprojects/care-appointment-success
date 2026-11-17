@@ -15,7 +15,7 @@ Phase 1 runs November 2026 to 31 March 2027. The bid deadline is 20 October 2026
 - [Plan](plan.md): research summary, approach, KPIs, risks
 - [Tasks](tasks.md): checklist to submission and Phase 1
 - [Submission draft](submission.md): sections A to K
-- [Final English answers](locales/en-gb/submission/): D1 to H3
+- [Final English answers](locales/en-gb/submission/): A to K
 - [Project plan Gantt chart](locales/en-gb/submission/submission-e1-project-management/plan-gantt-chart.pdf)
 
 ## Research

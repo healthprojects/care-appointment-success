@@ -55,8 +55,8 @@ See [plan.md](plan.md) for the brainstorm, stakeholder questions, KPIs and metri
 | [llms.txt](llms.txt), [llms.json](llms.json) | Machine-readable project index for AI agents |
 | [plan.md](plan.md) | Research summary, brainstorm, chosen approach, stakeholder questions, KPIs, Phase 1 plan, risks |
 | [tasks.md](tasks.md) | Task checklist through to submission and Phase 1 delivery |
-| [submission.md](submission.md) | Early draft of sections A to K. Final D1 to H3 text is in `locales/` |
-| [locales/en-gb/submission/](locales/en-gb/submission/) | Final English answers D1 to H3, including the Gantt chart PDF for E1 |
+| [submission.md](submission.md) | Early draft of sections A to K. Final text is in `locales/` |
+| [locales/en-gb/submission/](locales/en-gb/submission/) | Final English answers A to K, including the Gantt chart PDF for E1 |
 | [locales/cy-gb/](locales/cy-gb/) | Welsh versions |
 | [spec/index.md](spec/index.md) | Specification index: official documents, form questions, research |
 | [spec/brainstorms/index.md](spec/brainstorms/index.md) | Brainstorms drawn from all research |
