@@ -48,3 +48,10 @@ loco-rs = { workspace = true, features = ["testing"] }
 serial_test = { version = "3.5.0" }
 rstest = { version = "0.25" }
 insta = { version = "1.49", features = ["redactions", "yaml", "filters"] }
+
+# cargo-mutants builds every mutant once in a throwaway copy of the tree: no debug information and no
+# incremental state make each build quicker and smaller. `.cargo/mutants.toml` selects it.
+[profile.mutants]
+inherits = "test"
+debug = "none"
+incremental = false
