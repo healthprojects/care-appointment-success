@@ -2,6 +2,13 @@
 
 Guidance for AI coding agents working in this repository. Subfolders have their own `AGENTS.md`; the closest file wins.
 
+## Specification Driven Development
+
+**The `spec/` directory is the source of truth.** 
+- Before doing anything read all files inside the `spec/` directory using your file-reading tools.
+- Treat all files inside `spec/` as strict requirements. Where any file disagrees with the spec, the spec wins: fix the file, or change the spec on purpose and bring the other files into line in the same commit. 
+- Do not improvise structure, style, or citation practice.
+
 ## What this repository is
 
 A bid for the Contracts for Innovation Cymru challenge *Reducing Missed Appointments and Improving Access to Planned Care* (Cwm Taf Morgannwg University Health Board), plus a prototype and a service skeleton. The bid deadline is 20 October 2026, 12:00 noon BST. Phase 1 runs November 2026 to 31 March 2027 (5 months), and the draft request is £59,400 including VAT.
