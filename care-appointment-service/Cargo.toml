@@ -4,6 +4,7 @@
 name = "care-appointment-service"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.98"
 publish = false
 default-run = "care_appointment_service-cli"
 
@@ -30,7 +31,7 @@ sea-orm = { version = "1.1", features = [
   "runtime-tokio-rustls",
   "macros",
 ] }
-chrono = { version = "0.4" }
+jiff = { version = "0.2" }
 validator = { version = "0.20" }
 uuid = { version = "1.29", features = ["v4"] }
 include_dir = { version = "0.7" }

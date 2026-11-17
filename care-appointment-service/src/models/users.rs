@@ -1,5 +1,5 @@
 use async_trait::async_trait;
-use chrono::{offset::Local, Duration};
+use jiff::{SignedDuration, Timestamp};
 use loco_rs::{auth::jwt, hash, prelude::*};
 use serde::{Deserialize, Serialize};
 use serde_json::Map;
@@ -132,7 +132,7 @@ impl Model {
 
         let user = user.ok_or_else(|| ModelError::EntityNotFound)?;
         if let Some(expired_at) = user.magic_link_expiration {
-            if expired_at >= Local::now() {
+            if to_jiff(expired_at) >= Timestamp::now() {
                 Ok(user)
             } else {
                 tracing::debug!(
@@ -280,7 +280,7 @@ impl ActiveModel {
         mut self,
         db: &DatabaseConnection,
     ) -> ModelResult<Model> {
-        self.email_verification_sent_at = ActiveValue::set(Some(Local::now().into()));
+        self.email_verification_sent_at = ActiveValue::set(Some(to_db(Timestamp::now())));
         self.email_verification_token = ActiveValue::Set(Some(Uuid::new_v4().to_string()));
         self.update(db).await.map_err(ModelError::from)
     }
@@ -298,7 +298,7 @@ impl ActiveModel {
     ///
     /// when has DB query error
     pub async fn set_forgot_password_sent(mut self, db: &DatabaseConnection) -> ModelResult<Model> {
-        self.reset_sent_at = ActiveValue::set(Some(Local::now().into()));
+        self.reset_sent_at = ActiveValue::set(Some(to_db(Timestamp::now())));
         self.reset_token = ActiveValue::Set(Some(Uuid::new_v4().to_string()));
         self.update(db).await.map_err(ModelError::from)
     }
@@ -313,7 +313,7 @@ impl ActiveModel {
     ///
     /// when has DB query error
     pub async fn verified(mut self, db: &DatabaseConnection) -> ModelResult<Model> {
-        self.email_verified_at = ActiveValue::set(Some(Local::now().into()));
+        self.email_verified_at = ActiveValue::set(Some(to_db(Timestamp::now())));
         self.update(db).await.map_err(ModelError::from)
     }
 
@@ -347,10 +347,10 @@ impl ActiveModel {
     /// - Returns an error if database update fails
     pub async fn create_magic_link(mut self, db: &DatabaseConnection) -> ModelResult<Model> {
         let random_str = hash::random_string(MAGIC_LINK_LENGTH as usize);
-        let expired = Local::now() + Duration::minutes(MAGIC_LINK_EXPIRATION_MIN.into());
+        let expired = Timestamp::now() + SignedDuration::from_mins(MAGIC_LINK_EXPIRATION_MIN.into());
 
         self.magic_link_token = ActiveValue::set(Some(random_str));
-        self.magic_link_expiration = ActiveValue::set(Some(expired.into()));
+        self.magic_link_expiration = ActiveValue::set(Some(to_db(expired)));
         self.update(db).await.map_err(ModelError::from)
     }
 
@@ -366,4 +366,33 @@ impl ActiveModel {
         self.magic_link_expiration = ActiveValue::set(None);
         self.update(db).await.map_err(ModelError::from)
     }
+}
+
+/// Converts a jiff timestamp into the chrono-based type used by sea-orm entities.
+///
+/// # Panics
+///
+/// Never in practice: jiff timestamps are always within chrono's range.
+#[must_use]
+pub fn to_db(ts: Timestamp) -> DateTimeWithTimeZone {
+    sea_orm::prelude::DateTimeUtc::from_timestamp(
+        ts.as_second(),
+        ts.subsec_nanosecond().unsigned_abs(),
+    )
+    .expect("timestamp in range")
+    .fixed_offset()
+}
+
+/// Converts a sea-orm timestamp into a jiff timestamp.
+///
+/// # Panics
+///
+/// Never in practice: chrono timestamps are always within jiff's range.
+#[must_use]
+pub fn to_jiff(dt: DateTimeWithTimeZone) -> Timestamp {
+    Timestamp::new(
+        dt.timestamp(),
+        i32::try_from(dt.timestamp_subsec_nanos()).unwrap_or(0),
+    )
+    .expect("timestamp in range")
 }

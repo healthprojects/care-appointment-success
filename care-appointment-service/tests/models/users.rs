@@ -2,7 +2,7 @@ use care_appointment_service::{
     app::App,
     models::users::{self, Model, RegisterParams},
 };
-use chrono::{offset::Local, Duration};
+use jiff::{SignedDuration, Timestamp};
 use insta::assert_debug_snapshot;
 use loco_rs::testing::prelude::*;
 use sea_orm::{ActiveModelTrait, ActiveValue, IntoActiveModel};
@@ -344,9 +344,9 @@ async fn magic_link() {
         "Magic link expiration should be set after creation"
     );
 
-    let now = Local::now();
-    let should_expired_at = now + Duration::minutes(users::MAGIC_LINK_EXPIRATION_MIN.into());
-    let actual_expiration = updated_user.magic_link_expiration.unwrap();
+    let now = Timestamp::now();
+    let should_expired_at = now + SignedDuration::from_mins(users::MAGIC_LINK_EXPIRATION_MIN.into());
+    let actual_expiration = users::to_jiff(updated_user.magic_link_expiration.unwrap());
 
     assert!(
         actual_expiration >= now,
