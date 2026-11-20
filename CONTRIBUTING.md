@@ -15,7 +15,7 @@ Read [AGENTS.md](AGENTS.md) and [spec/index.md](spec/index.md) first; the spec i
 - `locales/en-gb/submission/` and `locales/cy-gb/submission/`: the English and Welsh answers. Keep word limits, numbers and acronyms consistent.
 - `care-appointment-success.github.io/` and `care-appointment-success-ui/`: SvelteKit prototypes. Run `pnpm install && pnpm run check && pnpm run check:locales && pnpm run build` in each folder you change.
 - `care-appointment-service/`: Rust (Loco) API. Run `cargo check && cargo test && cargo fmt --all -- --check && cargo clippy`.
-- `make test-minimum-supported-rust-version`: check the minimum supported Rust version.
+- `make ci-minimum-supported-rust-version`: check the minimum supported Rust version.
 
 ## Code of conduct
 

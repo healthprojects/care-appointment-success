@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Run the criterion benchmarks for the Rust workspace: `make test-benchmarks`.
+set -euo pipefail
+cd "$(dirname "$0")/../care-appointment-service"
+cargo bench

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Measure test coverage with cargo-tarpaulin: `make test-coverage`.
+# Requires: cargo install cargo-tarpaulin
+set -euo pipefail
+cd "$(dirname "$0")/../care-appointment-service"
+cargo tarpaulin --out Html --out Xml --output-dir ../target/coverage

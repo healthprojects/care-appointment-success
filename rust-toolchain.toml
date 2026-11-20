@@ -3,5 +3,5 @@
 # version (MSRV, N-2) is `rust-version` in the crates' Cargo.toml files.
 [toolchain]
 channel = "1.100.0"
-components = ["rustfmt", "clippy"]
+components = ["clippy", "llvm-tools", "rustfmt"]
 profile = "minimal"
